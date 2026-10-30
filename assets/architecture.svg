@@ -1,0 +1,109 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1040" height="400" viewBox="0 0 1040 400" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif">
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#57606a"/>
+    </marker>
+    <pattern id="grid" width="9" height="9" patternUnits="userSpaceOnUse">
+      <rect width="9" height="9" fill="#f6f8fa"/>
+      <rect width="4.5" height="4.5" fill="#d0d7de"/>
+      <rect x="4.5" y="4.5" width="4.5" height="4.5" fill="#d0d7de"/>
+    </pattern>
+  </defs>
+  <rect x="0" y="0" width="1040" height="400" rx="14" fill="#ffffff"/>
+
+  <!-- Column headers -->
+  <g font-size="11" font-weight="600" fill="#8c959f" letter-spacing="0.6">
+    <text x="62" y="34" text-anchor="middle">INPUT</text>
+    <text x="212" y="34" text-anchor="middle">FRAME THE BOARD</text>
+    <text x="408" y="34" text-anchor="middle">ENCODE</text>
+    <text x="640" y="34" text-anchor="middle">DECODE 64 SQUARES</text>
+    <text x="876" y="34" text-anchor="middle">CONSTRAIN</text>
+  </g>
+
+  <!-- Input photo -->
+  <rect x="20" y="62" width="84" height="64" rx="6" fill="#eaeef2" stroke="#d0d7de"/>
+  <polygon points="34,112 50,80 90,80 100,112" fill="url(#grid)" stroke="#8c959f"/>
+  <text x="62" y="146" font-size="12" fill="#24292f" text-anchor="middle">any photo</text>
+  <text x="62" y="162" font-size="12" fill="#24292f" text-anchor="middle">or render</text>
+
+  <!-- U2NETP -->
+  <rect x="140" y="62" width="144" height="104" rx="10" fill="#f6f8fa" stroke="#d0d7de"/>
+  <text x="212" y="88" font-size="14" font-weight="600" fill="#24292f" text-anchor="middle">U²-Net-p</text>
+  <text x="212" y="106" font-size="12" fill="#57606a" text-anchor="middle">salient-object mask</text>
+  <text x="212" y="122" font-size="12" fill="#57606a" text-anchor="middle">→ box + 5% margin</text>
+  <text x="212" y="138" font-size="12" fill="#57606a" text-anchor="middle">→ crop, letterbox</text>
+  <text x="212" y="154" font-size="11" fill="#8c959f" text-anchor="middle">frozen · 4.5 MB</text>
+
+  <!-- DINOv2 -->
+  <rect x="320" y="62" width="176" height="200" rx="10" fill="#ddf4ff" stroke="#54aeff"/>
+  <text x="408" y="88" font-size="14" font-weight="600" fill="#0a3069" text-anchor="middle">DINOv2 ViT-B/14</text>
+  <text x="408" y="106" font-size="12" fill="#0550ae" text-anchor="middle">644 px → 46 × 46 patches</text>
+  <g font-size="11" fill="#0a3069">
+    <rect x="344" y="118" width="128" height="22" rx="4" fill="#ffffff" stroke="#54aeff"/>
+    <text x="408" y="133" text-anchor="middle">block 3 · low-level</text>
+    <rect x="344" y="146" width="128" height="22" rx="4" fill="#ffffff" stroke="#54aeff"/>
+    <text x="408" y="161" text-anchor="middle">block 6</text>
+    <rect x="344" y="174" width="128" height="22" rx="4" fill="#ffffff" stroke="#54aeff"/>
+    <text x="408" y="189" text-anchor="middle">block 9</text>
+    <rect x="344" y="202" width="128" height="22" rx="4" fill="#ffffff" stroke="#54aeff"/>
+    <text x="408" y="217" text-anchor="middle">block 12 · semantic</text>
+  </g>
+  <text x="408" y="248" font-size="11" fill="#0550ae" text-anchor="middle">fine-tuned at 0.1× head LR</text>
+
+  <!-- Fusion -->
+  <rect x="320" y="282" width="176" height="62" rx="10" fill="#ddf4ff" stroke="#54aeff"/>
+  <text x="408" y="306" font-size="13" font-weight="600" fill="#0a3069" text-anchor="middle">multi-depth fusion</text>
+  <text x="408" y="324" font-size="12" fill="#0550ae" text-anchor="middle">concat 4 × 768 → 256 / patch</text>
+
+  <!-- Decoder -->
+  <rect x="540" y="62" width="200" height="282" rx="10" fill="#fbefff" stroke="#c297ff"/>
+  <text x="640" y="88" font-size="14" font-weight="600" fill="#3e1f79" text-anchor="middle">square-query decoder</text>
+  <text x="640" y="106" font-size="12" fill="#6639ba" text-anchor="middle">4 transformer layers</text>
+  <!-- 8x8 query grid -->
+  <g transform="translate(588,118)">
+    <rect width="104" height="104" fill="#ffffff" stroke="#c297ff"/>
+    <g fill="#e8d5ff">
+      <rect x="0" y="0" width="13" height="13"/><rect x="26" y="0" width="13" height="13"/><rect x="52" y="0" width="13" height="13"/><rect x="78" y="0" width="13" height="13"/>
+      <rect x="13" y="13" width="13" height="13"/><rect x="39" y="13" width="13" height="13"/><rect x="65" y="13" width="13" height="13"/><rect x="91" y="13" width="13" height="13"/>
+      <rect x="0" y="26" width="13" height="13"/><rect x="26" y="26" width="13" height="13"/><rect x="52" y="26" width="13" height="13"/><rect x="78" y="26" width="13" height="13"/>
+      <rect x="13" y="39" width="13" height="13"/><rect x="39" y="39" width="13" height="13"/><rect x="65" y="39" width="13" height="13"/><rect x="91" y="39" width="13" height="13"/>
+      <rect x="0" y="52" width="13" height="13"/><rect x="26" y="52" width="13" height="13"/><rect x="52" y="52" width="13" height="13"/><rect x="78" y="52" width="13" height="13"/>
+      <rect x="13" y="65" width="13" height="13"/><rect x="39" y="65" width="13" height="13"/><rect x="65" y="65" width="13" height="13"/><rect x="91" y="65" width="13" height="13"/>
+      <rect x="0" y="78" width="13" height="13"/><rect x="26" y="78" width="13" height="13"/><rect x="52" y="78" width="13" height="13"/><rect x="78" y="78" width="13" height="13"/>
+      <rect x="13" y="91" width="13" height="13"/><rect x="39" y="91" width="13" height="13"/><rect x="65" y="91" width="13" height="13"/><rect x="91" y="91" width="13" height="13"/>
+    </g>
+    <rect x="52" y="39" width="13" height="13" fill="#8250df"/>
+  </g>
+  <text x="640" y="240" font-size="12" fill="#3e1f79" text-anchor="middle">one learned query per square:</text>
+  <text x="640" y="257" font-size="12" fill="#3e1f79" text-anchor="middle">square + rank + file + color</text>
+  <text x="640" y="282" font-size="12" fill="#6639ba" text-anchor="middle">queries cross-attend to patches;</text>
+  <text x="640" y="298" font-size="12" fill="#6639ba" text-anchor="middle">identity is fixed, so no matching</text>
+  <text x="640" y="326" font-size="12" font-weight="600" fill="#3e1f79" text-anchor="middle">→ logits [64 × 13]</text>
+
+  <!-- Constrained decoding -->
+  <rect x="776" y="62" width="200" height="146" rx="10" fill="#fff8c5" stroke="#d4a72c"/>
+  <text x="876" y="88" font-size="14" font-weight="600" fill="#4d2d00" text-anchor="middle">exact constrained argmax</text>
+  <text x="876" y="110" font-size="12" fill="#7d4e00" text-anchor="middle">✓ one king per side</text>
+  <text x="876" y="128" font-size="12" fill="#7d4e00" text-anchor="middle">✓ kings never adjacent</text>
+  <text x="876" y="146" font-size="12" fill="#7d4e00" text-anchor="middle">✓ no pawns on ranks 1 / 8</text>
+  <text x="876" y="170" font-size="11" fill="#9a6700" text-anchor="middle">exact search over king squares;</text>
+  <text x="876" y="186" font-size="11" fill="#9a6700" text-anchor="middle">valid boards are left unchanged</text>
+
+  <!-- Output -->
+  <rect x="776" y="236" width="244" height="54" rx="10" fill="#dafbe1" stroke="#4ac26b"/>
+  <text x="898" y="258" font-size="11" fill="#116329" text-anchor="middle" letter-spacing="0.6" font-weight="600">FEN PIECE PLACEMENT</text>
+  <text x="898" y="279" font-size="12" fill="#116329" text-anchor="middle" font-family="SFMono-Regular, Menlo, monospace">r1bqkb1r/pppp1ppp/2n2n2/…</text>
+
+  <!-- Arrows -->
+  <g stroke="#57606a" stroke-width="1.6" fill="none" marker-end="url(#arrow)">
+    <path d="M104,94 L138,94"/>
+    <path d="M284,114 L318,114"/>
+    <path d="M496,313 L538,313"/>
+    <path d="M408,262 L408,280"/>
+    <path d="M740,135 L774,135"/>
+    <path d="M876,208 L876,234"/>
+  </g>
+
+  <!-- Footer -->
+  <text x="20" y="378" font-size="12" fill="#57606a">92.2 M parameters · one forward pass per image · trained end to end with per-square 13-way cross-entropy (empty + 6 pieces × 2 colors)</text>
+</svg>
