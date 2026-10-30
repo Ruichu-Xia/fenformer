@@ -8,8 +8,8 @@ no hyperparameter was tuned on them.
 
 | Source | Train | Val | What it is |
 | --- | ---: | ---: | --- |
-| `render` | 34,000 | 6,000 | Procedural scenes from a CPU rasterizer: 10 piece-mesh families, random board/piece/table materials and lighting, full 360° orbit, roll ±45°, 30% of cameras at 8–20° elevation |
-| `render_low_angle` | 17,000 | 3,000 | Same renderer, 60% of cameras at 8–20° elevation, random per-piece rotation, bounded shape variation of the procedural pieces |
+| `render` | 34,000 | 6,000 | Procedural scenes from a CPU rasterizer: 10 piece-mesh families, random board/piece/table materials and lighting, full 360° orbit, roll ±45°, camera elevation 20–75° (30% at 8–20°) |
+| `render_low_angle` | 17,000 | 3,000 | Same renderer, elevation 20–45° (60% at 8–20°), random per-piece rotation, bounded shape variation of the procedural pieces |
 | ChessReD | 6,479 | 2,192 | Smartphone photos of one physical set, official split (by game) |
 | ChessCog | 4,400 | 146 | Blender renders of one set, official split |
 | **Total** | **61,879** | **11,338** | |

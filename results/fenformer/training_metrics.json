@@ -1,0 +1,1422 @@
+[
+  {
+    "epoch": 1,
+    "lr": [
+      5.17063081695967e-09,
+      5.1706308169596694e-08
+    ],
+    "train": {
+      "loss": 0.9945769970737957,
+      "board_accuracy": 0.0,
+      "square_accuracy": 0.6978786219880735,
+      "images": 61879,
+      "per_source": {
+        "chesscog": {
+          "loss": 1.0213652094318109,
+          "board_accuracy": 0.0,
+          "square_accuracy": 0.6980397727272727,
+          "images": 4400
+        },
+        "chessred": {
+          "loss": 1.008032425492887,
+          "board_accuracy": 0.0,
+          "square_accuracy": 0.7047938532180892,
+          "images": 6479
+        },
+        "render": {
+          "loss": 0.9813113996816032,
+          "board_accuracy": 0.0,
+          "square_accuracy": 0.7027688419117647,
+          "images": 34000
+        },
+        "render_low_angle": {
+          "loss": 1.0090466709697947,
+          "board_accuracy": 0.0,
+          "square_accuracy": 0.685420955882353,
+          "images": 17000
+        }
+      }
+    },
+    "val": {
+      "loss": 0.779105515081766,
+      "board_accuracy": 0.0,
+      "square_accuracy": 0.7446777429881813,
+      "images": 11338,
+      "per_source": {
+        "chesscog": {
+          "loss": 0.8301370378634702,
+          "board_accuracy": 0.0,
+          "square_accuracy": 0.7277397260273972,
+          "images": 146
+        },
+        "chessred": {
+          "loss": 0.7711490385479083,
+          "board_accuracy": 0.0,
+          "square_accuracy": 0.7669223312043796,
+          "images": 2192
+        },
+        "render": {
+          "loss": 0.7782759366532167,
+          "board_accuracy": 0.0,
+          "square_accuracy": 0.7421276041666667,
+          "images": 6000
+        },
+        "render_low_angle": {
+          "loss": 0.7840946700175603,
+          "board_accuracy": 0.0,
+          "square_accuracy": 0.7343489583333334,
+          "images": 3000
+        }
+      }
+    }
+  },
+  {
+    "epoch": 2,
+    "lr": [
+      5.00517063081696e-06,
+      5.00517063081696e-05
+    ],
+    "train": {
+      "loss": 0.6111686291859955,
+      "board_accuracy": 0.007967161718838378,
+      "square_accuracy": 0.8020963796279836,
+      "images": 61879,
+      "per_source": {
+        "chesscog": {
+          "loss": 0.6360063381835988,
+          "board_accuracy": 0.006818181818181818,
+          "square_accuracy": 0.7990198863636364,
+          "images": 4400
+        },
+        "chessred": {
+          "loss": 0.6166954737377709,
+          "board_accuracy": 0.019447445593455782,
+          "square_accuracy": 0.8063840870504707,
+          "images": 6479
+        },
+        "render": {
+          "loss": 0.5991808534337975,
+          "board_accuracy": 0.00788235294117647,
+          "square_accuracy": 0.8068451286764706,
+          "images": 34000
+        },
+        "render_low_angle": {
+          "loss": 0.6266092191938968,
+          "board_accuracy": 0.004058823529411765,
+          "square_accuracy": 0.7917610294117647,
+          "images": 17000
+        }
+      }
+    },
+    "val": {
+      "loss": 0.17847504878108955,
+      "board_accuracy": 0.07973187511024872,
+      "square_accuracy": 0.9411519888869289,
+      "images": 11338,
+      "per_source": {
+        "chesscog": {
+          "loss": 0.14861638664765514,
+          "board_accuracy": 0.06164383561643835,
+          "square_accuracy": 0.948951198630137,
+          "images": 146
+        },
+        "chessred": {
+          "loss": 0.1462997368421749,
+          "board_accuracy": 0.1332116788321168,
+          "square_accuracy": 0.9518704379562044,
+          "images": 2192
+        },
+        "render": {
+          "loss": 0.17496238501781286,
+          "board_accuracy": 0.0745,
+          "square_accuracy": 0.9425,
+          "images": 6000
+        },
+        "render_low_angle": {
+          "loss": 0.21046292578817036,
+          "board_accuracy": 0.052,
+          "square_accuracy": 0.9302447916666666,
+          "images": 3000
+        }
+      }
+    }
+  },
+  {
+    "epoch": 3,
+    "lr": [
+      1e-05,
+      0.0001
+    ],
+    "train": {
+      "loss": 0.11027820750466548,
+      "board_accuracy": 0.27115822815494756,
+      "square_accuracy": 0.9643459917742692,
+      "images": 61879,
+      "per_source": {
+        "chesscog": {
+          "loss": 0.09146894652997038,
+          "board_accuracy": 0.3325,
+          "square_accuracy": 0.9715767045454545,
+          "images": 4400
+        },
+        "chessred": {
+          "loss": 0.05693447226661698,
+          "board_accuracy": 0.4840253125482328,
+          "square_accuracy": 0.9823058149405772,
+          "images": 6479
+        },
+        "render": {
+          "loss": 0.10912419961843475,
+          "board_accuracy": 0.26273529411764707,
+          "square_accuracy": 0.9647886029411765,
+          "images": 34000
+        },
+        "render_low_angle": {
+          "loss": 0.13778474144747838,
+          "board_accuracy": 0.191,
+          "square_accuracy": 0.9547444852941176,
+          "images": 17000
+        }
+      }
+    },
+    "val": {
+      "loss": 0.0525638581882116,
+      "board_accuracy": 0.5277826777209385,
+      "square_accuracy": 0.9830809556359146,
+      "images": 11338,
+      "per_source": {
+        "chesscog": {
+          "loss": 0.0218523758250665,
+          "board_accuracy": 0.7602739726027398,
+          "square_accuracy": 0.9940068493150684,
+          "images": 146
+        },
+        "chessred": {
+          "loss": 0.014084716687462442,
+          "board_accuracy": 0.8047445255474452,
+          "square_accuracy": 0.99609375,
+          "images": 2192
+        },
+        "render": {
+          "loss": 0.057236436809335524,
+          "board_accuracy": 0.488,
+          "square_accuracy": 0.981578125,
+          "images": 6000
+        },
+        "render_low_angle": {
+          "loss": 0.07282875247751751,
+          "board_accuracy": 0.39366666666666666,
+          "square_accuracy": 0.976046875,
+          "images": 3000
+        }
+      }
+    }
+  },
+  {
+    "epoch": 4,
+    "lr": [
+      9.92410602825576e-06,
+      9.92410602825576e-05
+    ],
+    "train": {
+      "loss": 0.04992717258360044,
+      "board_accuracy": 0.5521259231726434,
+      "square_accuracy": 0.9840921899998384,
+      "images": 61879,
+      "per_source": {
+        "chesscog": {
+          "loss": 0.031917353044846095,
+          "board_accuracy": 0.7025,
+          "square_accuracy": 0.9908345170454546,
+          "images": 4400
+        },
+        "chessred": {
+          "loss": 0.01117190513440738,
+          "board_accuracy": 0.85028553789165,
+          "square_accuracy": 0.9969565133508257,
+          "images": 6479
+        },
+        "render": {
+          "loss": 0.05102113512786523,
+          "board_accuracy": 0.5368235294117647,
+          "square_accuracy": 0.9837748161764706,
+          "images": 34000
+        },
+        "render_low_angle": {
+          "loss": 0.06717092889353209,
+          "board_accuracy": 0.43017647058823527,
+          "square_accuracy": 0.978079044117647,
+          "images": 17000
+        }
+      }
+    },
+    "val": {
+      "loss": 0.033358526819826255,
+      "board_accuracy": 0.6774563415064385,
+      "square_accuracy": 0.9893155208149585,
+      "images": 11338,
+      "per_source": {
+        "chesscog": {
+          "loss": 0.010624842435577628,
+          "board_accuracy": 0.9041095890410958,
+          "square_accuracy": 0.9976455479452054,
+          "images": 146
+        },
+        "chessred": {
+          "loss": 0.006623573889880994,
+          "board_accuracy": 0.9206204379562044,
+          "square_accuracy": 0.9982250798357665,
+          "images": 2192
+        },
+        "render": {
+          "loss": 0.037146035970678594,
+          "board_accuracy": 0.6448333333333334,
+          "square_accuracy": 0.9881223958333333,
+          "images": 6000
+        },
+        "render_low_angle": {
+          "loss": 0.04642422009896836,
+          "board_accuracy": 0.554,
+          "square_accuracy": 0.9847864583333333,
+          "images": 3000
+        }
+      }
+    }
+  },
+  {
+    "epoch": 5,
+    "lr": [
+      9.698730377266125e-06,
+      9.698730377266124e-05
+    ],
+    "train": {
+      "loss": 0.03469079126427116,
+      "board_accuracy": 0.6554566169459752,
+      "square_accuracy": 0.988835822734692,
+      "images": 61879,
+      "per_source": {
+        "chesscog": {
+          "loss": 0.02161932763376998,
+          "board_accuracy": 0.8029545454545455,
+          "square_accuracy": 0.9936186079545455,
+          "images": 4400
+        },
+        "chessred": {
+          "loss": 0.006315893969495843,
+          "board_accuracy": 0.9077018058342337,
+          "square_accuracy": 0.9982177998147862,
+          "images": 6479
+        },
+        "render": {
+          "loss": 0.035131222029905665,
+          "board_accuracy": 0.6475294117647059,
+          "square_accuracy": 0.988711856617647,
+          "images": 34000
+        },
+        "render_low_angle": {
+          "loss": 0.048007306176946526,
+          "board_accuracy": 0.537,
+          "square_accuracy": 0.9842702205882353,
+          "images": 17000
+        }
+      }
+    },
+    "val": {
+      "loss": 0.02873974583757219,
+      "board_accuracy": 0.7177632739460222,
+      "square_accuracy": 0.9907804506967719,
+      "images": 11338,
+      "per_source": {
+        "chesscog": {
+          "loss": 0.011664825715666816,
+          "board_accuracy": 0.8698630136986302,
+          "square_accuracy": 0.9961472602739726,
+          "images": 146
+        },
+        "chessred": {
+          "loss": 0.005458017910095008,
+          "board_accuracy": 0.9352189781021898,
+          "square_accuracy": 0.9987596943430657,
+          "images": 2192
+        },
+        "render": {
+          "loss": 0.03156911265610688,
+          "board_accuracy": 0.6875,
+          "square_accuracy": 0.98978125,
+          "images": 6000
+        },
+        "render_low_angle": {
+          "loss": 0.040923174185445534,
+          "board_accuracy": 0.612,
+          "square_accuracy": 0.9866875,
+          "images": 3000
+        }
+      }
+    }
+  },
+  {
+    "epoch": 6,
+    "lr": [
+      9.33072175705634e-06,
+      9.330721757056339e-05
+    ],
+    "train": {
+      "loss": 0.02668237120495998,
+      "board_accuracy": 0.7169152701239516,
+      "square_accuracy": 0.9913997983968713,
+      "images": 61879,
+      "per_source": {
+        "chesscog": {
+          "loss": 0.01642737745434715,
+          "board_accuracy": 0.8540909090909091,
+          "square_accuracy": 0.9951278409090909,
+          "images": 4400
+        },
+        "chessred": {
+          "loss": 0.00440802001429549,
+          "board_accuracy": 0.9354838709677419,
+          "square_accuracy": 0.9988448255903689,
+          "images": 6479
+        },
+        "render": {
+          "loss": 0.026869198772594888,
+          "board_accuracy": 0.7105294117647059,
+          "square_accuracy": 0.991360294117647,
+          "images": 34000
+        },
+        "render_low_angle": {
+          "loss": 0.03745209806186733,
+          "board_accuracy": 0.6108823529411764,
+          "square_accuracy": 0.9876764705882353,
+          "images": 17000
+        }
+      }
+    },
+    "val": {
+      "loss": 0.026144046726822936,
+      "board_accuracy": 0.7592167930852002,
+      "square_accuracy": 0.992143400511554,
+      "images": 11338,
+      "per_source": {
+        "chesscog": {
+          "loss": 0.005438523713352991,
+          "board_accuracy": 0.910958904109589,
+          "square_accuracy": 0.9981806506849316,
+          "images": 146
+        },
+        "chessred": {
+          "loss": 0.004198981632596464,
+          "board_accuracy": 0.9543795620437956,
+          "square_accuracy": 0.9990519502737226,
+          "images": 2192
+        },
+        "render": {
+          "loss": 0.028934146337241447,
+          "board_accuracy": 0.7423333333333333,
+          "square_accuracy": 0.9913098958333333,
+          "images": 6000
+        },
+        "render_low_angle": {
+          "loss": 0.037606043854822926,
+          "board_accuracy": 0.643,
+          "square_accuracy": 0.98846875,
+          "images": 3000
+        }
+      }
+    }
+  },
+  {
+    "epoch": 7,
+    "lr": [
+      8.831263204993308e-06,
+      8.831263204993308e-05
+    ],
+    "train": {
+      "loss": 0.021528257235387604,
+      "board_accuracy": 0.7577691947187253,
+      "square_accuracy": 0.9930001999870716,
+      "images": 61879,
+      "per_source": {
+        "chesscog": {
+          "loss": 0.013030040622890572,
+          "board_accuracy": 0.8727272727272727,
+          "square_accuracy": 0.9960298295454545,
+          "images": 4400
+        },
+        "chessred": {
+          "loss": 0.0030281379526678645,
+          "board_accuracy": 0.9549313165611977,
+          "square_accuracy": 0.9991824548541441,
+          "images": 6479
+        },
+        "render": {
+          "loss": 0.02181036424649745,
+          "board_accuracy": 0.7524705882352941,
+          "square_accuracy": 0.9928897058823529,
+          "images": 34000
+        },
+        "render_low_angle": {
+          "loss": 0.030214303561857805,
+          "board_accuracy": 0.6634705882352941,
+          "square_accuracy": 0.9900808823529412,
+          "images": 17000
+        }
+      }
+    },
+    "val": {
+      "loss": 0.021754976374561825,
+      "board_accuracy": 0.7943199858881637,
+      "square_accuracy": 0.9935463154877403,
+      "images": 11338,
+      "per_source": {
+        "chesscog": {
+          "loss": 0.005612888397554841,
+          "board_accuracy": 0.9452054794520548,
+          "square_accuracy": 0.9988227739726028,
+          "images": 146
+        },
+        "chessred": {
+          "loss": 0.0030648862416688166,
+          "board_accuracy": 0.9657846715328468,
+          "square_accuracy": 0.9993727189781022,
+          "images": 2192
+        },
+        "render": {
+          "loss": 0.024983128146245995,
+          "board_accuracy": 0.776,
+          "square_accuracy": 0.9927942708333334,
+          "images": 6000
+        },
+        "render_low_angle": {
+          "loss": 0.029740480303174992,
+          "board_accuracy": 0.6983333333333334,
+          "square_accuracy": 0.9905364583333334,
+          "images": 3000
+        }
+      }
+    }
+  },
+  {
+    "epoch": 8,
+    "lr": [
+      8.215532255906934e-06,
+      8.215532255906934e-05
+    ],
+    "train": {
+      "loss": 0.017339751069577757,
+      "board_accuracy": 0.7932578095961473,
+      "square_accuracy": 0.9943180440860389,
+      "images": 61879,
+      "per_source": {
+        "chesscog": {
+          "loss": 0.012253001076230495,
+          "board_accuracy": 0.8945454545454545,
+          "square_accuracy": 0.99625,
+          "images": 4400
+        },
+        "chessred": {
+          "loss": 0.002468306264767237,
+          "board_accuracy": 0.9603333847816021,
+          "square_accuracy": 0.9992765087204816,
+          "images": 6479
+        },
+        "render": {
+          "loss": 0.01733944134006293,
+          "board_accuracy": 0.7892941176470588,
+          "square_accuracy": 0.9943060661764705,
+          "images": 34000
+        },
+        "render_low_angle": {
+          "loss": 0.024324711167495374,
+          "board_accuracy": 0.7112941176470589,
+          "square_accuracy": 0.9919522058823529,
+          "images": 17000
+        }
+      }
+    },
+    "val": {
+      "loss": 0.02060427928538285,
+      "board_accuracy": 0.8034044805080262,
+      "square_accuracy": 0.9940851561121891,
+      "images": 11338,
+      "per_source": {
+        "chesscog": {
+          "loss": 0.004753225813059644,
+          "board_accuracy": 0.9383561643835616,
+          "square_accuracy": 0.9986087328767124,
+          "images": 146
+        },
+        "chessred": {
+          "loss": 0.003593376857352733,
+          "board_accuracy": 0.9625912408759124,
+          "square_accuracy": 0.9992372833029197,
+          "images": 2192
+        },
+        "render": {
+          "loss": 0.02340004714894591,
+          "board_accuracy": 0.7881666666666667,
+          "square_accuracy": 0.9933880208333333,
+          "images": 6000
+        },
+        "render_low_angle": {
+          "loss": 0.02821346086799046,
+          "board_accuracy": 0.711,
+          "square_accuracy": 0.9914947916666667,
+          "images": 3000
+        }
+      }
+    }
+  },
+  {
+    "epoch": 9,
+    "lr": [
+      7.502239727515748e-06,
+      7.502239727515747e-05
+    ],
+    "train": {
+      "loss": 0.014145924009185304,
+      "board_accuracy": 0.8225407650414519,
+      "square_accuracy": 0.9953394427026939,
+      "images": 61879,
+      "per_source": {
+        "chesscog": {
+          "loss": 0.010341405706032508,
+          "board_accuracy": 0.9075,
+          "square_accuracy": 0.9968288352272727,
+          "images": 4400
+        },
+        "chessred": {
+          "loss": 0.0017880106073190805,
+          "board_accuracy": 0.9705201419972218,
+          "square_accuracy": 0.9994646164531563,
+          "images": 6479
+        },
+        "render": {
+          "loss": 0.013891563386896023,
+          "board_accuracy": 0.8242058823529411,
+          "square_accuracy": 0.9954641544117647,
+          "images": 34000
+        },
+        "render_low_angle": {
+          "loss": 0.02034916298697349,
+          "board_accuracy": 0.7408235294117647,
+          "square_accuracy": 0.9931323529411765,
+          "images": 17000
+        }
+      }
+    },
+    "val": {
+      "loss": 0.019292230078669512,
+      "board_accuracy": 0.8209560769095079,
+      "square_accuracy": 0.9944338176927148,
+      "images": 11338,
+      "per_source": {
+        "chesscog": {
+          "loss": 0.0033791692754451493,
+          "board_accuracy": 0.9452054794520548,
+          "square_accuracy": 0.9990368150684932,
+          "images": 146
+        },
+        "chessred": {
+          "loss": 0.002993588305555626,
+          "board_accuracy": 0.9671532846715328,
+          "square_accuracy": 0.999337078010949,
+          "images": 2192
+        },
+        "render": {
+          "loss": 0.021625377127750048,
+          "board_accuracy": 0.809,
+          "square_accuracy": 0.9938125,
+          "images": 6000
+        },
+        "render_low_angle": {
+          "loss": 0.027309245861820576,
+          "board_accuracy": 0.732,
+          "square_accuracy": 0.9918697916666667,
+          "images": 3000
+        }
+      }
+    }
+  },
+  {
+    "epoch": 10,
+    "lr": [
+      6.7130611365345e-06,
+      6.7130611365345e-05
+    ],
+    "train": {
+      "loss": 0.01167172578205363,
+      "board_accuracy": 0.8489309781993891,
+      "square_accuracy": 0.9961830750335332,
+      "images": 61879,
+      "per_source": {
+        "chesscog": {
+          "loss": 0.009179493394234338,
+          "board_accuracy": 0.9229545454545455,
+          "square_accuracy": 0.9971768465909091,
+          "images": 4400
+        },
+        "chessred": {
+          "loss": 0.0014248496339798935,
+          "board_accuracy": 0.9788547615372742,
+          "square_accuracy": 0.9996189612594536,
+          "images": 6479
+        },
+        "render": {
+          "loss": 0.011324151609527261,
+          "board_accuracy": 0.8489705882352941,
+          "square_accuracy": 0.9962651654411765,
+          "images": 34000
+        },
+        "render_low_angle": {
+          "loss": 0.016917187837093103,
+          "board_accuracy": 0.7801764705882352,
+          "square_accuracy": 0.994452205882353,
+          "images": 17000
+        }
+      }
+    },
+    "val": {
+      "loss": 0.019925166788488817,
+      "board_accuracy": 0.84891515258423,
+      "square_accuracy": 0.9951655935791145,
+      "images": 11338,
+      "per_source": {
+        "chesscog": {
+          "loss": 0.004374533914091295,
+          "board_accuracy": 0.9452054794520548,
+          "square_accuracy": 0.9988227739726028,
+          "images": 146
+        },
+        "chessred": {
+          "loss": 0.00288299955497618,
+          "board_accuracy": 0.9712591240875912,
+          "square_accuracy": 0.9994511291058394,
+          "images": 2192
+        },
+        "render": {
+          "loss": 0.02311244776034922,
+          "board_accuracy": 0.8411666666666666,
+          "square_accuracy": 0.9946328125,
+          "images": 6000
+        },
+        "render_low_angle": {
+          "loss": 0.026759545836608594,
+          "board_accuracy": 0.7703333333333333,
+          "square_accuracy": 0.992921875,
+          "images": 3000
+        }
+      }
+    }
+  },
+  {
+    "epoch": 11,
+    "lr": [
+      5.87197802357784e-06,
+      5.8719780235778396e-05
+    ],
+    "train": {
+      "loss": 0.00946899607834254,
+      "board_accuracy": 0.8724769307842726,
+      "square_accuracy": 0.996899190355371,
+      "images": 61879,
+      "per_source": {
+        "chesscog": {
+          "loss": 0.0071630241810300335,
+          "board_accuracy": 0.9368181818181818,
+          "square_accuracy": 0.9977627840909091,
+          "images": 4400
+        },
+        "chessred": {
+          "loss": 0.0011924596938029798,
+          "board_accuracy": 0.9837937953387869,
+          "square_accuracy": 0.9996937220250038,
+          "images": 6479
+        },
+        "render": {
+          "loss": 0.009129128775462477,
+          "board_accuracy": 0.8737647058823529,
+          "square_accuracy": 0.997015625,
+          "images": 34000
+        },
+        "render_low_angle": {
+          "loss": 0.013899904541961886,
+          "board_accuracy": 0.8108235294117647,
+          "square_accuracy": 0.9953777573529412,
+          "images": 17000
+        }
+      }
+    },
+    "val": {
+      "loss": 0.019138481768431144,
+      "board_accuracy": 0.8572940553889575,
+      "square_accuracy": 0.9954770462162639,
+      "images": 11338,
+      "per_source": {
+        "chesscog": {
+          "loss": 0.003819683316304354,
+          "board_accuracy": 0.9383561643835616,
+          "square_accuracy": 0.9986087328767124,
+          "images": 146
+        },
+        "chessred": {
+          "loss": 0.0026704297726405125,
+          "board_accuracy": 0.9776459854014599,
+          "square_accuracy": 0.9995651802007299,
+          "images": 2192
+        },
+        "render": {
+          "loss": 0.023402159514830753,
+          "board_accuracy": 0.8416666666666667,
+          "square_accuracy": 0.9946588541666667,
+          "images": 6000
+        },
+        "render_low_angle": {
+          "loss": 0.023389297791893113,
+          "board_accuracy": 0.7966666666666666,
+          "square_accuracy": 0.9939739583333334,
+          "images": 3000
+        }
+      }
+    }
+  },
+  {
+    "epoch": 12,
+    "lr": [
+      5.004549202663504e-06,
+      5.0045492026635044e-05
+    ],
+    "train": {
+      "loss": 0.007739176071378541,
+      "board_accuracy": 0.8917080107952617,
+      "square_accuracy": 0.9974698605342684,
+      "images": 61879,
+      "per_source": {
+        "chesscog": {
+          "loss": 0.006518381538050397,
+          "board_accuracy": 0.94,
+          "square_accuracy": 0.9979651988636363,
+          "images": 4400
+        },
+        "chessred": {
+          "loss": 0.0008011062519622376,
+          "board_accuracy": 0.9862633122395431,
+          "square_accuracy": 0.9997660711529557,
+          "images": 6479
+        },
+        "render": {
+          "loss": 0.007320373476322428,
+          "board_accuracy": 0.8943529411764706,
+          "square_accuracy": 0.9976075367647059,
+          "images": 34000
+        },
+        "render_low_angle": {
+          "loss": 0.011536972455999122,
+          "board_accuracy": 0.8378823529411765,
+          "square_accuracy": 0.9961911764705882,
+          "images": 17000
+        }
+      }
+    },
+    "val": {
+      "loss": 0.017451843446025565,
+      "board_accuracy": 0.8677897336390897,
+      "square_accuracy": 0.9958973694655142,
+      "images": 11338,
+      "per_source": {
+        "chesscog": {
+          "loss": 0.003990390103715309,
+          "board_accuracy": 0.9452054794520548,
+          "square_accuracy": 0.9986087328767124,
+          "images": 146
+        },
+        "chessred": {
+          "loss": 0.0025932321123625854,
+          "board_accuracy": 0.9803832116788321,
+          "square_accuracy": 0.9996008211678832,
+          "images": 2192
+        },
+        "render": {
+          "loss": 0.021694194843720954,
+          "board_accuracy": 0.8556666666666667,
+          "square_accuracy": 0.995109375,
+          "images": 6000
+        },
+        "render_low_angle": {
+          "loss": 0.020478956727756972,
+          "board_accuracy": 0.806,
+          "square_accuracy": 0.9946354166666667,
+          "images": 3000
+        }
+      }
+    }
+  },
+  {
+    "epoch": 13,
+    "lr": [
+      4.137134080568117e-06,
+      4.137134080568117e-05
+    ],
+    "train": {
+      "loss": 0.0060724169635909065,
+      "board_accuracy": 0.9117794405210168,
+      "square_accuracy": 0.9980001292845715,
+      "images": 61879,
+      "per_source": {
+        "chesscog": {
+          "loss": 0.006037018086673759,
+          "board_accuracy": 0.9420454545454545,
+          "square_accuracy": 0.9979296875,
+          "images": 4400
+        },
+        "chessred": {
+          "loss": 0.0006262567281923713,
+          "board_accuracy": 0.9907393116221639,
+          "square_accuracy": 0.9998432435561043,
+          "images": 6479
+        },
+        "render": {
+          "loss": 0.005646769724565114,
+          "board_accuracy": 0.9159411764705883,
+          "square_accuracy": 0.9981511948529411,
+          "images": 34000
+        },
+        "render_low_angle": {
+          "loss": 0.00900850127832382,
+          "board_accuracy": 0.8655294117647059,
+          "square_accuracy": 0.9970137867647059,
+          "images": 17000
+        }
+      }
+    },
+    "val": {
+      "loss": 0.017239179371342835,
+      "board_accuracy": 0.8760804374669254,
+      "square_accuracy": 0.9961454290880226,
+      "images": 11338,
+      "per_source": {
+        "chesscog": {
+          "loss": 0.0020039888896300835,
+          "board_accuracy": 0.958904109589041,
+          "square_accuracy": 0.9991438356164384,
+          "images": 146
+        },
+        "chessred": {
+          "loss": 0.0023446619134269197,
+          "board_accuracy": 0.9817518248175182,
+          "square_accuracy": 0.9996293339416058,
+          "images": 2192
+        },
+        "render": {
+          "loss": 0.020564239618985083,
+          "board_accuracy": 0.8653333333333333,
+          "square_accuracy": 0.9956067708333334,
+          "images": 6000
+        },
+        "render_low_angle": {
+          "loss": 0.022213432235418926,
+          "board_accuracy": 0.8163333333333334,
+          "square_accuracy": 0.99453125,
+          "images": 3000
+        }
+      }
+    }
+  },
+  {
+    "epoch": 14,
+    "lr": [
+      3.296091647788907e-06,
+      3.296091647788907e-05
+    ],
+    "train": {
+      "loss": 0.004866830229693941,
+      "board_accuracy": 0.9260330645291618,
+      "square_accuracy": 0.9983894980526511,
+      "images": 61879,
+      "per_source": {
+        "chesscog": {
+          "loss": 0.0049239391724334135,
+          "board_accuracy": 0.9509090909090909,
+          "square_accuracy": 0.9983061079545454,
+          "images": 4400
+        },
+        "chessred": {
+          "loss": 0.0005740903983249447,
+          "board_accuracy": 0.9908936564284612,
+          "square_accuracy": 0.9998480668313011,
+          "images": 6479
+        },
+        "render": {
+          "loss": 0.004477403665619183,
+          "board_accuracy": 0.9286470588235294,
+          "square_accuracy": 0.9985055147058823,
+          "images": 34000
+        },
+        "render_low_angle": {
+          "loss": 0.0072669411236896955,
+          "board_accuracy": 0.8896470588235295,
+          "square_accuracy": 0.9976231617647059,
+          "images": 17000
+        }
+      }
+    },
+    "val": {
+      "loss": 0.017653849528194834,
+      "board_accuracy": 0.8895748809313812,
+      "square_accuracy": 0.9964872001234786,
+      "images": 11338,
+      "per_source": {
+        "chesscog": {
+          "loss": 0.002631679649984768,
+          "board_accuracy": 0.958904109589041,
+          "square_accuracy": 0.9991438356164384,
+          "images": 146
+        },
+        "chessred": {
+          "loss": 0.0025992415891585843,
+          "board_accuracy": 0.9808394160583942,
+          "square_accuracy": 0.9996364621350365,
+          "images": 2192
+        },
+        "render": {
+          "loss": 0.022165147857529974,
+          "board_accuracy": 0.8798333333333334,
+          "square_accuracy": 0.9958489583333333,
+          "images": 6000
+        },
+        "render_low_angle": {
+          "loss": 0.020362232004386593,
+          "board_accuracy": 0.839,
+          "square_accuracy": 0.9953333333333333,
+          "images": 3000
+        }
+      }
+    }
+  },
+  {
+    "epoch": 15,
+    "lr": [
+      2.506979482155325e-06,
+      2.506979482155325e-05
+    ],
+    "train": {
+      "loss": 0.0038769981997729196,
+      "board_accuracy": 0.9398988348227993,
+      "square_accuracy": 0.998704881704617,
+      "images": 61879,
+      "per_source": {
+        "chesscog": {
+          "loss": 0.0043857154174136,
+          "board_accuracy": 0.9606818181818182,
+          "square_accuracy": 0.998515625,
+          "images": 4400
+        },
+        "chessred": {
+          "loss": 0.000423635430162404,
+          "board_accuracy": 0.9950609661984874,
+          "square_accuracy": 0.9999107694088594,
+          "images": 6479
+        },
+        "render": {
+          "loss": 0.003577717098599324,
+          "board_accuracy": 0.9425588235294118,
+          "square_accuracy": 0.9988065257352942,
+          "images": 34000
+        },
+        "render_low_angle": {
+          "loss": 0.005660029909572318,
+          "board_accuracy": 0.9081764705882353,
+          "square_accuracy": 0.9980909926470588,
+          "images": 17000
+        }
+      }
+    },
+    "val": {
+      "loss": 0.018667513157049592,
+      "board_accuracy": 0.8999823602046216,
+      "square_accuracy": 0.9966429264420533,
+      "images": 11338,
+      "per_source": {
+        "chesscog": {
+          "loss": 0.003561417289453346,
+          "board_accuracy": 0.9383561643835616,
+          "square_accuracy": 0.9988227739726028,
+          "images": 146
+        },
+        "chessred": {
+          "loss": 0.0025187533251530532,
+          "board_accuracy": 0.9840328467153284,
+          "square_accuracy": 0.9996721031021898,
+          "images": 2192
+        },
+        "render": {
+          "loss": 0.023969128544514585,
+          "board_accuracy": 0.8913333333333333,
+          "square_accuracy": 0.9959765625,
+          "images": 6000
+        },
+        "render_low_angle": {
+          "loss": 0.020598806231515027,
+          "board_accuracy": 0.854,
+          "square_accuracy": 0.99565625,
+          "images": 3000
+        }
+      }
+    }
+  },
+  {
+    "epoch": 16,
+    "lr": [
+      1.7937771057501078e-06,
+      1.7937771057501076e-05
+    ],
+    "train": {
+      "loss": 0.003140542428580088,
+      "board_accuracy": 0.9505809725431891,
+      "square_accuracy": 0.99895991572262,
+      "images": 61879,
+      "per_source": {
+        "chesscog": {
+          "loss": 0.00369972737979548,
+          "board_accuracy": 0.9611363636363637,
+          "square_accuracy": 0.9987180397727272,
+          "images": 4400
+        },
+        "chessred": {
+          "loss": 0.00034335997863932426,
+          "board_accuracy": 0.9959870350362711,
+          "square_accuracy": 0.9999252392344498,
+          "images": 6479
+        },
+        "render": {
+          "loss": 0.002845521834530968,
+          "board_accuracy": 0.9548823529411765,
+          "square_accuracy": 0.9990772058823529,
+          "images": 34000
+        },
+        "render_low_angle": {
+          "loss": 0.004651908987726475,
+          "board_accuracy": 0.9219411764705883,
+          "square_accuracy": 0.9984200367647059,
+          "images": 17000
+        }
+      }
+    },
+    "val": {
+      "loss": 0.017849298475263734,
+      "board_accuracy": 0.9033339213265126,
+      "square_accuracy": 0.9968675582113248,
+      "images": 11338,
+      "per_source": {
+        "chesscog": {
+          "loss": 0.002688402347592722,
+          "board_accuracy": 0.9657534246575342,
+          "square_accuracy": 0.9992508561643836,
+          "images": 146
+        },
+        "chessred": {
+          "loss": 0.0024800285297051712,
+          "board_accuracy": 0.9831204379562044,
+          "square_accuracy": 0.9996649749087592,
+          "images": 2192
+        },
+        "render": {
+          "loss": 0.022511351412106022,
+          "board_accuracy": 0.8951666666666667,
+          "square_accuracy": 0.99628125,
+          "images": 6000
+        },
+        "render_low_angle": {
+          "loss": 0.020492836120013937,
+          "board_accuracy": 0.8583333333333333,
+          "square_accuracy": 0.9958802083333333,
+          "images": 3000
+        }
+      }
+    }
+  },
+  {
+    "epoch": 17,
+    "lr": [
+      1.1781572957515613e-06,
+      1.1781572957515613e-05
+    ],
+    "train": {
+      "loss": 0.0024883944517674447,
+      "board_accuracy": 0.9599702645485544,
+      "square_accuracy": 0.9991758108566718,
+      "images": 61879,
+      "per_source": {
+        "chesscog": {
+          "loss": 0.0030503121252354504,
+          "board_accuracy": 0.9688636363636364,
+          "square_accuracy": 0.9989985795454546,
+          "images": 4400
+        },
+        "chessred": {
+          "loss": 0.00032338839939914253,
+          "board_accuracy": 0.9956783454236765,
+          "square_accuracy": 0.9999228275968514,
+          "images": 6479
+        },
+        "render": {
+          "loss": 0.0022120162579492846,
+          "board_accuracy": 0.9633529411764706,
+          "square_accuracy": 0.9992720588235294,
+          "images": 34000
+        },
+        "render_low_angle": {
+          "loss": 0.0037208353364646483,
+          "board_accuracy": 0.9372941176470588,
+          "square_accuracy": 0.9987444852941176,
+          "images": 17000
+        }
+      }
+    },
+    "val": {
+      "loss": 0.017774940080916145,
+      "board_accuracy": 0.9067736814252955,
+      "square_accuracy": 0.9969433542070912,
+      "images": 11338,
+      "per_source": {
+        "chesscog": {
+          "loss": 0.003069479990129628,
+          "board_accuracy": 0.9383561643835616,
+          "square_accuracy": 0.9990368150684932,
+          "images": 146
+        },
+        "chessred": {
+          "loss": 0.002422591340882594,
+          "board_accuracy": 0.9858576642335767,
+          "square_accuracy": 0.999707744069343,
+          "images": 2192
+        },
+        "render": {
+          "loss": 0.0223101355173222,
+          "board_accuracy": 0.898,
+          "square_accuracy": 0.9963619791666667,
+          "images": 6000
+        },
+        "render_low_angle": {
+          "loss": 0.020637664411906825,
+          "board_accuracy": 0.865,
+          "square_accuracy": 0.995984375,
+          "images": 3000
+        }
+      }
+    }
+  },
+  {
+    "epoch": 18,
+    "lr": [
+      6.788274925862022e-07,
+      6.7882749258620215e-06
+    ],
+    "train": {
+      "loss": 0.002178365993650981,
+      "board_accuracy": 0.9644144216939511,
+      "square_accuracy": 0.9992826221335186,
+      "images": 61879,
+      "per_source": {
+        "chesscog": {
+          "loss": 0.002784009153460209,
+          "board_accuracy": 0.9693181818181819,
+          "square_accuracy": 0.9990625,
+          "images": 4400
+        },
+        "chessred": {
+          "loss": 0.000248337694651487,
+          "board_accuracy": 0.9975304830992437,
+          "square_accuracy": 0.9999493556104337,
+          "images": 6479
+        },
+        "render": {
+          "loss": 0.001967127282291746,
+          "board_accuracy": 0.9669705882352941,
+          "square_accuracy": 0.9993552389705882,
+          "images": 34000
+        },
+        "render_low_angle": {
+          "loss": 0.0031796565602551655,
+          "board_accuracy": 0.9454117647058824,
+          "square_accuracy": 0.9989402573529412,
+          "images": 17000
+        }
+      }
+    },
+    "val": {
+      "loss": 0.017743774811814474,
+      "board_accuracy": 0.9082730640324572,
+      "square_accuracy": 0.9969874536955371,
+      "images": 11338,
+      "per_source": {
+        "chesscog": {
+          "loss": 0.0028450639845574834,
+          "board_accuracy": 0.952054794520548,
+          "square_accuracy": 0.9991438356164384,
+          "images": 146
+        },
+        "chessred": {
+          "loss": 0.002418436416277088,
+          "board_accuracy": 0.9835766423357665,
+          "square_accuracy": 0.9996649749087592,
+          "images": 2192
+        },
+        "render": {
+          "loss": 0.022490320719070346,
+          "board_accuracy": 0.9005,
+          "square_accuracy": 0.9964114583333333,
+          "images": 6000
+        },
+        "render_low_angle": {
+          "loss": 0.02017346751190189,
+          "board_accuracy": 0.8666666666666667,
+          "square_accuracy": 0.996078125,
+          "images": 3000
+        }
+      }
+    }
+  },
+  {
+    "epoch": 19,
+    "lr": [
+      3.1096131866544014e-07,
+      3.1096131866544016e-06
+    ],
+    "train": {
+      "loss": 0.0019358790657666174,
+      "board_accuracy": 0.9684868856962782,
+      "square_accuracy": 0.9993598898657057,
+      "images": 61879,
+      "per_source": {
+        "chesscog": {
+          "loss": 0.0024194949886090066,
+          "board_accuracy": 0.9715909090909091,
+          "square_accuracy": 0.9991548295454545,
+          "images": 4400
+        },
+        "chessred": {
+          "loss": 0.0002747405014026828,
+          "board_accuracy": 0.9970674486803519,
+          "square_accuracy": 0.9999421206976385,
+          "images": 6479
+        },
+        "render": {
+          "loss": 0.0017298427019700284,
+          "board_accuracy": 0.9712058823529411,
+          "square_accuracy": 0.9994370404411764,
+          "images": 34000
+        },
+        "render_low_angle": {
+          "loss": 0.0028558698344190547,
+          "board_accuracy": 0.9513529411764706,
+          "square_accuracy": 0.9990367647058823,
+          "images": 17000
+        }
+      }
+    },
+    "val": {
+      "loss": 0.017813470837876846,
+      "board_accuracy": 0.9137414005997531,
+      "square_accuracy": 0.9970811651084848,
+      "images": 11338,
+      "per_source": {
+        "chesscog": {
+          "loss": 0.0027852357042731507,
+          "board_accuracy": 0.9726027397260274,
+          "square_accuracy": 0.999464897260274,
+          "images": 146
+        },
+        "chessred": {
+          "loss": 0.002380352686394827,
+          "board_accuracy": 0.9854014598540146,
+          "square_accuracy": 0.9996934876824818,
+          "images": 2192
+        },
+        "render": {
+          "loss": 0.022643665203606892,
+          "board_accuracy": 0.9053333333333333,
+          "square_accuracy": 0.996484375,
+          "images": 6000
+        },
+        "render_low_angle": {
+          "loss": 0.020160921212268326,
+          "board_accuracy": 0.8753333333333333,
+          "square_accuracy": 0.99625,
+          "images": 3000
+        }
+      }
+    }
+  },
+  {
+    "epoch": 20,
+    "lr": [
+      8.573748270166774e-08,
+      8.573748270166774e-07
+    ],
+    "train": {
+      "loss": 0.0017665185315366841,
+      "board_accuracy": 0.9707816868404466,
+      "square_accuracy": 0.9994204920085974,
+      "images": 61879,
+      "per_source": {
+        "chesscog": {
+          "loss": 0.0021562778520801246,
+          "board_accuracy": 0.9745454545454545,
+          "square_accuracy": 0.9992542613636364,
+          "images": 4400
+        },
+        "chessred": {
+          "loss": 0.0002445670401749557,
+          "board_accuracy": 0.9979935175181355,
+          "square_accuracy": 0.9999590021608273,
+          "images": 6479
+        },
+        "render": {
+          "loss": 0.0015223588964631744,
+          "board_accuracy": 0.9732941176470589,
+          "square_accuracy": 0.9995013786764706,
+          "images": 34000
+        },
+        "render_low_angle": {
+          "loss": 0.002734001490044969,
+          "board_accuracy": 0.9544117647058824,
+          "square_accuracy": 0.9990965073529412,
+          "images": 17000
+        }
+      }
+    },
+    "val": {
+      "loss": 0.017907888689555135,
+      "board_accuracy": 0.9145351913917799,
+      "square_accuracy": 0.9970908118715823,
+      "images": 11338,
+      "per_source": {
+        "chesscog": {
+          "loss": 0.002872599791105243,
+          "board_accuracy": 0.9657534246575342,
+          "square_accuracy": 0.9993578767123288,
+          "images": 146
+        },
+        "chessred": {
+          "loss": 0.0023993133134536286,
+          "board_accuracy": 0.9854014598540146,
+          "square_accuracy": 0.9996934876824818,
+          "images": 2192
+        },
+        "render": {
+          "loss": 0.022769986493279097,
+          "board_accuracy": 0.9076666666666666,
+          "square_accuracy": 0.9965026041666667,
+          "images": 6000
+        },
+        "render_low_angle": {
+          "loss": 0.02024700954996994,
+          "board_accuracy": 0.874,
+          "square_accuracy": 0.9962552083333334,
+          "images": 3000
+        }
+      }
+    }
+  }
+]

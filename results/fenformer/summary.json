@@ -1,0 +1,94 @@
+{
+  "chessred-test": {
+    "argmax": {
+      "images": 2129,
+      "board_accuracy": 0.9929544387036168,
+      "board_accuracy_ci95": [
+        0.9884074258529003,
+        0.9957256668249619
+      ],
+      "square_accuracy": 0.9996550610615312,
+      "mean_wrong_squares": 0.022076092660427094
+    },
+    "constrained": {
+      "images": 2129,
+      "board_accuracy": 0.9929544387036168,
+      "board_accuracy_ci95": [
+        0.9884074258529003,
+        0.9957256668249619
+      ],
+      "square_accuracy": 0.9996477219351808,
+      "mean_wrong_squares": 0.022545795887708664
+    },
+    "images_per_second": 6.619174863208708
+  },
+  "chesscog-test": {
+    "argmax": {
+      "images": 342,
+      "board_accuracy": 0.9532163742690059,
+      "board_accuracy_ci95": [
+        0.9253631272579459,
+        0.9710009885684903
+      ],
+      "square_accuracy": 0.9978983918128655,
+      "mean_wrong_squares": 0.13450291752815247
+    },
+    "constrained": {
+      "images": 342,
+      "board_accuracy": 0.9532163742690059,
+      "board_accuracy_ci95": [
+        0.9253631272579459,
+        0.9710009885684903
+      ],
+      "square_accuracy": 0.9978983918128655,
+      "mean_wrong_squares": 0.13450291752815247
+    },
+    "images_per_second": 5.9728118586042775
+  },
+  "chesscog-transfer": {
+    "argmax": {
+      "images": 29,
+      "board_accuracy": 1.0,
+      "board_accuracy_ci95": [
+        0.8830264055344442,
+        1.0
+      ],
+      "square_accuracy": 1.0,
+      "mean_wrong_squares": 0.0
+    },
+    "constrained": {
+      "images": 29,
+      "board_accuracy": 1.0,
+      "board_accuracy_ci95": [
+        0.8830264055344442,
+        1.0
+      ],
+      "square_accuracy": 1.0,
+      "mean_wrong_squares": 0.0
+    },
+    "images_per_second": 1.5540053589268226
+  },
+  "samryan-500": {
+    "argmax": {
+      "images": 500,
+      "board_accuracy": 0.296,
+      "board_accuracy_ci95": [
+        0.2576647234385832,
+        0.33744612092202536
+      ],
+      "square_accuracy": 0.95575,
+      "mean_wrong_squares": 2.8320000171661377
+    },
+    "constrained": {
+      "images": 500,
+      "board_accuracy": 0.302,
+      "board_accuracy_ci95": [
+        0.26339087332996447,
+        0.34362847560827325
+      ],
+      "square_accuracy": 0.95709375,
+      "mean_wrong_squares": 2.746000051498413
+    },
+    "images_per_second": 4.688592348626331
+  }
+}

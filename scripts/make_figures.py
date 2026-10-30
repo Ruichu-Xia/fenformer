@@ -304,7 +304,7 @@ def results_figure(ours: Path, baseline: Path | None, output: Path):
         systems.append(
             (
                 "ChessQueries (ViT-L, 372 M), released weights",
-                load_metrics(baseline, "argmax"),
+                load_metrics(baseline, "constrained"),
                 ORANGE,
             )
         )
@@ -361,18 +361,16 @@ def curves_figure(metrics: Path, output: Path):
         )
     left.set_yscale("log")
     left.set_title("per-square cross-entropy", loc="left", fontsize=11)
+    finals = {}
     for source, (name, color) in SOURCES.items():
         values = [h["val"]["per_source"][source]["board_accuracy"] for h in history]
         right.plot(epochs, values, color=color, lw=2, marker="o", ms=4)
-        right.annotate(
-            f"{name} {values[-1]:.1%}",
-            (epochs[-1], values[-1]),
-            xytext=(6, 0),
-            textcoords="offset points",
-            va="center",
-            fontsize=9,
-            color=INK,
-        )
+        finals[f"{name} {values[-1]:.1%}"] = values[-1]
+    # Direct labels, pushed apart from the top down so close final values never overlap.
+    floor = float("inf")
+    for label, value in sorted(finals.items(), key=lambda item: -item[1]):
+        floor = min(value, floor - 0.055)
+        right.annotate(label, (epochs[-1] + 0.4, floor), va="center", fontsize=9, color=INK)
     right.set_ylim(0, 1)
     right.yaxis.set_major_formatter(plt.FuncFormatter(lambda v, _: f"{v:.0%}"))
     right.set_title("validation exact-board accuracy, by source", loc="left", fontsize=11)
@@ -383,6 +381,7 @@ def curves_figure(metrics: Path, output: Path):
         for side in ("top", "right"):
             ax.spines[side].set_visible(False)
         ax.set_xlim(0.5, epochs[-1] + 0.5)
+        ax.xaxis.set_major_locator(plt.MaxNLocator(integer=True))
     fig.savefig(output, dpi=150, bbox_inches="tight")
 
 

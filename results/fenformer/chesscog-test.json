@@ -1,0 +1,2079 @@
+{
+  "metrics": {
+    "argmax": {
+      "images": 342,
+      "board_accuracy": 0.9532163742690059,
+      "board_accuracy_ci95": [
+        0.9253631272579459,
+        0.9710009885684903
+      ],
+      "square_accuracy": 0.9978983918128655,
+      "mean_wrong_squares": 0.13450291752815247
+    },
+    "constrained": {
+      "images": 342,
+      "board_accuracy": 0.9532163742690059,
+      "board_accuracy_ci95": [
+        0.9253631272579459,
+        0.9710009885684903
+      ],
+      "square_accuracy": 0.9978983918128655,
+      "mean_wrong_squares": 0.13450291752815247
+    },
+    "images_per_second": 5.9728118586042775
+  },
+  "predictions": [
+    {
+      "image": "images/chesscog-0046.png",
+      "target": "2rq1rk1/4ppbp/p4np1/1p1pBb2/3P4/1QN1P2P/PP2BPP1/2R2RK1",
+      "prediction": "2rq1rk1/4ppbp/p4np1/1p1pBb2/3P4/1QN1P2P/PP2BPP1/2R2RK1",
+      "wrong_squares": 0
+    },
+    {
+      "image": "images/chesscog-0049.png",
+      "target": "6k1/R5p1/7p/3N1PbP/4P3/5K2/7r/8",
+      "prediction": "6k1/R5p1/7p/3N1PbP/4P3/5K2/7r/8",
+      "wrong_squares": 0
+    },
+    {
+      "image": "images/chesscog-0093.png",
+      "target": "6k1/6p1/5pBp/r1BK4/7P/6P1/5P2/8",
+      "prediction": "6k1/6p1/5pBp/r1BK4/7P/6P1/5P2/8",
+      "wrong_squares": 0
+    },
+    {
+      "image": "images/chesscog-0094.png",
+      "target": "rn2kb1r/1p1b1pp1/p2pp2p/8/3NN2q/8/PPPQ1PPP/2KR1B1R",
+      "prediction": "rn2kb1r/1p1b1pp1/p2pp2p/8/3NN2q/8/PPPQ1PPP/2KR1B1R",
+      "wrong_squares": 0
+    },
+    {
+      "image": "images/chesscog-0102.png",
+      "target": "r2q1r2/3bppkp/3p2p1/p2P4/Pp6/1B3P2/1PPQ2PP/R3K2R",
+      "prediction": "r2q1r2/3bppkp/3p2p1/p2P4/Pp6/1B3P2/1PPQ2PP/R3K2R",
+      "wrong_squares": 0
+    },
+    {
+      "image": "images/chesscog-0136.png",
+      "target": "5k2/1pp1r2p/3n4/4N1p1/PR1P4/8/1P4K1/8",
+      "prediction": "5k2/1pp1r2p/3n4/4N1p1/PR1P4/8/1P4K1/8",
+      "wrong_squares": 0
+    },
+    {
+      "image": "images/chesscog-0158.png",
+      "target": "1r3rk1/pBp2p1p/2Q5/7q/2Pp2nP/N2P2p1/PP6/5RK1",
+      "prediction": "1r3rk1/pB3p1p/2Q5/7q/2Pp2nP/N2P2p1/PP6/5RK1",
+      "wrong_squares": 1
+    },
+    {
+      "image": "images/chesscog-0174.png",
+      "target": "1Q1n1rk1/5pp1/2p5/2q1p2p/2B1P3/2P4P/PP4P1/5R1K",
+      "prediction": "1Q1n1rk1/5pp1/2p5/2q1p2p/2B1P3/2P4P/PP4P1/5R1K",
+      "wrong_squares": 0
+    },
+    {
+      "image": "images/chesscog-0175.png",
+      "target": "7k/p5q1/2p3pp/1pQn4/4NP2/5BP1/7P/7K",
+      "prediction": "7k/p5q1/2p3pp/1pQn4/4NP2/5BP1/7P/7K",
+      "wrong_squares": 0
+    },
+    {
+      "image": "images/chesscog-0183.png",
+      "target": "r3k2r/pp2bpp1/2n4p/2PpP3/5q2/3B1N2/PP3PPP/RQ1K3R",
+      "prediction": "r3k2r/pp2bpp1/2n4p/2PpP3/5q2/3B1N2/PP3PPP/RQ1K3R",
+      "wrong_squares": 0
+    },
+    {
+      "image": "images/chesscog-0186.png",
+      "target": "6k1/2pq1p2/5Rp1/p4r1p/3n4/PPQ3PP/5R1K/8",
+      "prediction": "6k1/2pq1p2/5Rp1/p4r1p/3n4/PPQ3PP/5R1K/8",
+      "wrong_squares": 0
+    },
+    {
+      "image": "images/chesscog-0189.png",
+      "target": "8/4p3/3p1kp1/6N1/5PK1/6P1/1b5P/8",
+      "prediction": "8/4p3/3p1kp1/6P1/5PK1/6P1/1b5P/8",
+      "wrong_squares": 1
+    },
+    {
+      "image": "images/chesscog-0200.png",
+      "target": "8/4k1pp/5p2/pbr1p3/6r1/1PN1P3/PK1R2PP/4R3",
+      "prediction": "8/4k1pp/5p2/pbr1p3/6r1/1PN1P3/PK1R2PP/4R3",
+      "wrong_squares": 0
+    },
+    {
+      "image": "images/chesscog-0202.png",
+      "target": "b1r3k1/2r2p2/5np1/1ppp4/7p/PN2P1NP/1P3PP1/2RR2K1",
+      "prediction": "b1r3k1/2r2p2/5np1/1ppp4/7p/PN2P1NP/1P3PP1/2RR2K1",
+      "wrong_squares": 0
+    },
+    {
+      "image": "images/chesscog-0207.png",
+      "target": "r1b2rk1/pp2ppbp/2nq2p1/2p5/2NP4/4P1P1/PP3PBP/R1BQ1RK1",
+      "prediction": "r1b2rk1/pp2ppbp/2nq2p1/2p5/2NP4/4P1P1/PP3PBP/R1BQ1RK1",
+      "wrong_squares": 0
+    },
+    {
+      "image": "images/chesscog-0211.png",
+      "target": "1k1rr3/1bq3p1/npp1pp1p/4b3/3PBP2/P7/1P1BQ1PP/1K1R1R2",
+      "prediction": "1k1rr3/1bq3p1/npp1pp1p/4b3/3PBP2/P7/1P1BQ1PP/1K1R1R2",
+      "wrong_squares": 0
+    },
+    {
+      "image": "images/chesscog-0233.png",
+      "target": "r4rk1/2qnbppp/2p1pn2/ppPp3b/1P1P4/P1N1PN1P/1BQ1BPP1/2R2R1K",
+      "prediction": "r4rk1/2qnbppp/2p1pn2/ppPp3b/1P1P4/P1N1PN1P/1BQ1BPP1/2R2R1K",
+      "wrong_squares": 0
+    },
+    {
+      "image": "images/chesscog-0244.png",
+      "target": "r2r4/1p2kppp/pn1b1n2/2Np4/1P1P2P1/2N2P2/1P1BK2P/R6R",
+      "prediction": "r2r4/1p2kppp/pn1b1n2/2Np4/1P1P2P1/2N2P2/1P1BK2P/R6R",
+      "wrong_squares": 0
+    },
+    {
+      "image": "images/chesscog-0247.png",
+      "target": "r1bq1rk1/5pbp/ppn1pnp1/3p4/2PP4/1P1B1N2/PB1NQPPP/3R1RK1",
+      "prediction": "r1bq1rk1/5pbp/ppn1pnp1/3p4/2PP4/1P1B1N2/PB1NQPPP/3R1RK1",
+      "wrong_squares": 0
+    },
+    {
+      "image": "images/chesscog-0254.png",
+      "target": "r3kb1r/2q2p2/p2p1P2/np1Pp3/4B3/2P2Q1p/PPN3nP/R1B2R1K",
+      "prediction": "r3kb1r/2q2p2/p2p1P2/np1Pp3/4B3/2P2Q1p/PPN3nP/R1B2R1K",
+      "wrong_squares": 0
+    },
+    {
+      "image": "images/chesscog-0257.png",
+      "target": "3r2k1/2p2ppp/5b2/p1q5/1pb1r3/P3PPP1/1PQB3P/K2R3R",
+      "prediction": "3r2k1/2p2ppp/5b2/p1q5/1pb1r3/P3PPP1/1PQB3P/K2R3R",
+      "wrong_squares": 0
+    },
+    {
+      "image": "images/chesscog-0261.png",
+      "target": "6k1/1pp4p/2q5/p2b1p2/3Q4/P1P2N2/5PPP/2K5",
+      "prediction": "6k1/1pp4p/2q5/p2b1p2/3Q4/P1P2N2/5PPP/2K5",
+      "wrong_squares": 0
+    },
+    {
+      "image": "images/chesscog-0266.png",
+      "target": "r4k2/5ppp/1rbpn3/2p1p3/P1P1P3/2NP1NP1/R4P1P/3BK3",
+      "prediction": "r4k2/5ppp/1rbpn3/2p1p3/P1P1P3/2NP1NP1/R4P1P/3BK3",
+      "wrong_squares": 0
+    },
+    {
+      "image": "images/chesscog-0276.png",
+      "target": "r1bq1rk1/2pnppbp/1p3np1/p2p4/P2P1B2/2P2NP1/1P2PPBP/RN1Q1RK1",
+      "prediction": "r1bq1rk1/2pnppbp/1p3np1/p2p4/P2P1B2/2P2NP1/1P2PPBP/RN1Q1RK1",
+      "wrong_squares": 0
+    },
+    {
+      "image": "images/chesscog-0282.png",
+      "target": "1b1R4/5pkp/2r3p1/8/1P5P/2P2N2/5PK1/8",
+      "prediction": "1b1R4/5pkp/2r3p1/8/1P5P/2P2N2/5PK1/8",
+      "wrong_squares": 0
+    },
+    {
+      "image": "images/chesscog-0284.png",
+      "target": "2rr2k1/pq2bppp/1pnppn2/8/1P1PP3/P2QBN1P/3N1PP1/R3R1K1",
+      "prediction": "2rr2k1/pq2bppp/1pnppn2/8/1P1PP3/P2QBN1P/3N1PP1/R3R1K1",
+      "wrong_squares": 0
+    },
+    {
+      "image": "images/chesscog-0295.png",
+      "target": "2r3k1/5pp1/7p/2qb4/3N4/1pn1P2P/1Q3PP1/2R2B1K",
+      "prediction": "2r3k1/5pp1/7p/2qb4/3N4/1pn1P2P/1Q3PP1/2R2B1K",
+      "wrong_squares": 0
+    },
+    {
+      "image": "images/chesscog-0298.png",
+      "target": "r1bqkbnr/pppp1ppp/2n5/8/3QP3/8/PPP2PPP/RNB1KBNR",
+      "prediction": "r1bqkbnr/pppp1ppp/2n5/8/3QP3/8/PPP2PPP/RNB1KBNR",
+      "wrong_squares": 0
+    },
+    {
+      "image": "images/chesscog-0304.png",
+      "target": "rnbqk2r/ppppp1bp/5np1/5p2/2PP4/6P1/PP2PPBP/RNBQK1NR",
+      "prediction": "rnbqk2r/ppppp1bp/5np1/5p2/2PP4/6P1/PP2PPBP/RNBQK1NR",
+      "wrong_squares": 0
+    },
+    {
+      "image": "images/chesscog-0309.png",
+      "target": "rnbq1rk1/pp1p1ppp/4pn2/2p3B1/1bPP4/2N2N2/PP2PPPP/R2QKB1R",
+      "prediction": "rnbq1rk1/pp1p1ppp/4pn2/2p3B1/1bPP4/2N2N2/PP2PPPP/R2QKB1R",
+      "wrong_squares": 0
+    },
+    {
+      "image": "images/chesscog-0316.png",
+      "target": "r1b1r1k1/pp2qppp/1np5/4p3/1PP3n1/P1Q1BNP1/4PPBP/R2R2K1",
+      "prediction": "r1b1r1k1/pp2qppp/1np5/4p3/1PP3n1/P1Q1BNP1/4PPBP/R2R2K1",
+      "wrong_squares": 0
+    },
+    {
+      "image": "images/chesscog-0325.png",
+      "target": "8/4kp2/1p3n1p/p1Q3p1/P1B1p3/1P2P1PP/4KP2/8",
+      "prediction": "8/4kp2/1p3n1p/p1Q3p1/P1B1p3/1P2P1PP/4KP2/8",
+      "wrong_squares": 0
+    },
+    {
+      "image": "images/chesscog-0364.png",
+      "target": "1q3rk1/5ppp/Q3pn2/1p1pn3/3P4/6P1/PP2PPBP/R5K1",
+      "prediction": "1q3rk1/5ppp/Q3pn2/1p1pn3/3P4/6P1/PP2PPBP/R5K1",
+      "wrong_squares": 0
+    },
+    {
+      "image": "images/chesscog-0382.png",
+      "target": "r2q1rk1/1bpn1ppp/p2bpn2/1p6/1P1P4/P4NP1/2QBPPBP/RN3RK1",
+      "prediction": "r2q1rk1/1bpn1ppp/p2bpn2/1p6/1P1P4/P4NP1/2QBPPBP/RN3RK1",
+      "wrong_squares": 0
+    },
+    {
+      "image": "images/chesscog-0393.png",
+      "target": "6k1/5pp1/1Q2p1p1/5n2/2R4P/4PBP1/P2r1PK1/q7",
+      "prediction": "6k1/5pp1/1Q2p1p1/5n2/2R4P/4PBP1/P2r1PK1/q7",
+      "wrong_squares": 0
+    },
+    {
+      "image": "images/chesscog-0469.png",
+      "target": "8/2kb2pp/8/p1p1pp2/P1PrP3/3BKP2/6PP/1R6",
+      "prediction": "8/2kb2pp/8/p1p1pp2/P1PrP3/3BKP2/6PP/1R6",
+      "wrong_squares": 0
+    },
+    {
+      "image": "images/chesscog-0480.png",
+      "target": "r2q1rk1/p1pn2pp/1ppb4/4pP2/2P5/3P1NP1/P1P2P1P/1RBQ1RK1",
+      "prediction": "r2q1rk1/p1pn2pp/1ppb4/4pP2/2P5/3P1NP1/P1P2P1P/1RBQ1RK1",
+      "wrong_squares": 0
+    },
+    {
+      "image": "images/chesscog-0498.png",
+      "target": "r1bqk2r/4nppp/p2p3b/1p1Np3/4P2P/2P5/PPN2PP1/R2QKB1R",
+      "prediction": "r1bqk2r/4nppp/p2p3b/1p1Np3/4P2P/2P5/PPN2PP1/R2QKB1R",
+      "wrong_squares": 0
+    },
+    {
+      "image": "images/chesscog-0512.png",
+      "target": "rnbq1rk1/p1p2ppp/1p2p3/3n4/3P4/P3P3/1PQ2PPP/R1B1KBNR",
+      "prediction": "rnbq1rk1/p1p2ppp/1p2p3/3n4/3P4/P3P3/1PQ2PPP/R1B1KBNR",
+      "wrong_squares": 0
+    },
+    {
+      "image": "images/chesscog-0539.png",
+      "target": "1rbq1rk1/2p1npp1/pb1p1n1p/1p2p3/4P3/1BPPNN2/PP2QPPP/R1B2RK1",
+      "prediction": "1rbq1rk1/2p1npp1/pb1p1n1p/1p2p3/4P3/1BPPNN2/PP2QPPP/R1B2RK1",
+      "wrong_squares": 0
+    },
+    {
+      "image": "images/chesscog-0551.png",
+      "target": "r3rb1k/6pp/p4p2/2pb4/7N/7P/3N2P1/1RB2RK1",
+      "prediction": "r3rb1k/6pp/p4p2/2pb4/7N/7P/3N2P1/1RB2RK1",
+      "wrong_squares": 0
+    },
+    {
+      "image": "images/chesscog-0552.png",
+      "target": "1n6/1P3ppp/3kp3/1B1p4/8/4P1P1/5K1P/8",
+      "prediction": "1n6/1P3ppp/3kp3/1B1p4/8/4P1P1/5K1P/8",
+      "wrong_squares": 0
+    },
+    {
+      "image": "images/chesscog-0580.png",
+      "target": "3k4/6p1/3P4/2P4P/b2K4/p7/B7/8",
+      "prediction": "3k4/6p1/3P4/2P4P/b2K4/p7/B7/8",
+      "wrong_squares": 0
+    },
+    {
+      "image": "images/chesscog-0583.png",
+      "target": "r4rk1/ppq2ppp/2n1pn2/1R6/3P2b1/P1P2N1P/4BPP1/2BQ1RK1",
+      "prediction": "r4rk1/ppq2ppp/2n1pn2/1R6/3P2b1/P1P2N1P/4BPP1/2BQ1RK1",
+      "wrong_squares": 0
+    },
+    {
+      "image": "images/chesscog-0589.png",
+      "target": "r3r1k1/1pp1qppp/1pnp1n2/1B6/4P3/1PN2P2/PP1Q2PP/2KR3R",
+      "prediction": "r3r1k1/1pp1qppp/1pnp1n2/1B6/4P3/1PN2P2/PP1Q2PP/2KR3R",
+      "wrong_squares": 0
+    },
+    {
+      "image": "images/chesscog-0590.png",
+      "target": "1k2r3/1ppr1ppp/1p1p1n2/4n3/4PN2/2N2P2/PPP3PP/2KR3R",
+      "prediction": "1k2r3/1ppr1ppp/1p1p1n2/4n3/4PN2/2N2P2/PPP3PP/2KR3R",
+      "wrong_squares": 0
+    },
+    {
+      "image": "images/chesscog-0622.png",
+      "target": "r2q1rk1/pp1n1pbp/2p3p1/2P2P2/2p5/2N1B1QP/PP4P1/R4RK1",
+      "prediction": "r2q1rk1/pp1n1pbp/2p3p1/2P2P2/2p5/2N1B1QP/PP4P1/R4RK1",
+      "wrong_squares": 0
+    },
+    {
+      "image": "images/chesscog-0623.png",
+      "target": "2b5/2p5/1kp2p2/R7/1P2P3/3N1P2/7r/4K3",
+      "prediction": "2b5/2p5/1kp2p2/R7/1P2P3/3N1P2/7r/4K3",
+      "wrong_squares": 0
+    },
+    {
+      "image": "images/chesscog-0633.png",
+      "target": "8/3k2Kp/p7/1p1r4/6P1/8/Pn1p3r/3R2R1",
+      "prediction": "8/3k2Kp/p7/1p1r4/6P1/8/Pn1p3r/3R2R1",
+      "wrong_squares": 0
+    },
+    {
+      "image": "images/chesscog-0639.png",
+      "target": "1r2k3/r2pqn1p/P2R2p1/5p2/1P6/6P1/4PP1P/Q2R2K1",
+      "prediction": "1r2k3/r2pqn1p/P2R2p1/5p2/1P6/6P1/4PP1P/3R2K1",
+      "wrong_squares": 1
+    },
+    {
+      "image": "images/chesscog-0642.png",
+      "target": "8/8/8/8/8/k3bB2/1r2N3/1K6",
+      "prediction": "8/8/8/8/8/k3bB2/1r2N3/1K6",
+      "wrong_squares": 0
+    },
+    {
+      "image": "images/chesscog-0649.png",
+      "target": "7k/7p/1bB3p1/1P2p3/7P/3r2P1/1R3PK1/8",
+      "prediction": "7k/7p/1bB3p1/1P2p3/7P/3r2P1/1R3PK1/8",
+      "wrong_squares": 0
+    },
+    {
+      "image": "images/chesscog-0650.png",
+      "target": "r4rk1/pp1bppbp/2np1np1/q7/3NP3/1BN1B2P/PPP2PP1/R2Q1RK1",
+      "prediction": "r4rk1/pp1bppbp/2np1np1/q7/3NP3/1BN1B2P/PPP2PP1/R2Q1RK1",
+      "wrong_squares": 0
+    },
+    {
+      "image": "images/chesscog-0690.png",
+      "target": "2r1k1r1/2qn4/1p6/3Pp2R/8/3N4/PpPQ4/1K2R3",
+      "prediction": "2r1k1r1/2qn4/1p6/3Pp2R/8/3N4/PpPQ4/1K2R3",
+      "wrong_squares": 0
+    },
+    {
+      "image": "images/chesscog-0702.png",
+      "target": "rnbqkb1r/ppp2ppp/4pn2/3p4/2PP4/5N2/PP2PPPP/RNBQKB1R",
+      "prediction": "rnbqkb1r/ppp2ppp/4pn2/3p4/2PP4/5N2/PP2PPPP/RNBQKB1R",
+      "wrong_squares": 0
+    },
+    {
+      "image": "images/chesscog-0707.png",
+      "target": "r3k2r/pp1qbppp/2p1p3/P7/1nBP4/4P3/NPb1QPPP/R1B2RK1",
+      "prediction": "r3k2r/pp1qbppp/2p1p3/P7/1nBP4/4P3/NPb1QPPP/R1B2RK1",
+      "wrong_squares": 0
+    },
+    {
+      "image": "images/chesscog-0739.png",
+      "target": "4b2k/p1p3p1/1p6/6P1/5p2/4n3/P1P2K2/6R1",
+      "prediction": "4b2k/p1p3p1/1p6/6P1/5p2/4n3/P1P2K2/6R1",
+      "wrong_squares": 0
+    },
+    {
+      "image": "images/chesscog-0767.png",
+      "target": "r1b1kb1r/1pqp1ppp/p1n1pn2/8/3NP3/2NBBQ2/PPP2PPP/R3K2R",
+      "prediction": "r1b1kb1r/1pqp1ppp/p1n1pn2/8/3NP3/2NBBQ2/PPP2PPP/R3K2R",
+      "wrong_squares": 0
+    },
+    {
+      "image": "images/chesscog-0778.png",
+      "target": "2r2k2/4p2p/2P3p1/3Qp2q/8/1P4P1/5P2/2R3K1",
+      "prediction": "2r2k2/4p2p/2P3p1/3Qp2q/8/1P4P1/5P2/2R3K1",
+      "wrong_squares": 0
+    },
+    {
+      "image": "images/chesscog-0803.png",
+      "target": "2kr4/1p2r1pp/3q2b1/P2R2P1/3P1p2/5B1P/3Q1P2/5K1R",
+      "prediction": "2kr4/1p2r1pp/3q2b1/P2R2P1/3P1p2/5B1P/3Q1P2/5K1R",
+      "wrong_squares": 0
+    },
+    {
+      "image": "images/chesscog-0818.png",
+      "target": "6k1/6p1/p1p5/P1p1R3/4P1P1/2P5/5BK1/2r2b2",
+      "prediction": "6k1/6p1/p1p5/P1p1R3/4P1P1/2P5/5BK1/2r2b2",
+      "wrong_squares": 0
+    },
+    {
+      "image": "images/chesscog-0822.png",
+      "target": "3r1r1k/pp1qb1pp/1np2p2/4p3/1P4b1/PNQPP1P1/3R1PBP/1RB3K1",
+      "prediction": "3r1r1k/pp1qb1pp/1np2p2/4p3/1P4b1/PNQPP1P1/3R1PBP/1RB3K1",
+      "wrong_squares": 0
+    },
+    {
+      "image": "images/chesscog-0832.png",
+      "target": "3r3k/p3q2p/1p3R2/2p5/2p2Q2/7P/P1P3P1/7K",
+      "prediction": "3r3k/p3q2p/1p3R2/2p5/2p2Q2/7P/P1P3P1/7K",
+      "wrong_squares": 0
+    },
+    {
+      "image": "images/chesscog-0848.png",
+      "target": "rnbq1rk1/ppp1bppp/4pn2/8/2pP4/5NP1/PPQ1PPBP/RNB2RK1",
+      "prediction": "rnbq1rk1/ppp1bppp/4pn2/8/2pP4/5NP1/PPQ1PPBP/RNB2RK1",
+      "wrong_squares": 0
+    },
+    {
+      "image": "images/chesscog-0863.png",
+      "target": "5bk1/2pq1b2/r5pp/1p3p2/3p4/1P1P2P1/2QNPPBP/2R3K1",
+      "prediction": "5bk1/2pq1b2/r5pp/1p3p2/3p4/1P1P2P1/2QNPPBP/2R3K1",
+      "wrong_squares": 0
+    },
+    {
+      "image": "images/chesscog-0864.png",
+      "target": "2b3k1/4qp2/2N3p1/1p2p2p/1P1pPP1P/2nP2P1/3Q2BK/8",
+      "prediction": "2b3k1/4qp2/2N3p1/1p2p2p/1P1pPP1P/2nP2P1/3Q2BK/8",
+      "wrong_squares": 0
+    },
+    {
+      "image": "images/chesscog-0868.png",
+      "target": "8/6r1/1p5p/P1p1bk1B/2R3p1/4P3/5PKP/8",
+      "prediction": "8/6r1/1p5p/P1p1bk1B/2R3p1/4P3/5PKP/8",
+      "wrong_squares": 0
+    },
+    {
+      "image": "images/chesscog-0880.png",
+      "target": "r2q1rk1/1np1bppp/p2p1n2/1b2p3/p3P3/2PP1N2/1PBN1PPP/R1BQ1RK1",
+      "prediction": "r2q1rk1/1np1bppp/p2p1n2/1b2p3/p3P3/2PP1N2/1PBN1PPP/R1BQ1RK1",
+      "wrong_squares": 0
+    },
+    {
+      "image": "images/chesscog-0881.png",
+      "target": "r1r3k1/1p1n1pp1/1q5p/p1P1pb2/1P1p4/Q5P1/P2NPPBP/R1R3K1",
+      "prediction": "r1r3k1/1p1n1pp1/1q5p/p1P1pb2/1P1p4/Q5P1/P2NPPBP/R1R3K1",
+      "wrong_squares": 0
+    },
+    {
+      "image": "images/chesscog-0912.png",
+      "target": "8/5pk1/3Qp1p1/7p/3p1P1P/2q3P1/5PK1/8",
+      "prediction": "8/5pk1/3Qp1p1/7p/3p1P1P/2q3P1/5PK1/8",
+      "wrong_squares": 0
+    },
+    {
+      "image": "images/chesscog-0926.png",
+      "target": "6k1/R6p/p3p1pb/P2p1r2/1p1p4/3P2Q1/1P2qP1P/6RK",
+      "prediction": "6k1/R6p/p3p1pb/P2p1r2/1p1p4/3P2Q1/1P2qP1P/6RK",
+      "wrong_squares": 0
+    },
+    {
+      "image": "images/chesscog-0928.png",
+      "target": "2rr2k1/pp2ppbp/2nn2p1/2p5/2P2B2/P1NP2P1/1P3PBP/2RR2K1",
+      "prediction": "2rr2k1/pp2ppbp/2nn2p1/2p5/2P2B2/P1NP2P1/1P3PBP/2RR2K1",
+      "wrong_squares": 0
+    },
+    {
+      "image": "images/chesscog-0930.png",
+      "target": "8/4b1pp/p1rpk3/R3p3/4N3/1P3P2/P1r3PP/3R1K2",
+      "prediction": "8/4b1pp/p1rpk3/R3p3/4N3/1P3P2/P1r3PP/3R1K2",
+      "wrong_squares": 0
+    },
+    {
+      "image": "images/chesscog-0938.png",
+      "target": "rnbqkbnr/pp1ppppp/2p5/8/2P5/8/PP1PPPPP/RNBQKBNR",
+      "prediction": "rnbqkbnr/pp1ppppp/2p5/8/2P5/8/PP1PPPPP/RNBQKBNR",
+      "wrong_squares": 0
+    },
+    {
+      "image": "images/chesscog-0963.png",
+      "target": "3r4/1p5p/2pk4/p1n5/P4N2/2PB1P2/1Pb1K2P/6R1",
+      "prediction": "3r4/1p5p/2pk4/p1n5/P4N2/2PB1P2/1Pb1K2P/6R1",
+      "wrong_squares": 0
+    },
+    {
+      "image": "images/chesscog-0987.png",
+      "target": "rnbq1rk1/pppp1ppp/4pn2/8/2PP4/P1Q5/1P2PPPP/R1B1KBNR",
+      "prediction": "rnbq1rk1/pppp1ppp/4pn2/8/2PP4/P1Q5/1P2PPPP/R1B1KBNR",
+      "wrong_squares": 0
+    },
+    {
+      "image": "images/chesscog-1007.png",
+      "target": "r1b2rk1/2p1q2p/1pp1npp1/p3p3/P3P3/1P1PN3/1BP2PPP/R2Q1RK1",
+      "prediction": "r1b2rk1/2p1q2p/1pp1npp1/p3p3/P3P3/1P1PN3/1BP2PPP/R2Q1RK1",
+      "wrong_squares": 0
+    },
+    {
+      "image": "images/chesscog-1014.png",
+      "target": "8/8/6kp/3p1RpP/6P1/3r1PK1/8/8",
+      "prediction": "8/8/6kp/3p1RpP/6P1/3r1PK1/8/8",
+      "wrong_squares": 0
+    },
+    {
+      "image": "images/chesscog-1024.png",
+      "target": "1k2br2/RP6/2p4p/3p2p1/3Pp1P1/4P2P/1r4P1/R4NK1",
+      "prediction": "1k2br2/RP6/2p4p/3p2p1/3Pp1P1/4P2P/1r4P1/R4NK1",
+      "wrong_squares": 0
+    },
+    {
+      "image": "images/chesscog-1025.png",
+      "target": "4R3/5p1k/1p4p1/1N5p/P2P2nP/2B2bP1/5r2/4K3",
+      "prediction": "4R3/5p1k/1p4p1/1N5p/P2P2nP/2B2bP1/5r2/4K3",
+      "wrong_squares": 0
+    },
+    {
+      "image": "images/chesscog-1049.png",
+      "target": "8/r5kp/2R3p1/5p2/1b3P2/5K1P/4B3/8",
+      "prediction": "8/r5kp/2R3p1/5p2/1b3P2/5K1P/4B3/8",
+      "wrong_squares": 0
+    },
+    {
+      "image": "images/chesscog-1055.png",
+      "target": "6k1/3R1p1p/1p4p1/8/5P2/6P1/1r2PK1P/8",
+      "prediction": "6k1/3R1p1p/1p4p1/8/5P2/6P1/1r2PK1P/8",
+      "wrong_squares": 0
+    },
+    {
+      "image": "images/chesscog-1071.png",
+      "target": "3q1rk1/rp3ppp/p1nb4/3pNp2/3Pn3/1Q2PN1P/PP1B1PP1/R4RK1",
+      "prediction": "3q1rk1/rp3ppp/p1nb4/3pNp2/3Pn3/1Q2PN1P/PP1B1PP1/R4RK1",
+      "wrong_squares": 0
+    },
+    {
+      "image": "images/chesscog-1078.png",
+      "target": "6k1/pb1q1rp1/1p2pp1Q/2p5/5P2/2P3RP/P5PK/2BrR3",
+      "prediction": "6k1/pb1q1rp1/1p2pp1Q/2p5/5P2/2P3RP/P5PK/2BrR3",
+      "wrong_squares": 0
+    },
+    {
+      "image": "images/chesscog-1087.png",
+      "target": "rq3rk1/4ppbp/2p2np1/3p4/1PPB4/p3PN2/P3QPPP/2R2RK1",
+      "prediction": "rq3rk1/4ppbp/2p2np1/3p4/1PPB4/p3PN2/P3QPPP/2R2RK1",
+      "wrong_squares": 0
+    },
+    {
+      "image": "images/chesscog-1122.png",
+      "target": "r3r1k1/1pp1qppp/1pnp1n2/8/4P3/1PN2P2/PP1Q2PP/2KR1B1R",
+      "prediction": "r3r1k1/1pp1qppp/1pnp1n2/8/4P3/1PN2P2/PP1Q2PP/2KR1B1R",
+      "wrong_squares": 0
+    },
+    {
+      "image": "images/chesscog-1132.png",
+      "target": "2r2rk1/p4ppp/b3p3/1q1n1N2/8/2p3P1/PPQ1PPBP/R2R2K1",
+      "prediction": "2r2rk1/p4ppp/b3p3/1q1n1N2/8/2p3P1/PPQ1PPBP/R2R2K1",
+      "wrong_squares": 0
+    },
+    {
+      "image": "images/chesscog-1134.png",
+      "target": "8/1N5p/2R5/P5k1/2nP2p1/8/1Pr5/5K2",
+      "prediction": "8/1N5p/2R5/P5k1/2nP2p1/8/1Pr5/5K2",
+      "wrong_squares": 0
+    },
+    {
+      "image": "images/chesscog-1135.png",
+      "target": "4r1k1/1q5p/1nb1p1p1/4P1P1/p1p4P/3B2B1/P3Q1P1/5R1K",
+      "prediction": "4r1k1/1q5p/1nb1p1p1/4P1P1/p1p4P/3B2B1/P3Q1P1/5R1K",
+      "wrong_squares": 0
+    },
+    {
+      "image": "images/chesscog-1154.png",
+      "target": "2r3k1/2p2q1p/ppQRbp2/2n1p3/1P2P3/2P2N2/P1B2PPP/R5K1",
+      "prediction": "2r3k1/2p2q1p/ppQRbp2/2n1p3/1P2P3/2P2N2/P1B2PPP/R5K1",
+      "wrong_squares": 0
+    },
+    {
+      "image": "images/chesscog-1169.png",
+      "target": "1r4r1/8/1p2p2p/p1k1P3/4Nn2/PK6/2P4P/1R4R1",
+      "prediction": "1r4r1/8/1p2p2p/p1k1P3/4Nn2/PK6/2P4P/1R4R1",
+      "wrong_squares": 0
+    },
+    {
+      "image": "images/chesscog-1210.png",
+      "target": "6r1/8/4p2P/p2pP3/1bkP2r1/2p1B3/5RP1/R5K1",
+      "prediction": "6r1/8/4p2P/p2pP3/1bkP2r1/2p1B3/5RP1/R5K1",
+      "wrong_squares": 0
+    },
+    {
+      "image": "images/chesscog-1251.png",
+      "target": "1Rb1k3/r3n2p/P5p1/2b1p3/4P3/5PK1/1P4BP/R7",
+      "prediction": "1Rb1k3/r3n2p/P5p1/2b1p3/4P3/5PK1/1P4BP/R7",
+      "wrong_squares": 0
+    },
+    {
+      "image": "images/chesscog-1254.png",
+      "target": "3r3k/8/R2p3p/3Pn2P/8/8/6PK/8",
+      "prediction": "3r3k/8/R2p3p/3Pn2P/8/8/6PK/8",
+      "wrong_squares": 0
+    },
+    {
+      "image": "images/chesscog-1258.png",
+      "target": "7R/2p5/8/1P2kp2/5n2/4K3/8/8",
+      "prediction": "7R/2p5/8/1P2kp2/4pn2/4K3/8/8",
+      "wrong_squares": 1
+    },
+    {
+      "image": "images/chesscog-1264.png",
+      "target": "5R2/8/8/2k1QPK1/1r6/8/7P/1q6",
+      "prediction": "5R2/8/8/2k1QPK1/1r6/8/7P/1q6",
+      "wrong_squares": 0
+    },
+    {
+      "image": "images/chesscog-1266.png",
+      "target": "r3r1k1/1p3pbp/2p1bnp1/2P5/1PN1p3/2N1P3/2Q2PPP/5BK1",
+      "prediction": "r3r1k1/1p3pbp/2p1bnp1/2P5/1PN1p3/2N1P3/2Q2PPP/5BK1",
+      "wrong_squares": 0
+    },
+    {
+      "image": "images/chesscog-1290.png",
+      "target": "r1bq1rk1/pppp1ppp/2n2n2/1Bb1p3/4P3/2PP1N2/PP3PPP/RNBQK2R",
+      "prediction": "r1bq1rk1/pppp1ppp/2n2n2/1Bb1p3/4P3/2PP1N2/PP3PPP/RNBQK2R",
+      "wrong_squares": 0
+    },
+    {
+      "image": "images/chesscog-1337.png",
+      "target": "1r4k1/6np/2b1p1p1/8/1r1p1PP1/RPpNP3/2B3KP/5R2",
+      "prediction": "1r4k1/6np/2b1p1p1/8/1r1p1PP1/RPpNP3/2B3KP/5R2",
+      "wrong_squares": 0
+    },
+    {
+      "image": "images/chesscog-1338.png",
+      "target": "rnb2rk1/ppp1q1pp/3ppn2/5p2/2PP4/2N2NP1/PP1QPPBP/R4RK1",
+      "prediction": "rnb2rk1/ppp1q1pp/3ppn2/5p2/2PP4/2N2NP1/PP1QPPBP/R4RK1",
+      "wrong_squares": 0
+    },
+    {
+      "image": "images/chesscog-1366.png",
+      "target": "8/8/4k3/5NK1/r4P1P/6P1/8/8",
+      "prediction": "8/8/4k3/5NK1/r4P1P/6P1/8/8",
+      "wrong_squares": 0
+    },
+    {
+      "image": "images/chesscog-1369.png",
+      "target": "7k/1pB3p1/8/r4P1p/4n3/6P1/7P/1R5K",
+      "prediction": "7k/1pB3p1/8/r4P1p/4n3/6P1/7P/1R5K",
+      "wrong_squares": 0
+    },
+    {
+      "image": "images/chesscog-1382.png",
+      "target": "4rbk1/5p1p/P1R2P2/3p4/6P1/3p4/r4PP1/1N3RK1",
+      "prediction": "4rbk1/5p1p/P1R2P2/3p4/6P1/3p4/r4PP1/1N3RK1",
+      "wrong_squares": 0
+    },
+    {
+      "image": "images/chesscog-1383.png",
+      "target": "r1bqkb1r/1p3ppp/p1np1n2/4p1B1/4P3/N1N5/PPP2PPP/R2QKB1R",
+      "prediction": "r1bqkb1r/1p3ppp/p1np1n2/4p1B1/4P3/N1N5/PPP2PPP/R2QKB1R",
+      "wrong_squares": 0
+    },
+    {
+      "image": "images/chesscog-1391.png",
+      "target": "r2qk2r/1b1n1ppp/pp2pn2/2b5/3NP3/2N1BP2/PP2B1PP/R2Q1RK1",
+      "prediction": "r2qk2r/1b1n1ppp/pp2pn2/2b5/3NP3/2N1BP2/PP2B1PP/R2Q1RK1",
+      "wrong_squares": 0
+    },
+    {
+      "image": "images/chesscog-1396.png",
+      "target": "6k1/5pp1/r3p2p/8/ppR1P3/1P3PP1/P4K1P/8",
+      "prediction": "6k1/5pp1/r3p2p/8/ppR1P3/1P3PP1/P4K1P/8",
+      "wrong_squares": 0
+    },
+    {
+      "image": "images/chesscog-1398.png",
+      "target": "5rk1/6pp/8/1p1P1P2/2pR4/8/1P2r1PP/R5K1",
+      "prediction": "5rk1/6pp/8/1p1P1P2/2pR4/8/1P2r1PP/R5K1",
+      "wrong_squares": 0
+    },
+    {
+      "image": "images/chesscog-1404.png",
+      "target": "r1b1k2r/ppppqppp/5n2/4n1B1/2P5/2Q5/PP2PPPP/R3KBNR",
+      "prediction": "r1b1k2r/ppppqppp/5n2/4n1B1/2P5/2Q5/PP2PPPP/R3KBNR",
+      "wrong_squares": 0
+    },
+    {
+      "image": "images/chesscog-1408.png",
+      "target": "1r6/3q1pk1/2Rp1bp1/3B3p/1pQpP3/6P1/1PP2P1P/6K1",
+      "prediction": "1r6/3q1pk1/2Rp1bp1/3B3p/1pQpP3/6P1/1PP2P1P/6K1",
+      "wrong_squares": 0
+    },
+    {
+      "image": "images/chesscog-1438.png",
+      "target": "1r1r4/1p2kppp/p4n2/1PP3B1/2n1N1P1/3p1P2/1P2K2P/R6R",
+      "prediction": "1r1r4/1p2kppp/p4n2/1PP3B1/2n1N1P1/3p1P2/1P2K2P/R6R",
+      "wrong_squares": 0
+    },
+    {
+      "image": "images/chesscog-1445.png",
+      "target": "3rkb2/1pp2pp1/p1n4r/4Pb1p/5P2/2N2B2/PKP2BPP/3R3R",
+      "prediction": "3rkb2/1pp2pp1/p1n4r/4Pb1p/5P2/2N2B2/PKP2BPP/3R3R",
+      "wrong_squares": 0
+    },
+    {
+      "image": "images/chesscog-1456.png",
+      "target": "r1bq1rk1/2p1bppp/p1n2n2/1p1pp3/4P3/2PP1N2/PPBN1PPP/R1BQR1K1",
+      "prediction": "r1bq1rk1/2p1bppp/p1n2n2/1p1pp3/4P3/2PP1N2/PPBN1PPP/R1BQR1K1",
+      "wrong_squares": 0
+    },
+    {
+      "image": "images/chesscog-1459.png",
+      "target": "r4rk1/1pp3pp/p1pb1n2/4N3/2b1P3/4R3/PPP2PPP/R1B3K1",
+      "prediction": "r4rk1/1pp2ppp/p1pb1n2/4N3/2b1P3/4R3/PPP2PPP/R1B3K1",
+      "wrong_squares": 1
+    },
+    {
+      "image": "images/chesscog-1464.png",
+      "target": "r2q1rk1/pp1b1pbp/3ppnp1/8/3BPP2/1BN2Q2/PPP3PP/2KR3R",
+      "prediction": "r2q1rk1/pp1b1pbp/3ppnp1/8/3BPP2/1BN2Q2/PPP3PP/2KR3R",
+      "wrong_squares": 0
+    },
+    {
+      "image": "images/chesscog-1474.png",
+      "target": "rnbqkbnr/ppppp1pp/8/5p2/3P4/8/PPP1PPPP/RNBQKBNR",
+      "prediction": "rnbqkbnr/ppppp1pp/8/5p2/3P4/8/PPP1PPPP/RNBQKBNR",
+      "wrong_squares": 0
+    },
+    {
+      "image": "images/chesscog-1475.png",
+      "target": "4rrk1/2b2p1p/6p1/p5q1/P7/1NP1PR1P/4Q1P1/2R3K1",
+      "prediction": "4rrk1/2b2p1p/6p1/p5q1/P7/1NP1PR1P/4Q1P1/2R3K1",
+      "wrong_squares": 0
+    },
+    {
+      "image": "images/chesscog-1483.png",
+      "target": "r1n2bk1/1p1N1ppp/2p1r3/P7/2nPp3/P1N1P1P1/5P1P/2BR1RK1",
+      "prediction": "r1n2bk1/1p1N1ppp/2p1r3/P7/2nPp3/P1N1P1P1/5P1P/2BR1RK1",
+      "wrong_squares": 0
+    },
+    {
+      "image": "images/chesscog-1552.png",
+      "target": "r1bq1rk1/ppp1p1bp/2np1np1/5p2/2PP1B2/2N1PN2/PP2BPPP/R2QK2R",
+      "prediction": "r1bq1rk1/ppp1p1bp/2np1np1/5p2/2PP1B2/2N1PN2/PP2BPPP/R2QK2R",
+      "wrong_squares": 0
+    },
+    {
+      "image": "images/chesscog-1597.png",
+      "target": "r1b1kb1r/1pqp1ppp/p1n1pn2/8/2PNP3/6P1/PP3PBP/RNBQ1RK1",
+      "prediction": "r1b1kb1r/1pqp1ppp/p1n1pn2/8/2PNP3/6P1/PP3PBP/RNBQ1RK1",
+      "wrong_squares": 0
+    },
+    {
+      "image": "images/chesscog-1603.png",
+      "target": "2kr3r/pppq1pp1/2npbb1p/8/6P1/1PP1BN1P/P1PQ1PB1/2KR3R",
+      "prediction": "2kr3r/pppq1pp1/2npbb1p/8/6P1/1PP1BN1P/P1PQ1PB1/2KR3R",
+      "wrong_squares": 0
+    },
+    {
+      "image": "images/chesscog-1661.png",
+      "target": "r4k2/1p2qppp/pQp5/4p3/P3P3/2P5/1P3PPP/3R2K1",
+      "prediction": "r4k2/1p2qppp/pQp5/4p3/P3P3/2P5/1P3PPP/3R2K1",
+      "wrong_squares": 0
+    },
+    {
+      "image": "images/chesscog-1665.png",
+      "target": "r1b1r1k1/p1b2pp1/2Nq3p/1p1n4/4B3/2P3PP/1PQ2P2/R1BR2K1",
+      "prediction": "r1b1r1k1/p1b2pp1/2Nq3p/1p1n4/4B3/2P3PP/1PQ2P2/R1BR2K1",
+      "wrong_squares": 0
+    },
+    {
+      "image": "images/chesscog-1678.png",
+      "target": "4r1k1/pppq1p2/3p2pp/4r2n/4P2B/2P2P2/PP4PP/R2QR1K1",
+      "prediction": "4r1k1/pppq1p2/3p2pp/4r2n/4P2B/2P2P2/PP4PP/R2QR1K1",
+      "wrong_squares": 0
+    },
+    {
+      "image": "images/chesscog-1716.png",
+      "target": "8/5kp1/1p1nb2p/pP6/P4R2/6P1/4K1P1/8",
+      "prediction": "8/5kp1/1p1nb2p/pP6/P4R2/6P1/4K1P1/8",
+      "wrong_squares": 0
+    },
+    {
+      "image": "images/chesscog-1725.png",
+      "target": "rnbqkb1r/pp2pppp/2p2n2/8/2pP4/2N2N2/PP2PPPP/R1BQKB1R",
+      "prediction": "rnbqkb1r/pp2pppp/2p2n2/8/2pP4/2N2N2/PP2PPPP/R1BQKB1R",
+      "wrong_squares": 0
+    },
+    {
+      "image": "images/chesscog-1726.png",
+      "target": "2Q5/4k3/p4qpb/1bp1p3/4P3/1B2P3/PP4P1/5NK1",
+      "prediction": "2Q5/4k3/p4qpb/1bp1p3/4P3/1B2P3/PP4P1/5NK1",
+      "wrong_squares": 0
+    },
+    {
+      "image": "images/chesscog-1750.png",
+      "target": "2R5/8/8/3p4/4bK2/2pk4/8/8",
+      "prediction": "2R5/8/8/3p4/4bK2/2pk4/8/8",
+      "wrong_squares": 0
+    },
+    {
+      "image": "images/chesscog-1753.png",
+      "target": "r1bqkbnr/pp1ppppp/2n5/2p5/3PP3/5N2/PPP2PPP/RNBQKB1R",
+      "prediction": "r1bqkbnr/pp1ppppp/2n5/2p5/3PP3/5N2/PPP2PPP/RNBQKB1R",
+      "wrong_squares": 0
+    },
+    {
+      "image": "images/chesscog-1770.png",
+      "target": "r1bQkb1r/ppp2ppp/2p5/4Pn2/8/5N2/PPP2PPP/RNB2RK1",
+      "prediction": "r1bQkb1r/ppp2ppp/2p5/4Pn2/8/5N2/PPP2PPP/RNB2RK1",
+      "wrong_squares": 0
+    },
+    {
+      "image": "images/chesscog-1781.png",
+      "target": "4b3/7R/3P1kp1/4p3/5p1P/5Br1/6P1/7K",
+      "prediction": "4b3/7R/3P1kp1/4p3/5p1P/5Br1/6P1/7K",
+      "wrong_squares": 0
+    },
+    {
+      "image": "images/chesscog-1782.png",
+      "target": "rnbqkb1r/pppppp1p/6p1/4P2n/3P4/8/PPP1BPPP/RNBQK1NR",
+      "prediction": "rnbqkb1r/pppppp1p/6p1/4P2n/3P4/8/PPP1BPPP/RNBQK1NR",
+      "wrong_squares": 0
+    },
+    {
+      "image": "images/chesscog-1791.png",
+      "target": "5rk1/1p3p1p/1q1p2p1/1N6/Q7/6PP/5R1K/8",
+      "prediction": "5rk1/1p3p1p/1q1p2p1/1N6/Q7/6PP/5R1K/8",
+      "wrong_squares": 0
+    },
+    {
+      "image": "images/chesscog-1811.png",
+      "target": "q4rk1/1p2pp1p/2p2npb/2Pp1bn1/1P1P4/4PPP1/1Q5P/1NBRNBK1",
+      "prediction": "q4rk1/1p2pp1p/2p2npb/2Pp1bn1/1P1P4/4PPP1/1Q5P/1NBRNBK1",
+      "wrong_squares": 0
+    },
+    {
+      "image": "images/chesscog-1814.png",
+      "target": "2kr1b1r/pp1b1pp1/5n1p/q2p4/3P4/1BN1B3/PP3PPP/R2QR1K1",
+      "prediction": "2kr1b1r/pp1b1pp1/5n1p/q2p4/3P4/1BN1B3/PP3PPP/R2QR1K1",
+      "wrong_squares": 0
+    },
+    {
+      "image": "images/chesscog-1822.png",
+      "target": "r1b2rk1/1p1nqpp1/p3pn1p/2p5/3P1P2/2N2N2/PPQ1PPBP/R2R2K1",
+      "prediction": "r1b2rk1/1p1nqpp1/p3pn1p/2p5/3P1P2/2N2N2/PPQ1PPBP/R2R2K1",
+      "wrong_squares": 0
+    },
+    {
+      "image": "images/chesscog-1824.png",
+      "target": "1r4k1/1q3pp1/3pbn1p/b2N4/2Q1PB2/7P/1PB2PP1/3R2K1",
+      "prediction": "1r4k1/1q3pp1/3pbn1p/b2N4/2Q1PB2/7P/1PB2PP1/3R2K1",
+      "wrong_squares": 0
+    },
+    {
+      "image": "images/chesscog-1828.png",
+      "target": "r1bqk2r/2p2ppp/p1n5/1pbpp3/4n3/1BPP1N2/PP2QPPP/RNB2RK1",
+      "prediction": "r1bqk2r/2p2ppp/p1n5/1pbpp3/4n3/1BPP1N2/PP2QPPP/RNB2RK1",
+      "wrong_squares": 0
+    },
+    {
+      "image": "images/chesscog-1848.png",
+      "target": "r2qr1k1/pb1nbppp/1pp2n2/3pN3/3P1B2/1PN3P1/P1Q1PPBP/R2R2K1",
+      "prediction": "r2qr1k1/pb1nbppp/1pp2n2/3pN3/3P1B2/1PN3P1/P1Q1PPBP/R2R2K1",
+      "wrong_squares": 0
+    },
+    {
+      "image": "images/chesscog-1850.png",
+      "target": "r1bq1r1k/1pp2pbp/p1np1np1/4p3/B3P3/2PP1N2/PP3PPP/R1BQRNK1",
+      "prediction": "r1bq1r1k/1pp2pbp/p1np1np1/4p3/B3P3/2PP1N2/PP3PPP/R1BQRNK1",
+      "wrong_squares": 0
+    },
+    {
+      "image": "images/chesscog-1851.png",
+      "target": "r1bqk2r/ppp3bp/2np1ppn/4p3/2PPP3/2N1BN2/PP3PPP/R2QKB1R",
+      "prediction": "r1bqk2r/ppp3bp/2np1ppn/4p3/2PPP3/2N1BN2/PP3PPP/R2QKB1R",
+      "wrong_squares": 0
+    },
+    {
+      "image": "images/chesscog-1854.png",
+      "target": "8/8/4Rp2/2K2P2/5kP1/8/8/7r",
+      "prediction": "8/8/4Rp2/2K2P2/5kP1/8/8/7r",
+      "wrong_squares": 0
+    },
+    {
+      "image": "images/chesscog-1869.png",
+      "target": "8/8/6RP/6P1/8/4k3/7r/4K3",
+      "prediction": "8/8/6RP/6P1/8/4k3/7r/4K3",
+      "wrong_squares": 0
+    },
+    {
+      "image": "images/chesscog-1872.png",
+      "target": "rnbqk2r/pp2nppp/4p3/3pP3/3p2Q1/P1P5/2P2PPP/R1B1KBNR",
+      "prediction": "rnbqk2r/pp2nppp/4p3/3pP3/3p2Q1/P1P5/2P2PPP/R1B1KBNR",
+      "wrong_squares": 0
+    },
+    {
+      "image": "images/chesscog-1882.png",
+      "target": "8/5k2/5p1p/5p2/4bR2/4P1P1/2q2PBK/8",
+      "prediction": "8/5k2/5p1p/5p2/4bR2/4P1P1/2q2PBK/8",
+      "wrong_squares": 0
+    },
+    {
+      "image": "images/chesscog-1887.png",
+      "target": "r1bqk1nr/1p2bppp/p1np4/4p3/4P3/N1N3P1/PPP2P1P/R1BQKB1R",
+      "prediction": "r1bqk1nr/1p2bppp/p1np4/4p3/4P3/N1N3P1/PPP2P1P/R1BQKB1R",
+      "wrong_squares": 0
+    },
+    {
+      "image": "images/chesscog-1889.png",
+      "target": "1nrr2k1/qb2bpp1/pp1ppn1p/8/2P4B/P1N1PN2/1P2BPPP/1QRR2K1",
+      "prediction": "1nrr2k1/qb2bpp1/pp1ppn1p/8/2P4B/P1N1PN2/1P2BPPP/1QRR2K1",
+      "wrong_squares": 0
+    },
+    {
+      "image": "images/chesscog-1895.png",
+      "target": "r2qk2r/p1pn1ppp/b2bpn2/3pN3/3P4/1PN3P1/P3PPBP/R1BQ1RK1",
+      "prediction": "r2qk2r/2pn1ppp/b2bpn2/3pN3/3P4/1PN3P1/P3PPBP/R1BQ1RK1",
+      "wrong_squares": 1
+    },
+    {
+      "image": "images/chesscog-1901.png",
+      "target": "8/1pp2Q2/2k5/2np4/2r5/8/2Q5/3K4",
+      "prediction": "8/1pp2Q2/2k5/2np4/2r5/8/2Q5/3K4",
+      "wrong_squares": 0
+    },
+    {
+      "image": "images/chesscog-1904.png",
+      "target": "r1b1kb1r/pp1n1ppp/2p1p3/8/4P3/1B6/PPP2PPP/R1BK2NR",
+      "prediction": "r1b1kb1r/pp1n1ppp/2p1p3/8/4P3/1B6/PPP2PPP/R1BK2NR",
+      "wrong_squares": 0
+    },
+    {
+      "image": "images/chesscog-1964.png",
+      "target": "4r1k1/p4p2/3P2p1/2p1r3/2P1p1Q1/2q3N1/P5BP/5RK1",
+      "prediction": "4r1k1/p4p2/3P2p1/2p1r3/2P1p1Q1/2q3N1/P5BP/5RK1",
+      "wrong_squares": 0
+    },
+    {
+      "image": "images/chesscog-1997.png",
+      "target": "6k1/5pp1/Qp2r2p/4p3/p3q3/1nP4P/1P3PPK/3R1N2",
+      "prediction": "6k1/5pp1/Qp2r2p/4p3/p3q3/1nP4P/1P3PPK/3R1N2",
+      "wrong_squares": 0
+    },
+    {
+      "image": "images/chesscog-2009.png",
+      "target": "r3r1k1/1p1bppbp/3p1np1/q5B1/p1P1P3/2NB3P/PP1Q1PP1/1R2R1K1",
+      "prediction": "r3r1k1/1p1bppbp/3p1np1/q5B1/p1P1P3/2NB3P/PP1Q1PP1/1R2R1K1",
+      "wrong_squares": 0
+    },
+    {
+      "image": "images/chesscog-2024.png",
+      "target": "r1b1k2r/1p3ppp/p1n1pn2/q2p4/1b2P3/PNN1BP2/1PPQ2PP/R3KB1R",
+      "prediction": "r3k2r/pp3ppp/2n1pn2/3p4/4P3/2N1BP2/PPPQ2PP/R3KB1R",
+      "wrong_squares": 8
+    },
+    {
+      "image": "images/chesscog-2039.png",
+      "target": "1r6/1P4pp/3k4/2p2P2/8/2K3P1/7P/1R6",
+      "prediction": "1r6/1P4pp/3k4/2p2P2/8/2K3P1/7P/1R6",
+      "wrong_squares": 0
+    },
+    {
+      "image": "images/chesscog-2040.png",
+      "target": "r1bqkbnr/1p1p1ppp/p1n1p3/8/3NP3/2N5/PPP2PPP/R1BQKB1R",
+      "prediction": "r1bqkbnr/1p1p1ppp/p1n1p3/8/3NP3/2N5/PPP2PPP/R1BQKB1R",
+      "wrong_squares": 0
+    },
+    {
+      "image": "images/chesscog-2049.png",
+      "target": "r4bk1/3n1ppp/4p3/1p6/1B6/P2N2P1/4PP1P/1R4K1",
+      "prediction": "r4bk1/3n1ppp/4p3/1p6/1B6/P2N2P1/4PP1P/1R4K1",
+      "wrong_squares": 0
+    },
+    {
+      "image": "images/chesscog-2078.png",
+      "target": "q3r1k1/5ppn/3p2np/2pPpb2/1pP1P3/1P5P/1NB2PP1/2Q1R1K1",
+      "prediction": "q3r1k1/5ppn/3p2np/2pPpb2/1pP1P3/1P5P/1NB2PP1/2Q1R1K1",
+      "wrong_squares": 0
+    },
+    {
+      "image": "images/chesscog-2152.png",
+      "target": "1r4k1/5b2/6pb/2p1p3/3nP1B1/R7/1PN2P2/2KR4",
+      "prediction": "1r4k1/5b2/6pb/2p1p3/3nP1B1/R7/1PN2P2/2KR4",
+      "wrong_squares": 0
+    },
+    {
+      "image": "images/chesscog-2171.png",
+      "target": "r1b1kb1r/pp2pppp/1qn5/3p4/3PnB2/1N3N2/PPP2PPP/R2QKB1R",
+      "prediction": "r1b1kb1r/pp2pppp/1qn5/3p4/3PnB2/1N3N2/PPP2PPP/R2QKB1R",
+      "wrong_squares": 0
+    },
+    {
+      "image": "images/chesscog-2172.png",
+      "target": "2rqk2r/4b1pp/p1np2b1/3Qp3/1p2n3/4N1P1/PPP2PBP/R1B2RK1",
+      "prediction": "2rqk2r/4b1pp/p1np2b1/3Qp3/1p2n3/4N1P1/PPP2PBP/R1B2RK1",
+      "wrong_squares": 0
+    },
+    {
+      "image": "images/chesscog-2181.png",
+      "target": "4k3/pp5p/2p3p1/3p1p2/3P1P2/2P5/PP3KPP/8",
+      "prediction": "4k3/pp5p/2p3p1/3p1p2/3P1P2/2P5/PP3KPP/8",
+      "wrong_squares": 0
+    },
+    {
+      "image": "images/chesscog-2189.png",
+      "target": "6k1/2R3p1/p7/P2p4/6R1/2P3P1/5rPK/4r3",
+      "prediction": "6k1/2R3p1/p7/P2p4/6R1/2P3P1/5rPK/4r3",
+      "wrong_squares": 0
+    },
+    {
+      "image": "images/chesscog-2194.png",
+      "target": "8/2bb4/1p3p2/3B2k1/2P4p/5P1P/5BK1/8",
+      "prediction": "8/2bb4/1p3p2/3B2k1/2P4p/5P1P/5BK1/8",
+      "wrong_squares": 0
+    },
+    {
+      "image": "images/chesscog-2212.png",
+      "target": "8/6k1/6p1/3B1pNp/4PP2/8/6K1/3r4",
+      "prediction": "8/6k1/6p1/3B1pNp/4PP2/8/6K1/3r4",
+      "wrong_squares": 0
+    },
+    {
+      "image": "images/chesscog-2250.png",
+      "target": "4r1k1/p4p2/1p4pQ/2q2b1p/2p1P3/P6P/1P3NP1/4R1K1",
+      "prediction": "4r1k1/p4p2/1p4pQ/2q2b1p/2p1P3/P6P/1P3NP1/4R1K1",
+      "wrong_squares": 0
+    },
+    {
+      "image": "images/chesscog-2259.png",
+      "target": "r4rk1/p4ppp/2p1p3/2qn4/2b1P3/2P3P1/P1QB1PBP/R2R2K1",
+      "prediction": "r4rk1/p4ppp/2p1p3/2qn4/2b1P3/2P3P1/P1QB1PBP/R2R2K1",
+      "wrong_squares": 0
+    },
+    {
+      "image": "images/chesscog-2284.png",
+      "target": "5rk1/5b1p/5pp1/q2p4/8/1BbQ2P1/1P3P1P/3R2K1",
+      "prediction": "5rk1/5b1p/5pp1/q2p4/8/1BbQ2P1/1P3P1P/3R2K1",
+      "wrong_squares": 0
+    },
+    {
+      "image": "images/chesscog-2295.png",
+      "target": "rnb1k2r/pp3pp1/4pq1p/2p5/1bBPP3/2N2N2/PP3PPP/R2Q1RK1",
+      "prediction": "rnb1k2r/pp3pp1/4pq1p/2p5/1bBPP3/2N2N2/PP3PPP/R2Q1RK1",
+      "wrong_squares": 0
+    },
+    {
+      "image": "images/chesscog-2299.png",
+      "target": "r2q1rk1/1p1bppbp/n2p1np1/p2P4/3B4/2NN2P1/PP2PPBP/R2Q1RK1",
+      "prediction": "r2q1rk1/1p1bppbp/n2p1np1/p2P4/3B4/2NN2P1/PP2PPBP/R2Q1RK1",
+      "wrong_squares": 0
+    },
+    {
+      "image": "images/chesscog-2320.png",
+      "target": "3qk2r/r4pp1/p1Qbpn1p/3p1b2/3P4/2N1P3/PP1BBPPP/R3K2R",
+      "prediction": "3qk2r/r4pp1/p1Qbpn1p/3p1b2/3P4/2N1P3/PP1BBPPP/R3K2R",
+      "wrong_squares": 0
+    },
+    {
+      "image": "images/chesscog-2340.png",
+      "target": "8/8/4p3/B3p3/4p1p1/3nP1P1/2k1KP2/8",
+      "prediction": "8/8/4p3/B3p3/4p1p1/3nP1P1/2k1KP2/8",
+      "wrong_squares": 0
+    },
+    {
+      "image": "images/chesscog-2356.png",
+      "target": "r2qr1k1/2p2ppp/p7/1p1bR1b1/3P4/2P3BP/PP3PP1/RN1Q2K1",
+      "prediction": "r2qr1k1/2p2ppp/p7/1p1bR1b1/3P4/2P3BP/PP3PP1/RN1Q2K1",
+      "wrong_squares": 0
+    },
+    {
+      "image": "images/chesscog-2371.png",
+      "target": "1rbq1rk1/7p/pP1p1n2/2pP1p2/3bpP2/4N2P/PPB1Q1P1/R1B2R1K",
+      "prediction": "1rbq1rk1/7p/pP1p1n2/2pP1p2/3bpP2/4N2P/PPB1Q1P1/R1B2R1K",
+      "wrong_squares": 0
+    },
+    {
+      "image": "images/chesscog-2385.png",
+      "target": "rnbq1rk1/pp3ppp/4pn2/3P4/1b1N4/2N3P1/PP2PPBP/R1BQK2R",
+      "prediction": "rnbq1rk1/pp3ppp/4pn2/3P4/1b1N4/2N3P1/PP2PPBP/R1BQK2R",
+      "wrong_squares": 0
+    },
+    {
+      "image": "images/chesscog-2388.png",
+      "target": "r2r2k1/1p4p1/1bppp2p/p3n3/P3PN2/3P4/1PPB2PP/R4R1K",
+      "prediction": "r2r2k1/1p4p1/1bppp2p/p3n3/P3PN2/3P4/1PPB2PP/R4R1K",
+      "wrong_squares": 0
+    },
+    {
+      "image": "images/chesscog-2392.png",
+      "target": "6k1/3b1p1p/p2p1Qp1/3Pr3/4P3/7P/1q4P1/1BR3K1",
+      "prediction": "6k1/3b1p1p/p2p1Qp1/3Pr3/4P3/7P/1q4P1/1BR3K1",
+      "wrong_squares": 0
+    },
+    {
+      "image": "images/chesscog-2398.png",
+      "target": "2k1r3/pp3p2/q1pb2pr/5b1p/1P1P3P/1NP1P1P1/PK2NQ2/3R3R",
+      "prediction": "2k1r3/pp3p2/q1pb2pr/5b1p/1P1P3P/1NP1P1P1/PK2NQ2/3R3R",
+      "wrong_squares": 0
+    },
+    {
+      "image": "images/chesscog-2406.png",
+      "target": "8/7p/3Q4/6pk/p1qbPp2/P4P2/1P6/KN6",
+      "prediction": "8/7p/3Q4/6pk/p1qbPp2/P4P2/1P6/KN6",
+      "wrong_squares": 0
+    },
+    {
+      "image": "images/chesscog-2418.png",
+      "target": "6k1/p4pp1/Bp3n1p/4p3/4P3/PP1R1PP1/5KP1/2r5",
+      "prediction": "6k1/p4pp1/Bp3n1p/4p3/4P3/PP1R1PP1/5KP1/2r5",
+      "wrong_squares": 0
+    },
+    {
+      "image": "images/chesscog-2432.png",
+      "target": "4r3/1pk3r1/2p1p1p1/P2pPn1p/1P5P/1N3RP1/5PK1/4R3",
+      "prediction": "4r3/1pk3r1/2p1p1p1/P2pPn1p/1P5P/1N3RP1/5PK1/4R3",
+      "wrong_squares": 0
+    },
+    {
+      "image": "images/chesscog-2443.png",
+      "target": "2rr2k1/p2qb2p/1p2pn2/3p1pp1/2nP4/4P1P1/PPR1QPBP/1N1RB1K1",
+      "prediction": "2rr2k1/p2qb2p/1p2pn2/3p1pp1/2nP4/4P1P1/PPR1QPBP/1N1RB1K1",
+      "wrong_squares": 0
+    },
+    {
+      "image": "images/chesscog-2446.png",
+      "target": "r2b1n2/7p/bqp3pk/p2n2p1/2P1R3/6NP/1P3PB1/2BQR1K1",
+      "prediction": "r2b1n2/7p/bqp3pk/p2n2p1/2P1R3/6NP/1P3PB1/2BQR1K1",
+      "wrong_squares": 0
+    },
+    {
+      "image": "images/chesscog-2466.png",
+      "target": "8/1Q2k1p1/5p2/2P4p/3qp2P/6P1/5P1K/8",
+      "prediction": "8/1Q2k1p1/5p2/2P4p/3qp2P/6P1/5P1K/8",
+      "wrong_squares": 0
+    },
+    {
+      "image": "images/chesscog-2489.png",
+      "target": "8/8/5k2/p2pn2P/1p3p2/1P6/3r2P1/R2B1K2",
+      "prediction": "8/8/5k2/p2pn2P/1p3p2/1P6/3r2P1/R2B1K2",
+      "wrong_squares": 0
+    },
+    {
+      "image": "images/chesscog-2505.png",
+      "target": "r3k2r/p2n1p1p/3p1b2/3p4/5P2/8/P1PB2PP/1R2KB1R",
+      "prediction": "r3k2r/p2n1p1p/3p1b2/3p4/5P2/8/P1PB2PP/1R2KB1R",
+      "wrong_squares": 0
+    },
+    {
+      "image": "images/chesscog-2507.png",
+      "target": "4k3/4p2p/1P2p1p1/1qP5/7P/4NBP1/5PK1/8",
+      "prediction": "4k3/4p2p/1P2p1p1/1qP5/7P/4NBP1/5PK1/8",
+      "wrong_squares": 0
+    },
+    {
+      "image": "images/chesscog-2513.png",
+      "target": "8/8/5k2/R5p1/1r2p1P1/4P3/5P2/5K2",
+      "prediction": "8/8/5k2/R5p1/1r2p1P1/4P3/5P2/5K2",
+      "wrong_squares": 0
+    },
+    {
+      "image": "images/chesscog-2517.png",
+      "target": "rnbqkb1r/pp2pppp/2p2n2/3p4/2PP4/2N1P3/PP3PPP/R1BQKBNR",
+      "prediction": "rnbqkb1r/pp2pppp/2p2n2/3p4/2PP4/2N1P3/PP3PPP/R1BQKBNR",
+      "wrong_squares": 0
+    },
+    {
+      "image": "images/chesscog-2536.png",
+      "target": "2r3kr/2q3p1/2n1p3/1p1pP1B1/n1pP4/2P2QP1/1P3PK1/R6R",
+      "prediction": "2r3kr/2q3p1/2n1p3/1p1pP1B1/n1pP4/2P2QP1/1P3PK1/R6R",
+      "wrong_squares": 0
+    },
+    {
+      "image": "images/chesscog-2598.png",
+      "target": "2r4k/6p1/1p2r2p/p2p1q2/3PpP2/P3P1R1/1P3PK1/3Q1R2",
+      "prediction": "2r4k/6p1/1p2r2p/p2p1q2/3PpP2/P3P1R1/1P3PK1/3Q1R2",
+      "wrong_squares": 0
+    },
+    {
+      "image": "images/chesscog-2614.png",
+      "target": "r2qkb1r/1p1n1ppp/p2pbn2/4p3/4P3/1NN1BP2/PPP3PP/R2QKB1R",
+      "prediction": "r2qkb1r/1p1n1ppp/p2pbn2/4p3/4P3/1NN1BP2/PPP3PP/R2QKB1R",
+      "wrong_squares": 0
+    },
+    {
+      "image": "images/chesscog-2641.png",
+      "target": "2k4r/p1r1bp1p/2q1b1p1/p1p5/5Q2/2P1B3/4BPPP/1R3RK1",
+      "prediction": "2k4r/p1r2p1p/2q1b1p1/p1p5/5Q2/2P1B3/4BPPP/1R3RK1",
+      "wrong_squares": 1
+    },
+    {
+      "image": "images/chesscog-2650.png",
+      "target": "1r4k1/5ppp/1pQ5/3Bp3/2P1P2b/7P/3q2P1/1R5K",
+      "prediction": "1r4k1/5ppp/1pQ5/3Bp3/2P1P2b/7P/3q2P1/1R5K",
+      "wrong_squares": 0
+    },
+    {
+      "image": "images/chesscog-2661.png",
+      "target": "r1br4/4k1p1/p4b1p/P1p2p2/4p3/P2BP3/2RNKPPP/2R5",
+      "prediction": "r1br4/4k1p1/p4b1p/P1p2p2/4p3/P2BP3/2RNKPPP/2R5",
+      "wrong_squares": 0
+    },
+    {
+      "image": "images/chesscog-2666.png",
+      "target": "7k/p5pp/1p3p2/8/2Q1PP2/P1P2K2/3q2PP/2n5",
+      "prediction": "7k/p5pp/1p3p2/8/2Q1PP2/P1P2K2/3q2PP/2n5",
+      "wrong_squares": 0
+    },
+    {
+      "image": "images/chesscog-2669.png",
+      "target": "7k/p1pR4/4p3/5r1N/2P3p1/1P3b2/P4P1P/6K1",
+      "prediction": "7k/p1pR4/4p3/5r1N/2P3p1/1P3b2/P4P1P/6K1",
+      "wrong_squares": 0
+    },
+    {
+      "image": "images/chesscog-2695.png",
+      "target": "3r2k1/5pp1/4b2p/8/p4P2/r2pP1P1/P2R3P/R3KB2",
+      "prediction": "3r2k1/5pp1/4b2p/8/p4P2/r2pP1P1/P2R3P/R3KB2",
+      "wrong_squares": 0
+    },
+    {
+      "image": "images/chesscog-2735.png",
+      "target": "r1bq1rk1/ppp1npbp/2n3p1/4p3/2N5/3P1NP1/PP1BPPBP/R2Q1RK1",
+      "prediction": "r1bq1rk1/ppp1npbp/2n3p1/4p3/2N5/3P1NP1/PP1BPPBP/R2Q1RK1",
+      "wrong_squares": 0
+    },
+    {
+      "image": "images/chesscog-2797.png",
+      "target": "2r5/2P1p1kp/2R3p1/3Qp3/1P6/6P1/5PK1/1q6",
+      "prediction": "2r5/2P1p1kp/2R3p1/3Qp3/1P6/6P1/5PK1/1q6",
+      "wrong_squares": 0
+    },
+    {
+      "image": "images/chesscog-2813.png",
+      "target": "rnbqkb1r/ppp1pp1p/5np1/3p4/3P4/5NP1/PPP1PPBP/RNBQK2R",
+      "prediction": "rnbqkb1r/ppp1pp1p/5np1/3p4/3P4/5NP1/PPP1PPBP/RNBQK2R",
+      "wrong_squares": 0
+    },
+    {
+      "image": "images/chesscog-2814.png",
+      "target": "8/4Q1kp/p5p1/8/2K5/6P1/8/5r2",
+      "prediction": "8/4Q1kp/p5p1/8/2K5/6P1/8/5r2",
+      "wrong_squares": 0
+    },
+    {
+      "image": "images/chesscog-2856.png",
+      "target": "8/8/6k1/2N4p/P1n2K2/8/7P/8",
+      "prediction": "8/8/6k1/2N4p/P1n2K2/8/7P/8",
+      "wrong_squares": 0
+    },
+    {
+      "image": "images/chesscog-2862.png",
+      "target": "rnb2rk1/p1p1bppp/1p2p3/q7/3P1B2/3BPN2/PP3PPP/R2QK2R",
+      "prediction": "rnb2rk1/p1p1bppp/1p2p3/q7/3P1B2/3BPN2/PP3PPP/R2QK2R",
+      "wrong_squares": 0
+    },
+    {
+      "image": "images/chesscog-2865.png",
+      "target": "1k1rn1r1/pqp2p2/1p2N3/n1P1P3/6P1/P1P5/4QBP1/R2R2K1",
+      "prediction": "1k1rn1r1/pqp2p2/1p2N3/n1P1P3/6P1/P1P5/4QBP1/R2R2K1",
+      "wrong_squares": 0
+    },
+    {
+      "image": "images/chesscog-2888.png",
+      "target": "Q1bq2k1/8/p1p5/4b2p/2P2p2/8/2P2PPB/5BK1",
+      "prediction": "Q1bq2k1/8/p1p5/4b2p/2P2p2/8/2P2PPB/5BK1",
+      "wrong_squares": 0
+    },
+    {
+      "image": "images/chesscog-2889.png",
+      "target": "r2q1rk1/5pp1/p3bnnp/P2p4/3Pp3/1BP1NNP1/Q4P1P/1R2R1K1",
+      "prediction": "r2q1rk1/5pp1/p3bnnp/P2p4/3Pp3/1BP1NNP1/Q4P1P/1R2R1K1",
+      "wrong_squares": 0
+    },
+    {
+      "image": "images/chesscog-2896.png",
+      "target": "r1bqkb1r/pp1ppppp/2B2n2/2p5/4P3/5N2/PPPP1PPP/RNBQK2R",
+      "prediction": "r1bqkb1r/pp1ppppp/2B2n2/2p5/4P3/5N2/PPPP1PPP/RNBQK2R",
+      "wrong_squares": 0
+    },
+    {
+      "image": "images/chesscog-2897.png",
+      "target": "2r2bk1/1prq1p1p/pnn1p1p1/3pP3/3P1P2/1PN3P1/P2Q1B1P/R1R2BK1",
+      "prediction": "2r2bk1/1prq1p1p/pnn1p1p1/3pP3/3P1P2/1PN3P1/P2Q1B1P/R1R2BK1",
+      "wrong_squares": 0
+    },
+    {
+      "image": "images/chesscog-2917.png",
+      "target": "2k5/pp6/2p2p2/3p4/P2nr1P1/1P1R2P1/1B4K1/2r5",
+      "prediction": "2k5/pp6/2p2p2/3p4/P2nr1P1/1P1R2P1/1B4K1/2r5",
+      "wrong_squares": 0
+    },
+    {
+      "image": "images/chesscog-2922.png",
+      "target": "5b1r/1pk2ppp/pNp1p3/Q3P3/8/4P1K1/PP6/R1B3q1",
+      "prediction": "5b1r/1pk2ppp/pNp1p3/Q3P3/8/4P1K1/PP6/R1B3q1",
+      "wrong_squares": 0
+    },
+    {
+      "image": "images/chesscog-2929.png",
+      "target": "5k2/R1K5/5p2/7p/7P/6Pb/8/8",
+      "prediction": "5k2/R1K5/5p2/7p/7P/6Pb/8/8",
+      "wrong_squares": 0
+    },
+    {
+      "image": "images/chesscog-2940.png",
+      "target": "5rk1/7p/p2Q2p1/1p1P2P1/4P3/8/P7/1r3BK1",
+      "prediction": "5rk1/7p/p2Q2p1/1p1P2P1/4P3/8/P7/1r3BK1",
+      "wrong_squares": 0
+    },
+    {
+      "image": "images/chesscog-2960.png",
+      "target": "R7/4b3/4k3/1b6/p2B4/2K5/8/8",
+      "prediction": "R7/4b3/4k3/1b6/p2B4/2K5/8/8",
+      "wrong_squares": 0
+    },
+    {
+      "image": "images/chesscog-2967.png",
+      "target": "r1b2rk1/pp3ppp/2n1p3/q2n4/1b1N4/1QN3P1/PP1BPPBP/R3K2R",
+      "prediction": "r1b3kr/pp3ppp/2n1pn2/q2n4/1b1N4/1QN5/PP1B1PPP/R3K3",
+      "wrong_squares": 7
+    },
+    {
+      "image": "images/chesscog-2975.png",
+      "target": "r3kb1r/pp1q1pp1/4p3/3pPn1p/6Q1/2P1BN2/PP3PPP/R4RK1",
+      "prediction": "r3kb1r/pp1q1pp1/4p3/3pPn1p/6Q1/2P1BN2/PP3PPP/R4RK1",
+      "wrong_squares": 0
+    },
+    {
+      "image": "images/chesscog-2976.png",
+      "target": "r6k/p1p4p/1bppN1p1/4q3/4P1QP/3P4/P5P1/5R1K",
+      "prediction": "r6k/p1p4p/1bppN1p1/4q3/4P1QP/3P4/P5P1/5R1K",
+      "wrong_squares": 0
+    },
+    {
+      "image": "images/chesscog-3004.png",
+      "target": "rnbq1rk1/pp3pp1/2p1pb1p/3p4/2PP4/1QN1PN2/PP3PPP/3RKB1R",
+      "prediction": "rnbq1rk1/pp3pp1/2p1pb1p/3p4/2PP4/1QN1PN2/PP3PPP/3RKB1R",
+      "wrong_squares": 0
+    },
+    {
+      "image": "images/chesscog-3025.png",
+      "target": "rnbq1rk1/pp2ppbp/3p1np1/8/3NP3/2N1BP2/PPPQ2PP/R3KB1R",
+      "prediction": "rnbq1rk1/pp2ppbp/3p1np1/8/3NP3/2N1BP2/PPPQ2PP/R3KB1R",
+      "wrong_squares": 0
+    },
+    {
+      "image": "images/chesscog-3043.png",
+      "target": "6R1/3k4/8/1b1Pp1p1/4P1P1/2K2P2/2B5/2r5",
+      "prediction": "6R1/3k4/8/1b1Pp1p1/4P1P1/2K2P2/2B5/2r5",
+      "wrong_squares": 0
+    },
+    {
+      "image": "images/chesscog-3048.png",
+      "target": "8/8/8/8/1K6/p1N1r3/6k1/8",
+      "prediction": "8/8/8/8/1K6/p1N1r3/6k1/8",
+      "wrong_squares": 0
+    },
+    {
+      "image": "images/chesscog-3052.png",
+      "target": "8/p2R1p1k/1p4p1/1P2r2p/P7/6PP/5PK1/8",
+      "prediction": "8/p2R1p1k/1p4p1/1P2r2p/P7/6PP/5PK1/8",
+      "wrong_squares": 0
+    },
+    {
+      "image": "images/chesscog-3056.png",
+      "target": "8/1pr1k3/p3p3/P5p1/4P2p/1P1N2nP/1K4P1/3R4",
+      "prediction": "8/1pr1k3/p3p3/P5p1/4P2p/1P1N2nP/1K4P1/3R4",
+      "wrong_squares": 0
+    },
+    {
+      "image": "images/chesscog-3071.png",
+      "target": "r2q1k1r/p4pp1/2Q2b1p/3p4/8/4PN2/PP2KPPP/2R4R",
+      "prediction": "r2q1k1r/p4pp1/2Q2b1p/3p4/8/4PN2/PP2KPPP/2R4R",
+      "wrong_squares": 0
+    },
+    {
+      "image": "images/chesscog-3080.png",
+      "target": "8/7p/6pk/2K2p2/4q3/1RR4P/8/8",
+      "prediction": "8/7p/6pk/2K2p2/4q3/1RR4P/8/8",
+      "wrong_squares": 0
+    },
+    {
+      "image": "images/chesscog-3124.png",
+      "target": "8/8/5kp1/8/4r3/2R1NK2/8/8",
+      "prediction": "8/8/5kp1/8/4r3/2R1NK2/8/8",
+      "wrong_squares": 0
+    },
+    {
+      "image": "images/chesscog-3153.png",
+      "target": "1r1r1bk1/6pp/2B2p2/pp1P4/b2B4/2PK4/1R3PPP/R7",
+      "prediction": "1r1r1bk1/6pp/2B2p2/pp1P4/b2B4/2PK4/1R3PPP/R7",
+      "wrong_squares": 0
+    },
+    {
+      "image": "images/chesscog-3154.png",
+      "target": "rnbqkbnr/pppppp1p/6p1/8/2P5/8/PP1PPPPP/RNBQKBNR",
+      "prediction": "rnbqkbnr/pppppp1p/6p1/8/2P5/8/PP1PPPPP/RNBQKBNR",
+      "wrong_squares": 0
+    },
+    {
+      "image": "images/chesscog-3175.png",
+      "target": "3r2k1/5pp1/4p2p/2Pn4/2Q5/q4B1P/5PP1/2R3K1",
+      "prediction": "3r2k1/5pp1/4p2p/2Pn4/2Q5/q4B1P/5PP1/2R3K1",
+      "wrong_squares": 0
+    },
+    {
+      "image": "images/chesscog-3200.png",
+      "target": "8/6pp/2pkp3/pr6/8/1PR1PK2/6PP/8",
+      "prediction": "8/6pp/2pkp3/pr6/8/1PR1PK2/6PP/8",
+      "wrong_squares": 0
+    },
+    {
+      "image": "images/chesscog-3207.png",
+      "target": "r3k2r/1pp1bppq/p1p3p1/4P3/1nPP2P1/N5QP/PP3PK1/R1B2R2",
+      "prediction": "r3k2r/1pp1bppq/p1p3p1/4P3/1nPP2P1/N5QP/PP3PK1/R1B2R2",
+      "wrong_squares": 0
+    },
+    {
+      "image": "images/chesscog-3218.png",
+      "target": "8/7p/7P/4Kp2/1P4k1/3bB3/8/8",
+      "prediction": "8/7p/7P/4Kp2/1P4k1/3bB3/8/8",
+      "wrong_squares": 0
+    },
+    {
+      "image": "images/chesscog-3243.png",
+      "target": "8/K1k1b3/8/2P5/8/8/P7/7B",
+      "prediction": "8/K1k1b3/8/2P5/8/8/P7/7B",
+      "wrong_squares": 0
+    },
+    {
+      "image": "images/chesscog-3244.png",
+      "target": "3r3r/p1kn4/1pp3pp/1P2pp1P/P1q5/2P1BQ2/5PP1/3RR1K1",
+      "prediction": "3r3r/p1kn4/1pp3pp/1P2pp1P/P1q5/2P1BQ2/5PP1/3RR1K1",
+      "wrong_squares": 0
+    },
+    {
+      "image": "images/chesscog-3245.png",
+      "target": "1k2br2/pp4n1/4pr1p/3p1BpP/2pP4/P1P5/R1P2PPK/2B1RN2",
+      "prediction": "6k1/pp6/p3pr1p/3p1BpP/2pP4/P1P5/R1P2PPK/2B1RN2",
+      "wrong_squares": 6
+    },
+    {
+      "image": "images/chesscog-3254.png",
+      "target": "6k1/5b2/pr4p1/5pN1/7p/Q4R2/1P1q2PK/8",
+      "prediction": "6k1/5b2/pr4p1/5pN1/7p/Q4R2/1P1q2PK/8",
+      "wrong_squares": 0
+    },
+    {
+      "image": "images/chesscog-3263.png",
+      "target": "r1b1kb1r/ppq2ppp/2n1p3/3pP3/5B2/2P2N2/PP3PPP/R2QKB1R",
+      "prediction": "r1b1kb1r/ppq2ppp/2n1p3/3pP3/5B2/2P2N2/PP3PPP/R2QKB1R",
+      "wrong_squares": 0
+    },
+    {
+      "image": "images/chesscog-3288.png",
+      "target": "r1q3k1/1p3p1p/1nPp1np1/4p3/1PP1P3/2N1R2P/2QN1PPK/8",
+      "prediction": "r1q3k1/1p3p1p/1nPp1np1/4p3/1PP1P3/2N1R2P/2QN1PPK/8",
+      "wrong_squares": 0
+    },
+    {
+      "image": "images/chesscog-3291.png",
+      "target": "r3rbk1/1bq2ppp/1n1p4/p2Pp3/6P1/pP2B1NP/2PQ1PB1/R2R2K1",
+      "prediction": "r3rbk1/1bq2ppp/1n1p4/p2Pp3/6P1/pP2B1NP/2PQ1PB1/R2R2K1",
+      "wrong_squares": 0
+    },
+    {
+      "image": "images/chesscog-3294.png",
+      "target": "2q2rk1/5pBp/p3n3/1p3b2/4Nn2/1P5P/P4PP1/Q3R1K1",
+      "prediction": "2q2rk1/5pBp/p3n3/1p3b2/4Nn2/1P5P/P4PP1/Q3R1K1",
+      "wrong_squares": 0
+    },
+    {
+      "image": "images/chesscog-3295.png",
+      "target": "8/p6p/4k1p1/1pp5/4KP2/1P3P2/P1P4P/8",
+      "prediction": "8/p6p/4k1p1/1pp5/4KP2/1P3P2/P1P4P/8",
+      "wrong_squares": 0
+    },
+    {
+      "image": "images/chesscog-3300.png",
+      "target": "8/5k2/8/4RpP1/4nP2/2P1N1r1/4K3/8",
+      "prediction": "8/5k2/8/4RpP1/4nP2/2P1N1r1/4K3/8",
+      "wrong_squares": 0
+    },
+    {
+      "image": "images/chesscog-3311.png",
+      "target": "r1bq1rk1/pp4p1/2np1n1p/2p1p3/2PPP1P1/P1P5/4BN1P/R1BQ1RK1",
+      "prediction": "r1bq1rk1/pp4p1/2np1n1p/2p1p3/2PPP1P1/P1P5/4BN1P/R1BQ1RK1",
+      "wrong_squares": 0
+    },
+    {
+      "image": "images/chesscog-3330.png",
+      "target": "3b4/5bp1/p2B4/5p1k/2p5/P1P4N/1P4P1/5K2",
+      "prediction": "3b4/5bp1/p2B4/5p1k/2p5/P1P4N/1P4P1/5K2",
+      "wrong_squares": 0
+    },
+    {
+      "image": "images/chesscog-3337.png",
+      "target": "r3kb1Q/pp1qp3/n4pp1/2pn4/8/2N5/PPPP1PPP/R1B1K2R",
+      "prediction": "r3kb1Q/pp1qp3/n4pp1/2pn4/8/2N5/PPPP1PPP/R1B1K2R",
+      "wrong_squares": 0
+    },
+    {
+      "image": "images/chesscog-3352.png",
+      "target": "6k1/2p2p2/6p1/p7/7n/1P4q1/5R1K/8",
+      "prediction": "6k1/2p2p2/6p1/p7/7n/1P4q1/5R1K/8",
+      "wrong_squares": 0
+    },
+    {
+      "image": "images/chesscog-3357.png",
+      "target": "rnb2rk1/pp1pqppp/2p2n2/2bP4/2P1p3/P1N3P1/1P1BPPBP/R2QK1NR",
+      "prediction": "rnb2rk1/pp1pqppp/2p2n2/2bP4/2P1p3/P1N3P1/1P1BPPBP/R2QK1NR",
+      "wrong_squares": 0
+    },
+    {
+      "image": "images/chesscog-3379.png",
+      "target": "8/p2r4/2R2p2/2p1b1kp/2B5/5KPP/P1P5/8",
+      "prediction": "8/p2r4/2R2p2/2p1b1kp/2B5/5KPP/P1P5/8",
+      "wrong_squares": 0
+    },
+    {
+      "image": "images/chesscog-3412.png",
+      "target": "b7/4k3/3np2p/6p1/1p2P3/3NK3/1P2B1PP/8",
+      "prediction": "b7/4k3/3np2p/6p1/1p2P3/3NK3/1P2B1PP/8",
+      "wrong_squares": 0
+    },
+    {
+      "image": "images/chesscog-3429.png",
+      "target": "r2q2k1/1b2rppp/5n2/3p4/Pp1Qp3/1B2N3/1P3PPP/2R1R1K1",
+      "prediction": "r2q2k1/1b2rppp/5n2/3p4/Pp1Qp3/1B2N3/1P3PPP/2R1R1K1",
+      "wrong_squares": 0
+    },
+    {
+      "image": "images/chesscog-3473.png",
+      "target": "rr6/2bnqkp1/1pp1pnp1/p1Pp1p2/PP1P1P1P/4PBP1/N1QB2K1/RR6",
+      "prediction": "rr6/2bnqkp1/1pp1pnp1/p1Pp1p2/PP1P1P1P/4PBP1/N1QB2K1/RR6",
+      "wrong_squares": 0
+    },
+    {
+      "image": "images/chesscog-3474.png",
+      "target": "5b2/1kp2R2/2r4p/p2NP3/Ppb1K1P1/7P/8/4R3",
+      "prediction": "5b2/1kp2R2/2r4p/p2NP3/Ppb1K1P1/7P/8/4R3",
+      "wrong_squares": 0
+    },
+    {
+      "image": "images/chesscog-3484.png",
+      "target": "6k1/5p1p/p3q1p1/3rB3/4Q3/2P4P/1P3bP1/5R1K",
+      "prediction": "6k1/5p1p/p3q1p1/3rB3/4Q3/2P4P/1P3bP1/5R1K",
+      "wrong_squares": 0
+    },
+    {
+      "image": "images/chesscog-3500.png",
+      "target": "r4rk1/1ppqn1b1/p2p1n1p/3P1p2/2P1pP1N/4B3/PP2N1PP/R2Q1RK1",
+      "prediction": "r4rk1/1ppqn1b1/p2p1n1p/3P1p2/2P1pP1N/4B3/PP2N1PP/R2Q1RK1",
+      "wrong_squares": 0
+    },
+    {
+      "image": "images/chesscog-3514.png",
+      "target": "rnbqk2r/pp2bppp/3p1n2/2pPp3/4P3/2N5/PPPB1PPP/R2QKBNR",
+      "prediction": "rnbqk2r/pp2bppp/3p1n2/2pPp3/4P3/2N5/PPPB1PPP/R2QKBNR",
+      "wrong_squares": 0
+    },
+    {
+      "image": "images/chesscog-3524.png",
+      "target": "4rr2/p7/3P2k1/1p4pp/2pPP1q1/P2nQ3/4R1PB/5RK1",
+      "prediction": "4rr2/p7/3P2k1/1p4pp/2pPP1q1/P2nQ3/4R1PB/5RK1",
+      "wrong_squares": 0
+    },
+    {
+      "image": "images/chesscog-3569.png",
+      "target": "2r5/8/5kp1/1p2Rp1p/n2K3P/4N1P1/1P3P2/8",
+      "prediction": "2r5/8/5kp1/1p2Rp1p/n2K3P/4N1P1/1P3P2/8",
+      "wrong_squares": 0
+    },
+    {
+      "image": "images/chesscog-3587.png",
+      "target": "r1bqk1nr/pp1pppbp/2n3p1/8/3NP3/2N1B3/PPP2PPP/R2QKB1R",
+      "prediction": "r1bqk1nr/pp1pppbp/2n3p1/8/3NP3/2N1B3/PPP2PPP/R2QKB1R",
+      "wrong_squares": 0
+    },
+    {
+      "image": "images/chesscog-3602.png",
+      "target": "1k1b4/1ppQ4/4p3/nPN2b2/2Pp1P1p/q2P3P/6P1/5RK1",
+      "prediction": "1k1b4/1ppQ4/4p3/nPN2b2/2Pp1P1p/q2P3P/6P1/5RK1",
+      "wrong_squares": 0
+    },
+    {
+      "image": "images/chesscog-3638.png",
+      "target": "2rq1rk1/3bbpp1/p1nppn1p/1p6/3NPP2/P1N1B3/1PPQB1PP/3R1RK1",
+      "prediction": "2rq1rk1/3bbpp1/p1nppn1p/1p6/3NPP2/P1N1B3/1PPQB1PP/3R1RK1",
+      "wrong_squares": 0
+    },
+    {
+      "image": "images/chesscog-3655.png",
+      "target": "2r1kb1r/1b3ppp/pp1P4/P1pn4/5B2/5N1P/1PP2PP1/R2R2K1",
+      "prediction": "2r1kb1r/1b3ppp/pp1P4/P1pn4/5B2/5N1P/1PP2PP1/R2R2K1",
+      "wrong_squares": 0
+    },
+    {
+      "image": "images/chesscog-3663.png",
+      "target": "rnbq1rk1/ppp2pbp/3p2p1/3Pp2n/2P1P3/2N1BP2/PP1Q2PP/R3KBNR",
+      "prediction": "rnbq1rk1/ppp2pbp/3p2p1/3Pp2n/2P1P3/2N1BP2/PP1Q2PP/R3KBNR",
+      "wrong_squares": 0
+    },
+    {
+      "image": "images/chesscog-3694.png",
+      "target": "3q1rk1/4bbpp/2n2p2/3p4/3B4/2N5/1PB2PPP/Q3R1K1",
+      "prediction": "3q1rk1/4bbpp/2n2p2/3p4/3B4/2N5/1PB2PPP/Q3R1K1",
+      "wrong_squares": 0
+    },
+    {
+      "image": "images/chesscog-3707.png",
+      "target": "rnbq1rk1/pp3ppp/4pn2/2p5/1bpP4/2NBPN2/PP3PPP/R1BQ1RK1",
+      "prediction": "rnbq1rk1/pp3ppp/4pn2/2p5/1bpP4/2NBPN2/PP3PPP/R1BQ1RK1",
+      "wrong_squares": 0
+    },
+    {
+      "image": "images/chesscog-3710.png",
+      "target": "8/6pp/p4k2/2p5/P1p1R1P1/2P4P/r5P1/5K2",
+      "prediction": "8/6pp/p4k2/2p5/P1p1R1P1/2P4P/r5P1/5K2",
+      "wrong_squares": 0
+    },
+    {
+      "image": "images/chesscog-3735.png",
+      "target": "R1b1n3/2kn1pp1/1b6/3P4/2P3p1/1R2P1P1/6BP/6K1",
+      "prediction": "R1b1n3/2kn1pp1/1b6/3P4/2P3p1/1R2P1P1/6BP/6K1",
+      "wrong_squares": 0
+    },
+    {
+      "image": "images/chesscog-3740.png",
+      "target": "r7/1kpb3q/1bp2p2/6p1/1P1NP1n1/7Q/2NB1PPP/4R1K1",
+      "prediction": "r7/1kpb3q/1bp2p2/6p1/1P1NP1n1/7Q/2NB1PPP/4R1K1",
+      "wrong_squares": 0
+    },
+    {
+      "image": "images/chesscog-3750.png",
+      "target": "rn1qk2r/pp2bppp/2p1pn2/3p4/3P1B2/3QPN2/PPPN1PPP/R3K2R",
+      "prediction": "rn1qk2r/pp2bppp/2p1pn2/3p4/3P1B2/3QPN2/PPPN1PPP/R3K2R",
+      "wrong_squares": 0
+    },
+    {
+      "image": "images/chesscog-3770.png",
+      "target": "r2qk2r/pp3ppp/2nbbn2/1B1p4/8/1PN1PN2/P4PPP/R1BQ1RK1",
+      "prediction": "r2qk2r/pp3ppp/2nbbn2/1B1p4/8/1PN1PN2/P4PPP/R1BQ1RK1",
+      "wrong_squares": 0
+    },
+    {
+      "image": "images/chesscog-3773.png",
+      "target": "r4rk1/p2b1p2/3p2p1/1NpPb3/2P1Pp1q/P4Q2/4BP2/1RB1R1K1",
+      "prediction": "r4rk1/p2b1p2/3p2p1/1NpPb3/2P1Pp1q/P4Q2/4BP2/1RB1R1K1",
+      "wrong_squares": 0
+    },
+    {
+      "image": "images/chesscog-3782.png",
+      "target": "r3kb1r/1p2pppp/1np5/p7/P2PP3/1QN3Pq/1P3P1P/R1B1K2R",
+      "prediction": "r3kb1r/1p2pppp/1np5/p7/P2PP3/1QN3Pq/1P3P1P/R1B1K2R",
+      "wrong_squares": 0
+    },
+    {
+      "image": "images/chesscog-3795.png",
+      "target": "2R2bk1/1p3ppp/3p4/p1Q5/P3r3/4B1P1/1P3PKP/3q4",
+      "prediction": "2R2bk1/1p3ppp/3p4/p1Q5/P3r3/4B1P1/1P3PKP/3q4",
+      "wrong_squares": 0
+    },
+    {
+      "image": "images/chesscog-3814.png",
+      "target": "8/pp1r4/1R2p3/k2p1b1p/2pP1PpB/P1P3P1/2PK4/4R3",
+      "prediction": "8/pp1r4/1R2p3/k2p1b1p/2pP1PpB/P1P3P1/2PK4/4R3",
+      "wrong_squares": 0
+    },
+    {
+      "image": "images/chesscog-3833.png",
+      "target": "3r3k/4b2p/2q3p1/1p1pPp2/1PpQ1PP1/2P5/2B4P/r2R3K",
+      "prediction": "3r3k/4b2p/2q3p1/1p1pPp2/1PpQ1PP1/2P5/2B4P/r2R3K",
+      "wrong_squares": 0
+    },
+    {
+      "image": "images/chesscog-3834.png",
+      "target": "8/p3r2p/1p2k1p1/2pR4/5P2/1P3P2/P1P2K1P/8",
+      "prediction": "8/p3r2p/1p2k1p1/2pR4/5P2/1P3P2/P1P2K1P/8",
+      "wrong_squares": 0
+    },
+    {
+      "image": "images/chesscog-3856.png",
+      "target": "2rk1b1r/pp3ppp/8/4p3/3nP3/N3B1P1/Pn3P1P/R2B1K1R",
+      "prediction": "2rk1b1r/pp3ppp/8/4p3/3nP3/N3B1P1/Pn3P1P/R2B1K1R",
+      "wrong_squares": 0
+    },
+    {
+      "image": "images/chesscog-3861.png",
+      "target": "8/pp3p2/2b5/4k1p1/1P3p2/4PPP1/P4K2/3B4",
+      "prediction": "8/pp3p2/2b5/4k1p1/1P3p2/4PPP1/P4K2/3B4",
+      "wrong_squares": 0
+    },
+    {
+      "image": "images/chesscog-3883.png",
+      "target": "rnbq1rk1/ppp1ppbp/5np1/8/2QPP3/2N2N2/PP3PPP/R1B1KB1R",
+      "prediction": "rnbq1rk1/ppp1ppbp/5np1/8/2QPP3/2N2N2/PP3PPP/R1B1KB1R",
+      "wrong_squares": 0
+    },
+    {
+      "image": "images/chesscog-3903.png",
+      "target": "8/2N2pkp/8/3p4/1r1Pp1b1/4PqPp/Q4P1K/6R1",
+      "prediction": "8/2N2pk1/8/3p4/1r1Pp1b1/4PqP1/K4P1P/6R1",
+      "wrong_squares": 4
+    },
+    {
+      "image": "images/chesscog-3931.png",
+      "target": "r3kb1r/1p3pp1/p1b1p2p/q3B3/2p1P3/2N3Q1/PPP2PPP/R4RK1",
+      "prediction": "r3kb1r/1p3pp1/p1b1p2p/q3B3/2p1P3/2N3Q1/PPP2PPP/R4RK1",
+      "wrong_squares": 0
+    },
+    {
+      "image": "images/chesscog-3937.png",
+      "target": "8/p3rkp1/1p2p2p/4Pp2/1P6/P1Q3P1/4qP1P/4R1K1",
+      "prediction": "8/p3rkp1/1p2p2p/4Pp2/1P6/P1Q3P1/4qP1P/4R1K1",
+      "wrong_squares": 0
+    },
+    {
+      "image": "images/chesscog-3984.png",
+      "target": "6k1/p2r1p2/1p2b1p1/7p/2p1P3/P6P/1P4P1/3NR1K1",
+      "prediction": "6k1/p2r1p2/1p2b1p1/7p/2p1P3/P6P/1P4P1/3NR1K1",
+      "wrong_squares": 0
+    },
+    {
+      "image": "images/chesscog-3990.png",
+      "target": "3r1rk1/p4ppp/1p3R2/3n4/5q2/P4Q1P/BB2RPP1/6K1",
+      "prediction": "3r1rk1/p4ppp/1p3R2/3n4/5q2/P4Q1P/BB2RPP1/6K1",
+      "wrong_squares": 0
+    },
+    {
+      "image": "images/chesscog-4016.png",
+      "target": "8/4r1p1/7p/1p1k3P/3B1p2/PPR3n1/2K3P1/8",
+      "prediction": "8/4r1p1/7p/1p1k3P/3B1p2/PPR3n1/2K3P1/8",
+      "wrong_squares": 0
+    },
+    {
+      "image": "images/chesscog-4043.png",
+      "target": "r3r1k1/pp4pp/2n1b2q/P1Bp4/2pPP3/2P5/2B2QPP/R3R1K1",
+      "prediction": "r3r1k1/pp4pp/2n1b2q/P1Bp4/2pPP3/2P5/2B2QPP/R3R1K1",
+      "wrong_squares": 0
+    },
+    {
+      "image": "images/chesscog-4083.png",
+      "target": "1k1rr3/pPpb1p2/7p/3p2p1/1q1P4/2nBPQP1/3N2PP/R3R1K1",
+      "prediction": "1k1rr3/pPpb1p1p/8/3p2p1/1q1P4/2nBPQP1/3N2PP/R3R1K1",
+      "wrong_squares": 2
+    },
+    {
+      "image": "images/chesscog-4089.png",
+      "target": "1rqr2k1/4b1p1/2nppn1p/p1p1p3/Pp1PP3/2P1BNNP/1P2QPP1/R3R1K1",
+      "prediction": "1rqr2k1/4b1p1/2nppn1p/p1p1p3/Pp1PP3/2P1BNNP/1P2QPP1/R3R1K1",
+      "wrong_squares": 0
+    },
+    {
+      "image": "images/chesscog-4091.png",
+      "target": "r2q1rk1/pp1nppbp/2p3p1/3p1b2/2PPn3/1P2PNP1/PB3PBP/RN1Q1RK1",
+      "prediction": "r2q1rk1/pp1nppbp/2p3p1/3p1b2/2PPn3/1P2PNP1/PB3PBP/RN1Q1RK1",
+      "wrong_squares": 0
+    },
+    {
+      "image": "images/chesscog-4118.png",
+      "target": "r7/1pk5/2p1bp2/p1n4p/P3P2P/2N1NP2/2P3P1/R3K3",
+      "prediction": "r7/1pk5/2p1bp2/p1n4p/P3P2P/2N1NP2/2P3P1/R3K3",
+      "wrong_squares": 0
+    },
+    {
+      "image": "images/chesscog-4154.png",
+      "target": "r4rk1/pp1nbppp/1qn1p3/2ppPb2/3P1P2/2P1B3/PP1QB1PP/RN2NRK1",
+      "prediction": "r4rk1/pp1nbppp/1qn1p3/2ppPb2/3P1P2/2P1B3/PP1QB1PP/RN2NRK1",
+      "wrong_squares": 0
+    },
+    {
+      "image": "images/chesscog-4166.png",
+      "target": "rn1r2k1/pp2ppbp/1q2bnp1/1P6/2B2B2/Q1N1PN2/P4PPP/2R1K2R",
+      "prediction": "rn1r2k1/pp2ppbp/1q2bnp1/1P6/2B2B2/Q1N1PN2/P4PPP/2R1K2R",
+      "wrong_squares": 0
+    },
+    {
+      "image": "images/chesscog-4167.png",
+      "target": "Q3b3/2q1k1p1/3p1p1p/p1nPp3/1pB1P1PP/1P2BP2/P7/6K1",
+      "prediction": "Q3n3/2q1k1p1/3p1p1p/p1nPp3/1pB1P1PP/1P2BP2/P7/6K1",
+      "wrong_squares": 1
+    },
+    {
+      "image": "images/chesscog-4189.png",
+      "target": "rnbqkbnr/1pp2ppp/p3p3/3p4/3PP3/8/PPPN1PPP/R1BQKBNR",
+      "prediction": "rnbqkbnr/1pp2ppp/p3p3/3p4/3PP3/8/PPPN1PPP/R1BQKBNR",
+      "wrong_squares": 0
+    },
+    {
+      "image": "images/chesscog-4208.png",
+      "target": "4rr1k/p5b1/6Pp/1ppp1b2/4nP1N/qN2P3/P1Q3P1/1B2R1KR",
+      "prediction": "4rr1k/p5b1/6Pp/1ppp1b2/4nP1N/qN2P3/P1Q3P1/1B2R1KR",
+      "wrong_squares": 0
+    },
+    {
+      "image": "images/chesscog-4210.png",
+      "target": "2rk1b1r/pp3ppp/8/8/3pP3/N5P1/Pn3P1P/R2B1K1R",
+      "prediction": "2rk1b1r/pp3ppp/8/8/3pP3/N5P1/Pn3P1P/R2B1K1R",
+      "wrong_squares": 0
+    },
+    {
+      "image": "images/chesscog-4230.png",
+      "target": "2B3k1/5ppp/8/1b6/4P2P/4KP2/1r1N2P1/8",
+      "prediction": "2B3k1/5ppp/8/1b6/4P2P/4KP2/1r1N2P1/8",
+      "wrong_squares": 0
+    },
+    {
+      "image": "images/chesscog-4241.png",
+      "target": "2r4k/1p3rp1/p2R3p/7N/PP2ppP1/8/R4P1K/8",
+      "prediction": "2r4k/1p3rp1/p2R3p/7N/PP2ppP1/8/R4P1K/8",
+      "wrong_squares": 0
+    },
+    {
+      "image": "images/chesscog-4250.png",
+      "target": "r7/P3k3/2pn1P2/4K3/1PP5/8/8/R7",
+      "prediction": "r7/P3k3/2pn1P2/4K3/1PP5/8/8/R7",
+      "wrong_squares": 0
+    },
+    {
+      "image": "images/chesscog-4251.png",
+      "target": "8/5k2/8/r4PK1/5NPP/8/8/8",
+      "prediction": "8/5k2/8/r4PK1/5NPP/8/8/8",
+      "wrong_squares": 0
+    },
+    {
+      "image": "images/chesscog-4254.png",
+      "target": "r2qk2r/1b2bppp/p2pnn2/4p3/1PB1P3/2N1Q3/P2N1PPP/R1B2RK1",
+      "prediction": "r2qk2r/1b2bppp/p2pnn2/4p3/1PB1P3/2N1Q3/P2N1PPP/R1B2RK1",
+      "wrong_squares": 0
+    },
+    {
+      "image": "images/chesscog-4264.png",
+      "target": "3q2k1/3r1pp1/p2rp2p/8/2pP1Q1P/P2R1P2/1P4P1/3R2K1",
+      "prediction": "3q2k1/3r1pp1/p2rp2p/8/2pP1Q1P/P2R1P2/1P4P1/3R2K1",
+      "wrong_squares": 0
+    },
+    {
+      "image": "images/chesscog-4267.png",
+      "target": "8/1p5r/4p3/pk1p1p2/3PnPp1/PP1KP1P1/5NR1/8",
+      "prediction": "8/1p5r/4p3/pk1p1p2/3PnPp1/PP1KP1P1/5NR1/8",
+      "wrong_squares": 0
+    },
+    {
+      "image": "images/chesscog-4293.png",
+      "target": "3r4/8/b1k5/P5R1/2pB4/2P5/3K4/8",
+      "prediction": "3r4/8/b1k5/P5R1/2pB4/2P5/3K4/8",
+      "wrong_squares": 0
+    },
+    {
+      "image": "images/chesscog-4354.png",
+      "target": "r1q2rk1/pb2bppp/Bp2nn2/2pp4/3P4/1PN1PN2/PB2QPPP/2RR2K1",
+      "prediction": "r1q2rk1/pb2bppp/Bp2nn2/2pp4/3P4/1PN1PN2/PB2QPPP/2RR2K1",
+      "wrong_squares": 0
+    },
+    {
+      "image": "images/chesscog-4394.png",
+      "target": "7R/8/6p1/1k6/5r1P/KP6/8/8",
+      "prediction": "1k6/8/6P1/8/8/1P6/8/6K1",
+      "wrong_squares": 8
+    },
+    {
+      "image": "images/chesscog-4398.png",
+      "target": "5b2/1kpR1p2/r6p/p2NP3/Ppb1K1P1/7P/8/4R3",
+      "prediction": "5b2/1kpR1p2/r6p/p2NP3/Ppb1K1P1/7P/8/4R3",
+      "wrong_squares": 0
+    },
+    {
+      "image": "images/chesscog-4399.png",
+      "target": "r3rbk1/1bpq1ppp/p1np1n2/1p2p3/4P3/PBPP1N1P/1P1N1PP1/R1BQR1K1",
+      "prediction": "r3rbk1/1bpq1ppp/p1np1n2/1p2p3/4P3/PBPP1N1P/1P1N1PP1/R1BQR1K1",
+      "wrong_squares": 0
+    },
+    {
+      "image": "images/chesscog-4402.png",
+      "target": "4r1k1/1pbq1n1p/p1p3p1/P2p1p2/8/3P2PB/1PPB1P1P/3QR1K1",
+      "prediction": "4r1k1/1pbq1n1p/p1p3p1/P2p1p2/8/3P2PB/1PPB1P1P/3QR1K1",
+      "wrong_squares": 0
+    },
+    {
+      "image": "images/chesscog-4404.png",
+      "target": "2r3k1/1br2ppp/pqnppn2/1p6/3P4/P2BPN2/1PRNQPPP/2R3K1",
+      "prediction": "2r3k1/1br2ppp/pqnppn2/1p6/3P4/P2BPN2/1PRNQPPP/2R3K1",
+      "wrong_squares": 0
+    },
+    {
+      "image": "images/chesscog-4415.png",
+      "target": "rnbqk1nr/pp2ppbp/3p2p1/2pP4/2P5/2N5/PP2PPPP/R1BQKBNR",
+      "prediction": "rnbqk1nr/pp2ppbp/3p2p1/2pP4/2P5/2N5/PP2PPPP/R1BQKBNR",
+      "wrong_squares": 0
+    },
+    {
+      "image": "images/chesscog-4416.png",
+      "target": "r4rk1/pbqn1ppp/1p2p3/3n4/3PQ3/2PB1N2/PB3PPP/R2R2K1",
+      "prediction": "r4rk1/pbqn1ppp/1p2p3/3n4/3PQ3/2PB1N2/PB3PPP/R2R2K1",
+      "wrong_squares": 0
+    },
+    {
+      "image": "images/chesscog-4427.png",
+      "target": "r1q2rk1/p4ppp/1pb1pn2/P1p5/2P5/3P1NP1/2Q1PPBP/R4RK1",
+      "prediction": "r1q2rk1/p4ppp/1pb1pn2/P1p5/2P5/3P1NP1/2Q1PPBP/R4RK1",
+      "wrong_squares": 0
+    },
+    {
+      "image": "images/chesscog-4440.png",
+      "target": "rn2k2r/2qpbppp/4pn2/2pP4/1pB1P3/P3QP2/1P1B2PP/R3K1NR",
+      "prediction": "rn2k2r/2qpbppp/4pn2/2pP4/1pB1P3/P3QP2/1P1B2PP/R3K1NR",
+      "wrong_squares": 0
+    },
+    {
+      "image": "images/chesscog-4455.png",
+      "target": "r2qk2r/1p2ppbp/1np1b1p1/p2nN1B1/P2P4/2NBP3/1P3PPP/R2Q1RK1",
+      "prediction": "r2qk2r/1p2ppbp/1np1b1p1/p2nN1B1/P2P4/2NBP3/1P3PPP/R2Q1RK1",
+      "wrong_squares": 0
+    },
+    {
+      "image": "images/chesscog-4466.png",
+      "target": "2rq1rk1/4ppbp/p2nb1p1/1PB5/3PP3/2NQ2PP/5PB1/1R1R2K1",
+      "prediction": "2rq1rk1/4ppbp/p2nb1p1/1PB5/3PP3/2NQ2PP/5PB1/1R1R2K1",
+      "wrong_squares": 0
+    },
+    {
+      "image": "images/chesscog-4491.png",
+      "target": "rnbqkb1r/ppp2ppp/4pn2/8/2pPP3/2N2N2/PP3PPP/R1BQKB1R",
+      "prediction": "rnbqkb1r/ppp2ppp/4pn2/8/2pPP3/2N2N2/PP3PPP/R1BQKB1R",
+      "wrong_squares": 0
+    },
+    {
+      "image": "images/chesscog-4492.png",
+      "target": "r4rk1/5nbp/p2Pbpp1/4p3/1P2P3/4BNN1/5PPP/R3R1K1",
+      "prediction": "r4rk1/5nbp/p2Pbpp1/4p3/1P2P3/4BNN1/5PPP/R3R1K1",
+      "wrong_squares": 0
+    },
+    {
+      "image": "images/chesscog-4501.png",
+      "target": "3k4/p7/2p1npb1/PpPp3p/1P1P3p/2K1NPP1/8/5B2",
+      "prediction": "3k4/p7/2p1npb1/PpPp3p/1P1P3p/2K1NPP1/8/5B2",
+      "wrong_squares": 0
+    },
+    {
+      "image": "images/chesscog-4503.png",
+      "target": "rn2qrk1/p3bppp/b1p1pn2/1p1pN3/Q1PP4/1PN3P1/P3PPBP/R1B2RK1",
+      "prediction": "rn2qrk1/p3bppp/b1p1pn2/1p1pN3/Q1PP4/1PN3P1/P3PPBP/R1B2RK1",
+      "wrong_squares": 0
+    },
+    {
+      "image": "images/chesscog-4522.png",
+      "target": "r1bq1rk1/bpp1nppp/p2p1n2/4p3/PPB1P3/2PP1N2/3N1PPP/R1BQR1K1",
+      "prediction": "r1bq1rk1/1pp1nppp/p2p1n2/4p3/PPB1P3/2PP1N2/3N1PPP/R1BQR1K1",
+      "wrong_squares": 1
+    },
+    {
+      "image": "images/chesscog-4526.png",
+      "target": "r1bq1rk1/bpp1nppp/p2p1n2/4p3/P1BPP3/2P2N1P/1P3PP1/RNBQR1K1",
+      "prediction": "r1bqkr2/bpp1nppp/p2p1n2/4p3/P1BPP3/2P2N1P/1P3PP1/RNBQR1K1",
+      "wrong_squares": 2
+    },
+    {
+      "image": "images/chesscog-4541.png",
+      "target": "6k1/5pp1/7p/8/5P2/pn3P2/R4KPP/3rN3",
+      "prediction": "6k1/5pp1/7p/8/5P2/pn3P2/R4KPP/3rN3",
+      "wrong_squares": 0
+    },
+    {
+      "image": "images/chesscog-4571.png",
+      "target": "r1bqk2r/4nppp/p2p1n2/1p2p1B1/4P3/N7/PPP2PPP/R2QKB1R",
+      "prediction": "r1bqk2r/4nppp/p2p1n2/1p2p1B1/4P3/N7/PPP2PPP/R2QKB1R",
+      "wrong_squares": 0
+    },
+    {
+      "image": "images/chesscog-4616.png",
+      "target": "r1b2rk1/pp2npp1/1q2pn1p/1Bpp4/P2P4/1QP1PNP1/1P1N1PP1/R4RK1",
+      "prediction": "r1b2rk1/pp2npp1/1q2pn1p/1Bpp4/P2P4/1QP1PNP1/1P1N1PP1/R4RK1",
+      "wrong_squares": 0
+    },
+    {
+      "image": "images/chesscog-4637.png",
+      "target": "1b2rqk1/1R3p1p/5Qp1/8/2N2p1P/2P5/1P3PK1/8",
+      "prediction": "1b2rqk1/1R3p1p/5Qp1/8/2N2p1P/2P5/1P3PK1/8",
+      "wrong_squares": 0
+    },
+    {
+      "image": "images/chesscog-4663.png",
+      "target": "2r1kb1r/5pp1/pq2p1p1/2N1P3/1pP5/4Qb2/PP3BPP/R1R3K1",
+      "prediction": "2r1kb1r/5pp1/pq2p1p1/2N1P3/1pP5/4Qb2/PP3BPP/R1R3K1",
+      "wrong_squares": 0
+    },
+    {
+      "image": "images/chesscog-4696.png",
+      "target": "3Q4/r5k1/3p4/3Ppn2/3q4/p1N1NpPP/5P2/6K1",
+      "prediction": "3Q4/r5k1/3p4/3Ppn2/3q4/p1N1NpPP/5P2/6K1",
+      "wrong_squares": 0
+    },
+    {
+      "image": "images/chesscog-4729.png",
+      "target": "rnbqkbnr/pppp1ppp/8/4p3/2P5/8/PP1PPPPP/RNBQKBNR",
+      "prediction": "rnbqkbnr/pppp1ppp/8/4p3/2P5/8/PP1PPPPP/RNBQKBNR",
+      "wrong_squares": 0
+    },
+    {
+      "image": "images/chesscog-4751.png",
+      "target": "6k1/2p2r1p/2Pb2p1/4Rp2/4rP1q/7P/6PB/3Q1R1K",
+      "prediction": "6k1/2p2r1p/2Pb2p1/4Rp2/4rP1q/7P/6PB/3Q1R1K",
+      "wrong_squares": 0
+    },
+    {
+      "image": "images/chesscog-4752.png",
+      "target": "3r1k2/6pp/1R1n1p2/p6P/8/5PB1/5P2/4K3",
+      "prediction": "3r1k2/6pp/1R1n1p2/p6P/8/5PB1/5P2/4K3",
+      "wrong_squares": 0
+    },
+    {
+      "image": "images/chesscog-4755.png",
+      "target": "r3r1k1/1p1b1ppp/p1pb1q2/4p3/PP6/2BPPBP1/5P1P/1R1QR1K1",
+      "prediction": "r3r1k1/1p1b1ppp/p1pb1q2/4p3/PP6/2BPPBP1/5P1P/1R1QR1K1",
+      "wrong_squares": 0
+    },
+    {
+      "image": "images/chesscog-4758.png",
+      "target": "8/1r4p1/RPr4p/3pk3/4p1PP/5pK1/1RP2P2/8",
+      "prediction": "8/1r4p1/RPr4p/3pk3/4p1PP/5pK1/1RP2P2/8",
+      "wrong_squares": 0
+    },
+    {
+      "image": "images/chesscog-4766.png",
+      "target": "rn4k1/1p2bppp/p7/3rpP2/8/1P4P1/P2BNP1P/R4RK1",
+      "prediction": "rn4k1/1p2bppp/p7/3rpP2/8/1P4P1/P2BNP1P/R4RK1",
+      "wrong_squares": 0
+    },
+    {
+      "image": "images/chesscog-4769.png",
+      "target": "3k4/4n3/1p5p/pP1NK1n1/P2P4/8/8/3B4",
+      "prediction": "3k4/4n3/1p5p/pP1NK1n1/P2P4/8/8/3B4",
+      "wrong_squares": 0
+    },
+    {
+      "image": "images/chesscog-4786.png",
+      "target": "7r/p1p1prk1/1p1pR1p1/3P2P1/2P2P2/1P4K1/P7/4R3",
+      "prediction": "7r/p1p1prk1/1p1pR1p1/3P2P1/2P2P2/1P4K1/P7/4R3",
+      "wrong_squares": 0
+    },
+    {
+      "image": "images/chesscog-4805.png",
+      "target": "rn1qkb1r/1p3pp1/p3pn1p/2pp1b2/P2P4/5NP1/1PPNPPBP/R1BQ1RK1",
+      "prediction": "rn1qkb1r/1p3pp1/p3pn1p/2pp1b2/P2P4/5NP1/1PPNPPBP/R1BQ1RK1",
+      "wrong_squares": 0
+    },
+    {
+      "image": "images/chesscog-4836.png",
+      "target": "2rqk2r/pp1nppbp/3p1np1/2pP4/3BP1P1/2N4P/PPP1QP2/2KR1B1R",
+      "prediction": "2rqk2r/pp1nppbp/3p1np1/2pP4/3BP1P1/2N4P/PPP1QP2/2KR1B1R",
+      "wrong_squares": 0
+    },
+    {
+      "image": "images/chesscog-4841.png",
+      "target": "rnbqkbnr/pp1ppp2/6p1/2p4p/4P2P/P7/1PPP1PP1/RNBQKBNR",
+      "prediction": "rnbqkbnr/pp1ppp2/6p1/2p4p/4P2P/P7/1PPP1PP1/RNBQKBNR",
+      "wrong_squares": 0
+    },
+    {
+      "image": "images/chesscog-4857.png",
+      "target": "rnbqk2r/ppp2ppp/4p3/8/1bBPn3/2N2N2/PP3PPP/R1BQK2R",
+      "prediction": "rnbqk2r/ppp2ppp/4p3/8/1bBPn3/2N2N2/PP3PPP/R1BQK2R",
+      "wrong_squares": 0
+    },
+    {
+      "image": "images/chesscog-4861.png",
+      "target": "b4r1k/2q4p/5p2/2ppp2P/2P4Q/1P4P1/2n2PBN/4R1K1",
+      "prediction": "b4r1k/2q4p/5p2/2ppp2P/2P4Q/1P4P1/2n2PBN/4R1K1",
+      "wrong_squares": 0
+    },
+    {
+      "image": "images/chesscog-4875.png",
+      "target": "r1bq1rk1/pp3ppp/1bp2nn1/4p3/B3N3/2PP1N1P/PP3PP1/R1BQR1K1",
+      "prediction": "r1bq1rk1/pp3ppp/1bp2nn1/4p3/B3N3/2PP1N1P/PP3PP1/R1BQR1K1",
+      "wrong_squares": 0
+    },
+    {
+      "image": "images/chesscog-4885.png",
+      "target": "r2qkbnr/pp1n1ppp/2p1p3/3pPb2/3P4/4BN2/PPPN1PPP/R2QKB1R",
+      "prediction": "r2qkbnr/pp1n1ppp/2p1p3/3pPb2/3P4/4BN2/PPPN1PPP/R2QKB1R",
+      "wrong_squares": 0
+    },
+    {
+      "image": "images/chesscog-4887.png",
+      "target": "rn1q1rk1/p1p2ppp/bp1bpn2/4N3/2pP4/1PN3P1/P2BPPBP/R2Q1RK1",
+      "prediction": "rn1q1rk1/p1p2ppp/bp1bpn2/4N3/2pP4/1PN3P1/P2BPPBP/R2Q1RK1",
+      "wrong_squares": 0
+    }
+  ]
+}

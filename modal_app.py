@@ -81,7 +81,7 @@ def train_remote(config: dict, resume: bool):
 
 @app.function(
     image=image,
-    gpu="L4",
+    gpu="A100-80GB",
     cpu=8,
     memory=16384,
     timeout=3600,

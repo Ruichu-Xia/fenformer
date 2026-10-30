@@ -1,6 +1,6 @@
 """Score a trained model on benchmark directories with the full inference pipeline.
 
-    python -m fenformer.evaluate --weights best.pt --output results/ data/benchmarks/*
+    python -m fenformer.evaluate --output results/fenformer data/benchmarks/*
 
 Each image goes through live U2NETP framing, the model, and constrained decoding, exactly
 as in `predict`. Metrics are reported for both plain argmax and constrained decoding.
@@ -19,7 +19,7 @@ from .board import fen_to_labels, labels_to_fen
 from .data import load_benchmark
 from .decode import decode
 from .localize import SIZE, download_u2netp, frame_board, load_image
-from .predict import load_model, logits
+from .predict import download_weights, load_model, logits
 
 
 class FramedImages(Dataset):
@@ -107,13 +107,14 @@ def main():
         description=__doc__, formatter_class=argparse.RawTextHelpFormatter
     )
     parser.add_argument("benchmarks", nargs="+", type=Path)
-    parser.add_argument("--weights", type=Path, required=True)
+    parser.add_argument("--weights", type=Path, help="default: released weights")
     parser.add_argument("--u2netp", type=Path, default=Path("weights/u2netp.onnx"))
     parser.add_argument("--output", type=Path, required=True)
     parser.add_argument("--device", default="cuda" if torch.cuda.is_available() else "cpu")
     parser.add_argument("--workers", type=int, default=4)
     args = parser.parse_args()
-    model = load_model(args.weights, args.device)
+    weights = args.weights or download_weights(Path("weights/fenformer.safetensors"))
+    model = load_model(weights, args.device)
     u2netp = download_u2netp(args.u2netp)
     args.output.mkdir(parents=True, exist_ok=True)
     summary = {}
