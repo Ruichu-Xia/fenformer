@@ -1,6 +1,6 @@
 """Score a trained model on benchmark directories with the full inference pipeline.
 
-    python -m fenformer.evaluate --output results/fenformer data/benchmarks/*
+    python -m fenformer.evaluate --output results/fenformer data/benchmarks/*/
 
 Each image goes through live U2NETP framing, the model, and constrained decoding, exactly
 as in `predict`. Metrics are reported for both plain argmax and constrained decoding.

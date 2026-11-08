@@ -125,7 +125,7 @@ Reproduce the benchmarks and training:
 
 ```bash
 uv run python scripts/prepare_benchmarks.py                     # zero-shot photo sets
-uv run python -m fenformer.evaluate --output results/fenformer data/benchmarks/*
+uv run python -m fenformer.evaluate --output results/fenformer data/benchmarks/*/
 modal run modal_app.py --run my-run                              # train on one A100
 uv run pytest                                                    # 26 tests
 ```
