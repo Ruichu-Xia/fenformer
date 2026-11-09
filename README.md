@@ -57,7 +57,12 @@ a fifth of a square of a perfect perspective grid, median over the 29 transfer p
 it knows which side White sits on (right: the camera is behind Black, and a1 is top right).
 Later layers attend more widely, gathering context from the rest of the board.
 
-<p align="center"><img src="assets/learned_grid.png" width="100%" alt="First-layer attention peaks of the 64 square queries, one dot per square, on three unseen photos"></p>
+<p align="center"><img src="assets/learned_grid.png" width="100%" alt="Each of the 64 square queries, labeled by its square name, placed where its first-layer attention peaks on three unseen photos"></p>
+
+<p align="center"><sub>Each label is one square query (e4 = the query for e4), placed where it looks in the first
+decoder layer. The labels land on their own squares, so the model has learned the board grid
+and its orientation without ever being told where squares are. The middle board's printed
+coordinates let you check every label.</sub></p>
 
 **Exact constrained decoding.** Per-square argmax can output two white kings. Fixing the two
 king squares makes every other square independent, so the best board with one king per

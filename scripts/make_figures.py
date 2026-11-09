@@ -250,7 +250,7 @@ def query_peaks(attention_map: torch.Tensor) -> np.ndarray:
 
 
 def grid_figure(weights: Path, images: list[Path], output: Path):
-    """Mark where each square query looks in the first decoder layer.
+    """Label each square query at the point it looks at in the first decoder layer.
 
     Only the first layer localizes squares (peaks fit a perspective grid to about a fifth of a
     square); later layers attend widely for context, so they are not shown.
@@ -258,24 +258,25 @@ def grid_figure(weights: Path, images: list[Path], output: Path):
     u2netp = download_u2netp(Path("weights/u2netp.onnx"))
     model = load_model(weights, "cpu")
     fig, axes = plt.subplots(
-        1, len(images), figsize=(4.2 * len(images), 4.2), gridspec_kw={"wspace": 0.04}
+        1, len(images), figsize=(5.2 * len(images), 5.2), gridspec_kw={"wspace": 0.03}
     )
     for ax, path in zip(np.atleast_1d(axes), images, strict=True):
         pixels = frame_board(load_image(path), weights=u2netp)
         _, maps = cross_attention(model, pixels)
-        peaks = query_peaks(maps[0]).reshape(8, 8, 2)  # [rank 8..1, file a..h, xy]
+        peaks = query_peaks(maps[0])  # [64, xy] in FEN order: a8..h8, ..., a1..h1
         ax.imshow(pixels.permute(1, 2, 0).numpy())
-        ax.scatter(*peaks.reshape(-1, 2).T, s=22, color=YELLOW, edgecolor=INK, lw=0.6, zorder=3)
-        for name, (r, f) in {"a1": (7, 0), "h1": (7, 7), "a8": (0, 0)}.items():
-            ax.annotate(
+        for index, (x, y) in enumerate(peaks):
+            name = "abcdefgh"[index % 8] + str(8 - index // 8)
+            ax.text(
+                x,
+                y,
                 name,
-                peaks[r, f],
-                xytext=(5, 5),
-                textcoords="offset points",
-                color="white",
-                fontsize=10,
+                ha="center",
+                va="center",
+                fontsize=7,
                 fontweight="bold",
-                bbox=dict(boxstyle="round,pad=0.2", fc=INK, ec="none", alpha=0.7),
+                color=INK,
+                bbox=dict(boxstyle="round,pad=0.12", fc=YELLOW, ec="none", alpha=0.9),
             )
         ax.set_axis_off()
     fig.savefig(output, dpi=150, bbox_inches="tight")
