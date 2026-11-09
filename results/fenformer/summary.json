@@ -90,5 +90,28 @@
       "mean_wrong_squares": 2.746000051498413
     },
     "images_per_second": 4.688592348626331
+  },
+  "fenit-373": {
+    "argmax": {
+      "images": 373,
+      "board_accuracy": 0.6005361930294906,
+      "board_accuracy_ci95": [
+        0.550048561878679,
+        0.6489740513359978
+      ],
+      "square_accuracy": 0.9692107908847185,
+      "mean_wrong_squares": 1.97050940990448
+    },
+    "constrained": {
+      "images": 373,
+      "board_accuracy": 0.6058981233243967,
+      "board_accuracy_ci95": [
+        0.5554688618033194,
+        0.6541682907828068
+      ],
+      "square_accuracy": 0.9695459115281502,
+      "mean_wrong_squares": 1.949061632156372
+    },
+    "images_per_second": 1.5220244287366842
   }
 }

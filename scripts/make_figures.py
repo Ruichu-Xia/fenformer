@@ -285,6 +285,7 @@ BENCHMARKS = {
     "chessred-test": "ChessReD test\n2,129 phone photos · seen set",
     "chesscog-test": "ChessCog test\n342 renders · seen set",
     "chesscog-transfer": "ChessCog transfer\n29 photos · unseen set",
+    "fenit-373": "Fenit\n373 phone photos · unseen sets",
     "samryan-500": "samryan-500\n500 top-down photos · unseen set",
 }
 
@@ -386,32 +387,43 @@ def curves_figure(metrics: Path, output: Path):
     fig.savefig(output, dpi=150, bbox_inches="tight")
 
 
-def examples_figure(results: list[Path], roots: list[Path], output: Path, wrong: bool):
-    """Photos beside predicted boards: successes, or failures with wrong squares outlined.
-
-    Takes the first two qualifying images (successes) or the two with the fewest errors
-    (failures, the informative near-misses) from each benchmark result file.
-    """
+def near_misses(results: list[Path], roots: list[Path]) -> list[tuple[Path, dict]]:
+    """Pick the two failures with the fewest wrong squares from each benchmark."""
     rows = []
     for result, root in zip(results, roots, strict=True):
         records = json.loads(result.read_text())["predictions"]
-        chosen = [r for r in records if (r["wrong_squares"] > 0) == wrong]
+        chosen = [r for r in records if r["wrong_squares"] > 0]
         chosen.sort(key=lambda r: (r["wrong_squares"], r["image"]))
         rows += [(root / r["image"], r) for r in chosen[:2]]
-    # Two examples per row, each as a photo panel followed by a board panel.
+    return rows
+
+
+def pairs_figure(rows: list[tuple[Path, dict]], output: Path, columns: int):
+    """Photos beside predicted boards, `columns` pairs per row, wrong squares outlined."""
+    photos = [load_image(path) for path, _ in rows]
+    aspect = float(np.median([p.width / p.height for p in photos]))
+    board = 0.75  # board diagram size relative to photo height: the photo leads
+    count = -(-len(rows) // columns)
+    unit = 12 / (columns * (aspect + board))
     fig, axes = plt.subplots(
-        len(rows) // 2,
-        4,
-        figsize=(12, 3.0 * len(rows) / 2),
-        gridspec_kw={"wspace": 0.04, "hspace": 0.14},
+        count,
+        2 * columns,
+        figsize=(12, 1.15 * unit * count),
+        gridspec_kw={"wspace": 0.05, "hspace": 0.15, "width_ratios": [aspect, board] * columns},
         squeeze=False,
     )
-    for k, (path, record) in enumerate(rows):
-        photo_ax, board_ax = axes[k // 2, 2 * (k % 2)], axes[k // 2, 2 * (k % 2) + 1]
-        photo = load_image(path)
+    for ax in axes.flat:
+        ax.set_axis_off()
+    for k, ((path, record), photo) in enumerate(zip(rows, photos, strict=True)):
+        photo_ax, board_ax = (
+            axes[k // columns, 2 * (k % columns)],
+            axes[k // columns, 2 * (k % columns) + 1],
+        )
         photo_ax.imshow(photo)
-        photo_ax.set_axis_off()
-        photo_ax.set_title(path.parents[1].name, fontsize=9, color=MUTED, loc="left")
+        pieces = sum(c.isalpha() for c in record["target"])
+        photo_ax.set_title(
+            f"{path.parents[1].name} · {pieces} pieces", fontsize=9, color=MUTED, loc="left"
+        )
         predicted, target = fen_to_labels(record["prediction"]), fen_to_labels(record["target"])
         draw_board(board_ax, predicted, target)
         verdict = "exact" if predicted == target else f"{record['wrong_squares']} wrong"
@@ -423,7 +435,8 @@ def main():
     """Dispatch to one figure."""
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument(
-        "figure", choices=["data", "explain", "grid", "results", "curves", "examples", "failures"]
+        "figure",
+        choices=["data", "explain", "grid", "results", "curves", "failures", "gallery"],
     )
     parser.add_argument("--gallery", type=Path)
     parser.add_argument("--weights", type=Path)
@@ -435,6 +448,7 @@ def main():
     parser.add_argument("--baseline", type=Path)
     parser.add_argument("--metrics", type=Path)
     parser.add_argument("--benchmarks", type=Path, nargs="+", help="benchmark directories")
+    parser.add_argument("--pick", nargs="+", help="gallery: image keys from one benchmark")
     args = parser.parse_args()
     ASSETS.mkdir(exist_ok=True)
     if args.figure == "data":
@@ -462,10 +476,16 @@ def main():
         results_figure(args.ours, args.baseline, args.output or ASSETS / "results.png")
     elif args.figure == "curves":
         curves_figure(args.metrics, args.output or ASSETS / "training_curves.png")
-    elif args.figure in ("examples", "failures"):
+    elif args.figure == "failures":
         results = [args.ours / f"{root.name}.json" for root in args.benchmarks]
-        output = args.output or ASSETS / f"{args.figure}.png"
-        examples_figure(results, args.benchmarks, output, wrong=args.figure == "failures")
+        rows = near_misses(results, args.benchmarks)
+        pairs_figure(rows, args.output or ASSETS / "failures.png", columns=2)
+    elif args.figure == "gallery":
+        (root,) = args.benchmarks
+        records = json.loads((args.ours / f"{root.name}.json").read_text())["predictions"]
+        by_image = {r["image"]: r for r in records}
+        rows = [(root / image, by_image[image]) for image in args.pick]
+        pairs_figure(rows, args.output or ASSETS / "gallery.png", columns=2)
 
 
 if __name__ == "__main__":

@@ -37,10 +37,20 @@ Piece meshes: procedural (this project), [ChessSight](https://github.com/tchauff
 | `chesscog-test` | 342 | Blender renders | Official test split; same set as ChessCog train |
 | `chesscog-transfer` | 29 | Phone photos of a wooden tournament set | **Zero-shot**: physical set never seen |
 | `samryan-500` | 500 | Top-down DSLR photos of a vinyl roll-up board, clutter around it | **Zero-shot**: set, camera geometry and framing never seen |
+| `fenit-373` | 373 | Phone photos of two piece sets on boards laid on a tiled floor, low to overhead angles | **Zero-shot**: sets never seen; published after training |
 
 Sources: [ChessReD](https://data.4tu.nl/datasets/99b5c721-280b-450b-b058-b2900b69a90f)
 (Masouris & van Gemert, CC BY-NC-SA 4.0),
 [ChessCog](https://osf.io/xf3ka/) and its
 [transfer sample](https://github.com/georg-wolflein/chesscog) (Wölflein & Arandjelović),
-[samryan18/chess-dataset](https://github.com/samryan18/chess-dataset) (MIT).
-`scripts/prepare_benchmarks.py` rebuilds the two zero-shot sets from their sources.
+[samryan18/chess-dataset](https://github.com/samryan18/chess-dataset) (MIT),
+[Fenit](https://doi.org/10.17632/wpp9xnbcp6.1) (Harjanto, Oei & Susanto, CC BY 4.0).
+`scripts/prepare_benchmarks.py` rebuilds the three zero-shot sets from their sources.
+
+Fenit labels each photo by writing its FEN into the filename. `fenit-373` keeps the 373
+of its 491 photos whose filename is a legal position (one king per side). It drops 99 with
+no readable FEN in the name (mostly timestamps) and 19 single-piece or king-less shots. Fenit also annotates every piece with a
+box: on 332 of the 373 photos the box counts match the filename FEN for every piece type,
+and fenformer scores within one point of its full-set accuracy on those 332, so label noise
+does not drive the result. Fenit was scored on CPU in fp32; the other benchmarks were scored
+on GPU in bf16, and rescoring two of them on CPU gave identical exact-board counts.

@@ -1,4 +1,4 @@
-"""Build the two zero-shot real-photo benchmarks from their public sources.
+"""Build the three zero-shot real-photo benchmarks from their public sources.
 
     uv run python scripts/prepare_benchmarks.py --cache downloads --output data/benchmarks
 
@@ -7,8 +7,12 @@ samryan-500        500 top-down photos of a vinyl tournament set
                    with "-" for "/"; a "_2" suffix marks a second photo of a position.
 chesscog-transfer  29 photos of a wooden set from the ChessCog transfer-learning sample
                    (github.com/georg-wolflein/chesscog). Labels come from per-image JSON.
+fenit-373          373 phone photos of boards on a floor, from the Fenit dataset
+                   (doi.org/10.17632/wpp9xnbcp6.1, CC BY 4.0). The FEN is the filename
+                   with "_" or "-" for "/"; photos without one, or without exactly one
+                   king per side (single-piece shots), are skipped.
 
-Neither physical set appears in training. Each benchmark is written as
+None of these physical sets appears in training. Each benchmark is written as
 <output>/<name>/{images/..., labels.json} and packed as <output>/<name>.tar.
 """
 
@@ -18,6 +22,7 @@ import re
 import shutil
 import subprocess
 import tarfile
+import urllib.request
 import zipfile
 from pathlib import Path
 
@@ -27,6 +32,10 @@ SAMRYAN_REPO = "https://github.com/samryan18/chess-dataset.git"
 CHESSCOG_TRANSFER = (
     "https://drive.usercontent.google.com/download"
     "?id=1Z9fTXRb7FlqzgTTXoywgiQP-Z1cH1v3W&export=download&confirm=t"
+)
+FENIT_IMAGES = (  # file listing of the images/Train folder, dataset version 1
+    "https://data.mendeley.com/public-api/datasets/wpp9xnbcp6/files"
+    "?folder_id=15159330-c254-4d16-871a-155340d1b8a3&version=1"
 )
 
 
@@ -56,8 +65,53 @@ def build_chesscog_transfer(archive: Path, output: Path) -> dict:
     return labels
 
 
+def fenit_placement(filename: str) -> str | None:
+    """FEN placement of a legal position encoded in a Fenit filename, else None."""
+    stem = filename.rsplit(".", 1)[0].split(" ")[0]  # drop " b", " (2)", ...
+    placement = "/".join(re.split(r"[_-]", stem))
+    try:
+        fen_to_labels(placement)
+    except ValueError:
+        return None  # timestamp-named or malformed
+    if placement.count("K") != 1 or placement.count("k") != 1:
+        return None
+    return placement
+
+
+def fetch(url: str):
+    """Open a URL; Mendeley Data rejects Python's default user agent."""
+    return urllib.request.urlopen(urllib.request.Request(url, headers={"User-Agent": "fenformer"}))
+
+
+def download_fenit(cache: Path) -> Path:
+    """Fetch the labeled Fenit photos into `cache/fenit`, checking each file's size."""
+    with fetch(FENIT_IMAGES) as response:
+        files = json.load(response)
+    directory = cache / "fenit"
+    directory.mkdir(exist_ok=True)
+    kept = [f for f in files if fenit_placement(f["filename"])]
+    for f in kept:
+        path = directory / f["filename"]
+        if not path.exists():
+            with fetch(f["content_details"]["download_url"]) as response, open(path, "wb") as out:
+                shutil.copyfileobj(response, out)
+        if path.stat().st_size != f["size"]:
+            raise ValueError(f"Size differs from the Fenit listing: {path}")
+    (directory / "files.json").write_text(json.dumps([f["filename"] for f in kept], indent=1))
+    return directory
+
+
+def build_fenit(directory: Path, output: Path) -> dict:
+    """Copy the labeled photos under their original names."""
+    labels = {}
+    for name in sorted(json.loads((directory / "files.json").read_text())):
+        shutil.copy2(directory / name, output / "images" / name)
+        labels[f"images/{name}"] = fenit_placement(name)
+    return labels
+
+
 def main():
-    """Download sources into the cache if missing, then write both benchmarks."""
+    """Download sources into the cache if missing, then write all benchmarks."""
     parser = argparse.ArgumentParser(
         description=__doc__, formatter_class=argparse.RawTextHelpFormatter
     )
@@ -75,6 +129,7 @@ def main():
     builders = {
         "samryan-500": (build_samryan, clone),
         "chesscog-transfer": (build_chesscog_transfer, archive),
+        "fenit-373": (build_fenit, download_fenit(args.cache)),
     }
     for name, (build, source) in builders.items():
         output = args.output / name

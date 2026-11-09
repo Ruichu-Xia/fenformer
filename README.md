@@ -9,16 +9,23 @@
 
 ## Results
 
-The test that matters is a chess set the model has never seen. On two public photo sets
-of unseen physical boards, fenformer reads **29 of 29** and **30.2%** of boards perfectly.
-The released ChessQueries model, a ViT-L four times larger and the state of the art on
-ChessReD, reads **0 of 29** and **6.6%** of the same images.
+The test that matters is a chess set the model has never seen. On three public photo sets
+of unseen physical boards, fenformer reads **29 of 29**, **60.6%** and **30.2%** of boards
+perfectly. The released ChessQueries model, a ViT-L four times larger and the state of the
+art on ChessReD, reads **0 of 29**, **16.4%** and **6.6%** of the same images.
+
+<p align="center"><img src="assets/gallery.png" width="100%" alt="Six phone photos from the Fenit dataset, taken from sideways, corner, overhead and low angles, each beside fenformer's exactly correct board"></p>
+
+<p align="center"><sub>Fenit: phone photos of boards on a floor, published after fenformer was trained. Six of
+the 226 boards it reads exactly, hand-picked for variety of angle and piece set; every
+prediction, right or wrong, is in <a href="results/fenformer/fenit-373.json"><code>results/</code></a>.</sub></p>
 
 <p align="center"><img src="assets/results.png" width="88%" alt="Exact-board accuracy per benchmark, fenformer against ChessQueries"></p>
 
 | Benchmark | Images | fenformer | ChessQueries ViT-L (released) |
 | --- | ---: | ---: | ---: |
 | ChessCog transfer, **unseen set** | 29 | **100%** [88.3, 100] | 0.0% [0, 11.7] |
+| Fenit, **unseen sets**, published after training | 373 | **60.6%** [55.5, 65.4] | 16.4% [12.9, 20.4] |
 | samryan-500, **unseen set**, top-down | 500 | **30.2%** [26.3, 34.4] | 6.6% [4.7, 9.1] |
 | ChessReD test (seen set, unseen games) | 2,129 | 99.30% [98.8, 99.6] | 99.62% [99.3, 99.8] |
 | ChessCog test (seen renders) | 342 | 95.32% [92.5, 97.1] | — |
@@ -30,8 +37,6 @@ prediction for every image are in [`results/`](results). No test image was used 
 training, model selection or tuning. ChessCog's training renders are in the training mix;
 its transfer set is real photos of a different physical set, which the ChessCog authors
 collected to test unseen sets.
-
-<p align="center"><img src="assets/examples.png" width="100%" alt="Exact predictions on unseen chess sets"></p>
 
 ## How it works
 
@@ -61,15 +66,16 @@ Valid argmax boards pass through unchanged.
 
 **What each part buys.** Measured on the same weights, removing one part at a time:
 
-| Exact boards | ChessReD test | ChessCog test | ChessCog transfer | samryan-500 |
-| --- | ---: | ---: | ---: | ---: |
-| fenformer | **99.30%** | 95.32% | **100%** | **30.2%** |
-| without framing (whole photo) | 98.68% | **96.49%** | **100%** | 17.6% |
-| without constrained decoding | **99.30%** | 95.32% | **100%** | 29.6% |
+| Exact boards | ChessReD test | ChessCog test | ChessCog transfer | Fenit | samryan-500 |
+| --- | ---: | ---: | ---: | ---: | ---: |
+| fenformer | **99.30%** | 95.32% | **100%** | 60.6% | **30.2%** |
+| without framing (whole photo) | 98.68% | **96.49%** | **100%** | **62.5%** | 17.6% |
+| without constrained decoding | **99.30%** | 95.32% | **100%** | 60.1% | 29.6% |
 
-Framing matters most where the board fills a small part of the photo (samryan-500); it
-costs 1.2 points on ChessCog renders. Constrained
-decoding only changes boards the network gets illegally wrong, which is rare in-domain.
+Framing matters most where the board fills a small part of the photo (samryan-500, +12.6
+points); on ChessCog renders and Fenit it costs 1–2 points, inside their confidence
+intervals. Constrained decoding only changes boards the network gets illegally wrong, which
+is rare in-domain.
 
 ## Data: diversity over realism
 
@@ -99,9 +105,17 @@ kernels, and every run resumes from `last.pt`
 
 <p align="center"><img src="assets/failures.png" width="100%" alt="Near-miss failures with the wrong square outlined and the true piece in the corner"></p>
 
-samryan-500 is the hard case: a vinyl board shot straight down by a DSLR. The training
-cameras stop at 75° elevation, and from directly above a bishop, a rook and a pawn are all
-a round top. That is where the errors come from:
+**Fenit: sparse boards have no "up".** fenformer reads 70.8% of Fenit boards with more than
+8 pieces exactly, but only 39.8% of boards with 8 or fewer. Of the 147 boards it gets
+wrong, 23 are the right position rotated 180° (within two squares), and all 23 have 8 or
+fewer pieces: with two kings and a pawn on a board without printed coordinates, little in
+the photo says which side White sits on, while no fuller board was flipped. On the 101
+boards with 1–5 wrong squares, the errors split into wrong piece type (33%), missed pieces
+(32%), invented pieces (18%) and wrong color (17%, mostly a white pawn read as black).
+
+**samryan-500: the camera is straight overhead.** A vinyl board shot from directly above by
+a DSLR. The training cameras stop at 75° elevation, and from directly above a bishop, a rook
+and a pawn are all a round top. That is where the errors come from:
 
 - **60% of wrong squares are the wrong piece type, 1% the wrong color.** The model finds the
   board and the pieces; it misreads their shape.
@@ -156,5 +170,5 @@ results/        metrics and per-image predictions behind every number above
 
 DINOv2 (Meta AI) via timm; U²-Net-p (Qin et al.) from the rembg release; ChessReD
 (Masouris & van Gemert); ChessCog (Wölflein & Arandjelović); samryan18/chess-dataset;
-ChessQueries (Seytre) for the released baseline weights. Mesh and dataset licenses are
+Fenit (Harjanto, Oei & Susanto); ChessQueries (Seytre) for the released baseline weights. Mesh and dataset licenses are
 listed in [`docs/data.md`](docs/data.md).
