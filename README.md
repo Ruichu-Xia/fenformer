@@ -27,7 +27,9 @@ Exact-board accuracy: all 64 squares right, with 95% Wilson intervals. Both mode
 same constrained decoding (below). On ChessReD, the one benchmark both were trained for, the
 two are within noise of each other. Square accuracy, wrong squares per board, and the
 prediction for every image are in [`results/`](results). No test image was used for
-training, model selection or tuning.
+training, model selection or tuning. ChessCog's training renders are in the training mix;
+its transfer set is real photos of a different physical set, which the ChessCog authors
+collected to test unseen sets.
 
 <p align="center"><img src="assets/examples.png" width="100%" alt="Exact predictions on unseen chess sets"></p>
 
@@ -44,11 +46,13 @@ transformer decoder and each predicts one of 13 classes.
 **Why square queries.** Classical pipelines detect corners, rectify the board and classify
 cropped squares, which breaks under occlusion, low angles and unusual sets. Here, square
 identity is built into each query (a learned embedding plus shared rank, file and color
-embeddings), so the network must *find* its square. It does: connecting each query's
-attention peak recovers a perspective-correct grid, including which side White sits on
-(right: the camera is behind Black, and a1 is top right).
+embeddings), so the network must *find* its square. It does, with no location supervision:
+in the first decoder layer each query's attention peak lands on its own square (within about
+a fifth of a square of a perfect perspective grid, median over the 29 transfer photos), and
+it knows which side White sits on (right: the camera is behind Black, and a1 is top right).
+Later layers attend more widely, gathering context from the rest of the board.
 
-<p align="center"><img src="assets/learned_grid.png" width="100%" alt="Attention peaks of the 64 square queries form the board grid on three unseen photos"></p>
+<p align="center"><img src="assets/learned_grid.png" width="100%" alt="First-layer attention peaks of the 64 square queries, one dot per square, on three unseen photos"></p>
 
 **Exact constrained decoding.** Per-square argmax can output two white kings. Fixing the two
 king squares makes every other square independent, so the best board with one king per

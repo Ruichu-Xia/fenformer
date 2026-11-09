@@ -239,18 +239,22 @@ def explain_figure(weights: Path, image_path: Path, fen: str, squares: list[str]
     fig.savefig(output, dpi=150, bbox_inches="tight")
 
 
-def query_peaks(maps: torch.Tensor) -> np.ndarray:
-    """Pixel location [64, 2] of each square query's attention mass (sharpened centroid)."""
-    attention = maps.mean(0).flatten(1) ** 4  # emphasize the peak over diffuse context
+def query_peaks(attention_map: torch.Tensor) -> np.ndarray:
+    """Pixel location [64, 2] of each query's attention peak in one layer's map [64, 46, 46]."""
+    attention = attention_map.flatten(1) ** 4  # sharpened centroid: the peak, not diffuse context
     attention = attention / attention.sum(1, keepdim=True)
-    side = maps.shape[-1]
+    side = attention_map.shape[-1]
     ys, xs = torch.meshgrid(torch.arange(side), torch.arange(side), indexing="ij")
     centers = torch.stack([xs.flatten(), ys.flatten()], 1).float() * 14 + 7
     return (attention @ centers).numpy()
 
 
 def grid_figure(weights: Path, images: list[Path], output: Path):
-    """Connect the 64 query peaks along ranks and files: the board grid the model found."""
+    """Mark where each square query looks in the first decoder layer.
+
+    Only the first layer localizes squares (peaks fit a perspective grid to about a fifth of a
+    square); later layers attend widely for context, so they are not shown.
+    """
     u2netp = download_u2netp(Path("weights/u2netp.onnx"))
     model = load_model(weights, "cpu")
     fig, axes = plt.subplots(
@@ -259,17 +263,14 @@ def grid_figure(weights: Path, images: list[Path], output: Path):
     for ax, path in zip(np.atleast_1d(axes), images, strict=True):
         pixels = frame_board(load_image(path), weights=u2netp)
         _, maps = cross_attention(model, pixels)
-        peaks = query_peaks(maps).reshape(8, 8, 2)  # [rank 8..1, file a..h, xy]
+        peaks = query_peaks(maps[0]).reshape(8, 8, 2)  # [rank 8..1, file a..h, xy]
         ax.imshow(pixels.permute(1, 2, 0).numpy())
-        for i in range(8):
-            ax.plot(*peaks[i].T, color=YELLOW, lw=1.4, alpha=0.9)
-            ax.plot(*peaks[:, i].T, color=YELLOW, lw=1.4, alpha=0.9)
-        ax.scatter(*peaks.reshape(-1, 2).T, s=9, color=YELLOW, zorder=3)
+        ax.scatter(*peaks.reshape(-1, 2).T, s=22, color=YELLOW, edgecolor=INK, lw=0.6, zorder=3)
         for name, (r, f) in {"a1": (7, 0), "h1": (7, 7), "a8": (0, 0)}.items():
             ax.annotate(
                 name,
                 peaks[r, f],
-                xytext=(4, 4),
+                xytext=(5, 5),
                 textcoords="offset points",
                 color="white",
                 fontsize=10,
